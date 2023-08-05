@@ -2,6 +2,8 @@ name: Generate
 
 on:
   workflow_dispatch:
+  schedule:
+    - cron: "0 6/6 * * *"
 
 jobs:
   generate:
