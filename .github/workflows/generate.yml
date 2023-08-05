@@ -7,6 +7,8 @@ jobs:
   generate:
     name: "Generate wallpapers"
     runs-on: ubuntu-22.04
+    permissions:
+      contents: write
     timeout-minutes: 15
     concurrency:
       # never run jobs in parallel, don't cancel jobs
@@ -32,8 +34,9 @@ jobs:
           CHANNEL_ID: ${{ secrets.CHANNEL_ID }}
           SALAI_TOKEN: ${{ secrets.SALAI_TOKEN }}
 
-      - name: "Upload wallpapers"
-        uses: actions/upload-artifact@v3
+      - name: Deploy 🚀
+        uses: JamesIves/github-pages-deploy-action@v4
         with:
-          name: wallpapers
-          path: wallpapers/*.png
+          folder: wallpapers
+          target-folder: wallpapers
+          clean-exclude: wallpapers
