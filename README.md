@@ -1,18 +1,22 @@
 # Frottage
 
-AI generated wallpapers.
+Regularly updated AI generated wallpapers.
 
-# Prompts
+<div>
+<img src="https://fdietze.github.io/frottage/wallpapers/wallpaper-desktop-latest.jpg" height="200" />
+   <img src="https://fdietze.github.io/frottage/wallpapers/wallpaper-desktop-light-latest.jpg" height="200" />
+<img src="https://fdietze.github.io/frottage/wallpapers/wallpaper-mobile-latest.jpg" height="200" />
+</div>
 
 [view prompts](/prompts)
 
-# Deployed
+The images are deployed to:
 
-`https://fdietze.github.io/frottage/wallpapers/wallpaper-<prompt>-latest.png`
+`https://fdietze.github.io/frottage/wallpapers/wallpaper-<prompt>-latest.<png|jpg>`
 
 # Linux
 ```
-feh --bg-fill https://fdietze.github.io/frottage/wallpapers/wallpaper-desktop-latest.png
+feh --bg-fill https://fdietze.github.io/frottage/wallpapers/wallpaper-desktop-latest.jpg
 ```
 
 # Android:
