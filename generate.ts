@@ -47,7 +47,7 @@ async function main() {
       `wallpapers/${filenameDetail}`,
       `wallpapers/${filenameLatest}`,
     );
-  });
+  }
 
   process.exit(0);
 }
