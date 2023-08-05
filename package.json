@@ -4,6 +4,7 @@
     "midjourney": "^4.3.11"
   },
   "devDependencies": {
+    "@types/node": "^20.4.7",
     "tsx": "^3.12.7"
   }
 }

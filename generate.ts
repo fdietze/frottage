@@ -3,9 +3,9 @@ import { Midjourney } from "midjourney";
 import fs from "fs";
 async function main() {
   const client = new Midjourney({
-    ServerId: <string> process.env.SERVER_ID,
-    ChannelId: <string> process.env.CHANNEL_ID,
-    SalaiToken: <string> process.env.SALAI_TOKEN,
+    ServerId: <string>process.env.SERVER_ID,
+    ChannelId: <string>process.env.CHANNEL_ID,
+    SalaiToken: <string>process.env.SALAI_TOKEN,
     Debug: true,
     Ws: true, //enable ws is required for remix mode (and custom zoom)
   });
@@ -34,25 +34,27 @@ async function main() {
   // results.forEach(async (result) => {
   for (const result of results) {
     const filenameLatest = `wallpaper-${result.filename}-latest`;
-    let filenameDetail = `wallpaper-${result.filename}-${
-      new Date()
+    let filenameDetail = `wallpaper-${result.filename}-${new Date()
         .toISOString()
         .replace(/[-:]/g, "")
         .replace(/\..+/, "")
-    }-${result.prompt}.png`;
+      }-${result.prompt}`;
     // sanitize filename
-    filenameDetail = filenameDetail.replace(/[^a-z0-9]/gi, "_");
-    await download(result.uri, `wallpapers/${filenameDetail}`);
+    filenameDetail = filenameDetail.replace(/[^a-z0-9]/gi, "_").replace(
+      /_+/g,
+      "_",
+    );
+    await download(result.uri, `wallpapers/${filenameDetail}.png`);
     fs.copyFileSync(
-      `wallpapers/${filenameDetail}`,
-      `wallpapers/${filenameLatest}`,
+      `wallpapers/${filenameDetail}.png`,
+      `wallpapers/${filenameLatest}.png`,
     );
   }
 
   process.exit(0);
 }
 
-async function imagine(client: Midjourney, prompt: string): string {
+async function imagine(client: Midjourney, prompt: string): Promise<string> {
   console.log("scheduling prompt: ", prompt);
   const Imagine = await client.Imagine(
     prompt,
@@ -61,30 +63,21 @@ async function imagine(client: Midjourney, prompt: string): string {
     },
   );
   console.log(Imagine);
-  if (!Imagine) {
-    console.log("no message");
-    return;
-  }
+  if (!Imagine) throw new Error("no message");
 
   console.log("upscaling prompt U1: ", prompt);
   const U1CustomID = Imagine.options?.find((o) => o.label === "U1")?.custom;
-  if (!U1CustomID) {
-    console.log("no U1");
-    return;
-  }
+  if (!U1CustomID) throw new Error("no U1");
   // Upscale U1
   const Upscale = await client.Custom({
-    msgId: <string> Imagine.id,
+    msgId: <string>Imagine.id,
     flags: Imagine.flags,
     customId: U1CustomID,
     loading: (uri: string, progress: string) => {
       console.log("loading", uri, "progress", progress);
     },
   });
-  if (!Upscale) {
-    console.log("no Upscale");
-    return;
-  }
+  if (!Upscale) throw new Error("no Upscale");
   console.log(Upscale);
   console.log("finished prompt: ", prompt);
   return Upscale.uri;
