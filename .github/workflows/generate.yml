@@ -40,6 +40,7 @@ jobs:
           SERVER_ID: ${{ secrets.SERVER_ID }}
           CHANNEL_ID: ${{ secrets.CHANNEL_ID }}
           SALAI_TOKEN: ${{ secrets.SALAI_TOKEN }}
+          STABILITY_AI_API_KEY: ${{ secrets.STABILITY_AI_API_KEY }}
 
       - name: Deploy 🚀
         uses: JamesIves/github-pages-deploy-action@v4
