@@ -31,7 +31,8 @@ async function main() {
   client.Close();
 
   // download and save results
-  results.forEach((result) => {
+  // results.forEach(async (result) => {
+  for (const result of results) {
     const filenameLatest = `wallpaper-${result.filename}-latest`;
     let filenameDetail = `wallpaper-${result.filename}-${
       new Date()
@@ -47,10 +48,6 @@ async function main() {
       `wallpapers/${filenameLatest}`,
     );
   });
-
-  // exec command feh --bg-fill ${filename}:
-  // const { execSync } = require("node:child_process");
-  // execSync(`feh --bg-fill ${filename}`);
 
   process.exit(0);
 }
@@ -94,6 +91,7 @@ async function imagine(client: Midjourney, prompt: string): string {
 }
 
 async function download(uri: string, path: string) {
+  console.log("downloading", uri, "to", path);
   const fs = require("fs");
   const { Readable } = require("stream");
   const { finished } = require("stream/promises");
