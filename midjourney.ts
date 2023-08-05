@@ -5,9 +5,9 @@ export async function midjourney_generate_prompts(
   prompts: Array<{ filename: string; prompt: string }>,
 ): Promise<Array<{ filename: string; prompt: string; uri: string }>> {
   const client = new Midjourney({
-    ServerId: <string> process.env.SERVER_ID,
-    ChannelId: <string> process.env.CHANNEL_ID,
-    SalaiToken: <string> process.env.SALAI_TOKEN,
+    ServerId: <string>process.env.SERVER_ID,
+    ChannelId: <string>process.env.CHANNEL_ID,
+    SalaiToken: <string>process.env.SALAI_TOKEN,
     Debug: false,
     Ws: true, //enable ws is required for remix mode (and custom zoom)
   });
@@ -39,14 +39,16 @@ async function imagine(client: Midjourney, prompt: string): Promise<string> {
   // console.log(Imagine);
   if (!Imagine) throw new Error("no message");
 
-  console.log("upscaling prompt U1:", prompt);
-  const U1CustomID = Imagine.options?.find((o) => o.label === "U1")?.custom;
-  if (!U1CustomID) throw new Error("no U1");
-  // Upscale U1
+  // random number between 1 and 4
+  const variant = Math.floor(Math.random() * 4) + 1;
+  console.log(`upscaling prompt variant ${variant}:`, prompt);
+  const customID = Imagine.options?.find((o) => o.label === `U${variant}`)
+    ?.custom;
+  if (!customID) throw new Error("upscale button not found");
   const Upscale = await client.Custom({
-    msgId: <string> Imagine.id,
+    msgId: <string>Imagine.id,
     flags: Imagine.flags,
-    customId: U1CustomID,
+    customId: customID,
     loading: (uri: string, progress: string) => {
       console.log(`upscaling (${progress}):`, prompt);
     },
