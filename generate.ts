@@ -27,14 +27,9 @@ async function main() {
 
     await upscale(
       `wallpapers/wallpaper-${result.filename}-original.png`,
-      `wallpapers/wallpaper-${result.filename}-upscaled.png`,
-    );
-
-    const filenameLatest = `wallpaper-${result.filename}-latest`;
-    fs.copyFileSync(
-      `wallpapers/wallpaper-${result.filename}-upscaled.png`,
       `wallpapers/wallpaper-${result.filename}-latest.png`,
     );
+
     // let filenameDetail = `wallpaper-${result.filename}-${new Date()
     //     .toISOString()
     //     .replace(/[-:]/g, "")
