@@ -5,13 +5,14 @@ export async function midjourney_generate_prompts(
   prompts: Array<{ filename: string; prompt: string }>,
 ): Promise<Array<{ filename: string; prompt: string; uri: string }>> {
   const client = new Midjourney({
-    ServerId: <string>process.env.SERVER_ID,
-    ChannelId: <string>process.env.CHANNEL_ID,
-    SalaiToken: <string>process.env.SALAI_TOKEN,
+    ServerId: <string> process.env.SERVER_ID,
+    ChannelId: <string> process.env.CHANNEL_ID,
+    SalaiToken: <string> process.env.SALAI_TOKEN,
     Debug: false,
     Ws: true, //enable ws is required for remix mode (and custom zoom)
   });
 
+  console.log("connecting to midjourney bot (discord)...");
   await client.init();
   // run all prompts on the same connection
   const results = await Promise.all(
@@ -43,7 +44,7 @@ async function imagine(client: Midjourney, prompt: string): Promise<string> {
   if (!U1CustomID) throw new Error("no U1");
   // Upscale U1
   const Upscale = await client.Custom({
-    msgId: <string>Imagine.id,
+    msgId: <string> Imagine.id,
     flags: Imagine.flags,
     customId: U1CustomID,
     loading: (uri: string, progress: string) => {
