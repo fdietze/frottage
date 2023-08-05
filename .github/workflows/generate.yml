@@ -30,7 +30,11 @@ jobs:
         run: yarn install --frozen-lockfile
 
       - name: "Generate wallpapers"
-        run: npx tsx generate.ts
+        run: |
+          set -e
+          npx tsx generate.ts
+          rm -f wallpapers/.gitignore
+          ls -la wallpapers
         env:
           SERVER_ID: ${{ secrets.SERVER_ID }}
           CHANNEL_ID: ${{ secrets.CHANNEL_ID }}

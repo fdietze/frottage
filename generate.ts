@@ -3,9 +3,9 @@ import { Midjourney } from "midjourney";
 import fs from "fs";
 async function main() {
   const client = new Midjourney({
-    ServerId: <string>process.env.SERVER_ID,
-    ChannelId: <string>process.env.CHANNEL_ID,
-    SalaiToken: <string>process.env.SALAI_TOKEN,
+    ServerId: <string> process.env.SERVER_ID,
+    ChannelId: <string> process.env.CHANNEL_ID,
+    SalaiToken: <string> process.env.SALAI_TOKEN,
     Debug: true,
     Ws: true, //enable ws is required for remix mode (and custom zoom)
   });
@@ -34,11 +34,12 @@ async function main() {
   // results.forEach(async (result) => {
   for (const result of results) {
     const filenameLatest = `wallpaper-${result.filename}-latest`;
-    let filenameDetail = `wallpaper-${result.filename}-${new Date()
+    let filenameDetail = `wallpaper-${result.filename}-${
+      new Date()
         .toISOString()
         .replace(/[-:]/g, "")
         .replace(/\..+/, "")
-      }-${result.prompt}`;
+    }-${result.prompt}`;
     // sanitize filename
     filenameDetail = filenameDetail.replace(/[^a-z0-9]/gi, "_").replace(
       /_+/g,
@@ -70,7 +71,7 @@ async function imagine(client: Midjourney, prompt: string): Promise<string> {
   if (!U1CustomID) throw new Error("no U1");
   // Upscale U1
   const Upscale = await client.Custom({
-    msgId: <string>Imagine.id,
+    msgId: <string> Imagine.id,
     flags: Imagine.flags,
     customId: U1CustomID,
     loading: (uri: string, progress: string) => {
