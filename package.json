@@ -1,0 +1,9 @@
+{
+  "dependencies": {
+    "dotenv": "^16.3.1",
+    "midjourney": "^4.3.11"
+  },
+  "devDependencies": {
+    "tsx": "^3.12.7"
+  }
+}
