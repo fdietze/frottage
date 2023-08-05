@@ -8,18 +8,20 @@ Regularly updated AI generated wallpapers.
 <img src="https://fdietze.github.io/frottage/wallpapers/wallpaper-mobile-latest.jpg" height="200" />
 </div>
 
-[view prompts](/prompts)
+[view prompts](/prompts), [view schedule](/.github/workflows/generate.yml#L6)
 
 The images are deployed to:
 
 `https://fdietze.github.io/frottage/wallpapers/wallpaper-<prompt>-latest.<png|jpg>`
 
-# Linux
+# Usage
+
+## Linux
 ```
 feh --bg-fill https://fdietze.github.io/frottage/wallpapers/wallpaper-desktop-latest.jpg
 ```
 
-# Android:
+## Android:
 
 1. Install Automate:
    https://play.google.com/store/apps/details?id=com.llamalab.automate&referrer=utm_source%3Dcommunity
