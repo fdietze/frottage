@@ -35,7 +35,7 @@ jobs:
           set -e
           npx tsx generate.ts
           rm -f wallpapers/.gitignore
-          mogrify -format jpg -quality 95 *.png
+          mogrify -format jpg -quality 95 wallpapers/*.png
           ls -la wallpapers
         env:
           SERVER_ID: ${{ secrets.SERVER_ID }}
