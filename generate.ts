@@ -7,10 +7,16 @@ async function main() {
   // synchronously read all files in prompts folder into an Array
   const prompts: Array<{ filename: string; prompt: string }> = fs.readdirSync(
     "./prompts",
-  ).map((filename) => ({
-    filename,
-    prompt: fs.readFileSync(`prompts/${filename}`, "utf8").trim(),
-  }));
+  ).map((filename) => {
+    const allLines = fs.readFileSync(`prompts/${filename}`, "utf8").trim()
+      .split("\n");
+    const constRandomLine =
+      allLines[Math.floor(Math.random() * allLines.length)];
+    return {
+      filename,
+      prompt: constRandomLine,
+    };
+  });
   console.log(prompts);
 
   // launch midjourney and generate images for each prompt
