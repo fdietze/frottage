@@ -4,8 +4,9 @@ Regularly updated AI generated wallpapers.
 
 <div>
 <img src="https://fdietze.github.io/frottage/wallpapers/wallpaper-desktop-latest.jpg" height="200" />
-   <img src="https://fdietze.github.io/frottage/wallpapers/wallpaper-desktop-light-latest.jpg" height="200" />
+<img src="https://fdietze.github.io/frottage/wallpapers/wallpaper-desktop-light-latest.jpg" height="200" />
 <img src="https://fdietze.github.io/frottage/wallpapers/wallpaper-mobile-latest.jpg" height="200" />
+<img src="https://fdietze.github.io/frottage/wallpapers/wallpaper-mobile-homescreen-latest.jpg" height="200" />
 </div>
 
 [view prompts](/prompts), [view schedule](/.github/workflows/generate.yml#L6)
@@ -17,6 +18,7 @@ The images are deployed to:
 # Usage
 
 ## Linux
+
 ```
 feh --bg-fill https://fdietze.github.io/frottage/wallpapers/wallpaper-desktop-latest.jpg
 ```
