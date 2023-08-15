@@ -1,5 +1,6 @@
 wallpaper, daylight --c 20 --ar 16:9
-utopian dream landscape, white matte texture, colored details, contrast --no castle --c 20 --ar 16:9
+utopian dream landscape, white matte texture, <%= color %> colored details, contrast --no castle --c 20 --ar 16:9
 mighty polygon bird, light background --c 20 --ar 16:9
 majestic sea turtle swimming gracefully in the crystal clear waters --ar 16:9
 nature landscape on flying rock ::5 idyllic, clouds, magnetism, lush plants --c 20 --ar 16:9
+<%= dayOfWeekCEST %> funny work life --ar 16:9

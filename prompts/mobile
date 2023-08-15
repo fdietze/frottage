@@ -1,6 +1,6 @@
 an old tree, filled with life, plants, dark green, blue, purple --no person --c 36 --s 9 --ar 9:19
 laughing king, wise, nice, happy, tears, colorful drawing --ar 9:19
-crazy futuristic <%= it.random(['apple', 'banana', 'cucumber', 'durian']) %> machine, complicated --ar 9:19
+crazy futuristic <%= random(['apple', 'banana', 'cucumber', 'durian']) %> machine, complicated --ar 9:19
 colorful tissue fighting for the soap to clean themselves --c 30 --ar 9:19
 silhouette of a deep sea monster --c 20 --ar 9:19
 collision of fire and water --c 30 --ar 9:19
@@ -15,3 +15,6 @@ still life, cyber punk colours --c 31 --ar 9:19
 large exotic butterflies covering screen, diverse, digital art --c 15 --ar 9:19
 grinning monster, nice, cute --c 15 --ar 9:19
 monster behind courtain, shy, confused --c 15 --ar 9:19
+the tree of life, <%= monthCEST %>, <%= dayPeriodCEST %> --c 20 --ar 9:19
+futuristic clock, <%= timeOfDayCEST %> o'clock
+tasty <%= dayPeriodCEST %> food
