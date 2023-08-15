@@ -13,7 +13,7 @@ Regularly updated AI generated wallpapers.
 
 The images are deployed to:
 
-`https://fdietze.github.io/frottage/wallpapers/wallpaper-<prompt>-latest.<png|jpg>`
+`https://fdietze.github.io/frottage/wallpapers/wallpaper-<prompt>-latest.jpg`
 
 # Usage
 
