@@ -27,7 +27,12 @@ jobs:
           node-version: "18"
           cache: "yarn"
 
-      - name: "Install dependencies"
+      - name: Install yq
+        run: |
+          curl --silent --location https://github.com/mikefarah/yq/releases/download/v4.12.0/yq_linux_amd64.tar.gz |\
+          tar xz && sudo mv yq_linux_amd64 /usr/bin/yq
+
+      - name: "Install node dependencies"
         run: yarn install --frozen-lockfile
 
       - name: "Generate wallpapers"
@@ -44,9 +49,21 @@ jobs:
           SALAI_TOKEN: ${{ secrets.SALAI_TOKEN }}
           STABILITY_AI_API_KEY: ${{ secrets.STABILITY_AI_API_KEY }}
 
+      - name: Generate cron timestamp
+        run: |
+          set -e
+          CRONEXPR=$(yq '.on.schedule[0].cron' < .github/workflows/generate.yml)
+          npx tsx listCeiledCronHours.ts "$CRONEXPR" > updateHoursUTC.json
+          cat updateHoursUTC.json
+
+      - name: Prepare upload
+        run: |
+          mkdir -p static
+          cp updateHoursUTC.json static/updateHoursUTC.json
+          cp -r wallpapers static/wallpapers
+
       - name: Deploy 🚀
         uses: JamesIves/github-pages-deploy-action@v4
         with:
-          folder: wallpapers
-          target-folder: wallpapers
-          clean-exclude: wallpapers
+          folder: static
+          clean-exclude: static

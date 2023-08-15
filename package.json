@@ -1,5 +1,6 @@
 {
   "dependencies": {
+    "cron-parser": "^4.9.0",
     "dotenv": "^16.3.1",
     "eta": "^3.1.0",
     "form-data": "^4.0.0",
