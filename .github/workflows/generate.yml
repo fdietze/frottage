@@ -41,7 +41,6 @@ jobs:
           npx tsx generate.ts
           rm -f wallpapers/.gitignore
           mogrify -format jpg -quality 95 wallpapers/*.png
-          rm *.png
           ls -la wallpapers
         env:
           SERVER_ID: ${{ secrets.SERVER_ID }}
@@ -58,9 +57,9 @@ jobs:
 
       - name: Prepare upload
         run: |
-          mkdir -p static
+          mkdir -p static/wallpapers
           cp updateHoursUTC.json static/updateHoursUTC.json
-          cp -r wallpapers static/wallpapers
+          cp -r wallpapers/*.jpg static/wallpapers/
 
       - name: Deploy 🚀
         uses: JamesIves/github-pages-deploy-action@v4
