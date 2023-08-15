@@ -295,6 +295,11 @@ esbuild@~0.17.6:
     "@esbuild/win32-ia32" "0.17.19"
     "@esbuild/win32-x64" "0.17.19"
 
+eta@^3.1.0:
+  version "3.1.0"
+  resolved "https://registry.yarnpkg.com/eta/-/eta-3.1.0.tgz#3403d3887800c1353f87c884a1bf4adfb222cad2"
+  integrity sha512-my4rbVATtKt9P7oNH6NkynI2bMY081ak9mZfX5Hh2tZ0HHCMhhFKYh6KH9NyUTRMTgohYd2Pd8lA2b9IbR0WrA==
+
 expand-template@^2.0.3:
   version "2.0.3"
   resolved "https://registry.yarnpkg.com/expand-template/-/expand-template-2.0.3.tgz#6e14b3fcee0f3a6340ecb57d2e8918692052a47c"

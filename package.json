@@ -1,6 +1,7 @@
 {
   "dependencies": {
     "dotenv": "^16.3.1",
+    "eta": "^3.1.0",
     "form-data": "^4.0.0",
     "midjourney": "^4.3.11",
     "node-fetch": "^3.3.2",

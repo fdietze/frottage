@@ -3,20 +3,34 @@ import fs from "fs";
 import { midjourney_generate_prompts } from "./midjourney";
 import { download } from "./download";
 import { upscale } from "./upscale";
+import { render } from "./template";
+
 async function main() {
   // synchronously read all files in prompts folder into an Array
-  const prompts: Array<{ filename: string; prompt: string }> = fs.readdirSync(
+  const promptTemplates: Array<{ filename: string; promptTemplate: string }> =
+    fs
+      .readdirSync(
     "./prompts",
   ).map((filename) => {
     const allLines = fs.readFileSync(`prompts/${filename}`, "utf8").trim()
       .split("\n");
-    const constRandomLine =
+        const randomLine =
       allLines[Math.floor(Math.random() * allLines.length)];
     return {
       filename,
-      prompt: constRandomLine,
+          promptTemplate: randomLine,
     };
   });
+
+  const prompts: Array<
+    { filename: string; promptTemplate: string; prompt: string }
+  > = promptTemplates.map((promptTemplate) => {
+    return {
+      ...promptTemplate,
+      prompt: render(promptTemplate.promptTemplate),
+    };
+  });
+
   console.log(prompts);
 
   // launch midjourney and generate images for each prompt
