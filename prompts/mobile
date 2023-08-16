@@ -18,3 +18,4 @@ monster behind courtain, shy, confused --c 15 --ar 9:19
 the tree of life, <%= monthCEST %>, <%= dayPeriodCEST %> --c 20 --ar 9:19
 futuristic clock, <%= timeOfDayCEST %> o'clock
 tasty <%= dayPeriodCEST %> food
+very tall tree, --no leafs --ar 9:19
