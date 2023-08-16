@@ -60,6 +60,7 @@ jobs:
           mkdir -p static/wallpapers
           cp updateHoursUTC.json static/updateHoursUTC.json
           cp -r wallpapers/*.jpg static/wallpapers/
+          find static
 
       - name: Deploy 🚀
         uses: JamesIves/github-pages-deploy-action@v4
