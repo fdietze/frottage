@@ -4,6 +4,7 @@ import { midjourney_generate_prompts } from "./midjourney";
 import { download } from "./download";
 import { upscale } from "./upscale";
 import { render } from "./template";
+import { getRandomIndex } from "./random";
 
 async function main() {
   // synchronously read all files in prompts folder into an Array
@@ -14,8 +15,8 @@ async function main() {
   ).map((filename) => {
     const allLines = fs.readFileSync(`prompts/${filename}`, "utf8").trim()
       .split("\n");
-        const randomLine =
-      allLines[Math.floor(Math.random() * allLines.length)];
+        const randomLine = allLines[getRandomIndex(allLines.length)];
+
     return {
       filename,
           promptTemplate: randomLine,
