@@ -2,4 +2,4 @@ wood texture --c 20 --ar 9:19
 stone texture --c 20 --ar 9:19
 silk texture --c 20 --ar 9:19
 tiling wall structure, aztec --ar 9:19
-ambient occlusion, <%= color %> colored accents --c 10 --ar 9:19
+ambient occlusion, <%= color %> colored accents, matte --c 10 --ar 9:19
