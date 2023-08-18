@@ -3,7 +3,7 @@ name: Generate
 on:
   workflow_dispatch:
   schedule:
-    - cron: "45 1,7,13,17 * * *" # 15 minutes before the hour (UTC)
+    - cron: "45 3,9,15,18 * * *" # 15 minutes before the hour (UTC)
 
 
 jobs:
