@@ -59,7 +59,7 @@ jobs:
         run: |
           mkdir -p static/wallpapers
           cp updateHoursUTC.json static/updateHoursUTC.json
-          cp -r wallpapers/*.jpg static/wallpapers/
+          cp -r wallpapers/*-latest.jpg static/wallpapers/
           find static
 
       - name: Deploy 🚀
