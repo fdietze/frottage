@@ -1,5 +1,5 @@
 wallpaper, daylight --c 20 --ar 16:9
-utopian dream landscape, white matte texture, <%= color %> colored details, contrast --no castle --c 25 --ar 16:9
+utopian dream landscape, white matte texture, <%= color() %> colored details, contrast --no castle --c 25 --ar 16:9
 dangerous polygon bird, detailed, daylight --c 25 --ar 16:9
 majestic sea turtle swimming gracefully in the crystal clear waters, adventure --c 20 --ar 16:9
 network of giant flying rocks with exotic plants on them, high in the mountains, fog, tropical, cinematic --c 10 --ar 16:9

@@ -21,7 +21,7 @@ export function render(template: string): string {
   // - gpt generated categories, like `randomColors`
   return eta.renderString(template, {
     random: randomElement,
-    color: randomElement(colorNames),
+    color: () => randomElement(colorNames),
     season: season(new Date().getMonth()),
     dayOfWeek: new Date().toLocaleString("default", { weekday: "long" }),
     monthCEST: new Date().toLocaleString("default", {

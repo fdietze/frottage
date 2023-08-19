@@ -1,60 +1,116 @@
 import "dotenv/config";
-import { Midjourney } from "midjourney";
+import { Midjourney, MJMessage } from "midjourney";
+import { getRandomIndex } from "./random";
+import { sleepMs } from "./util";
 
-export async function midjourney_generate_prompts(
-  prompts: Array<{ filename: string; prompt: string }>,
-): Promise<Array<{ filename: string; prompt: string; uri: string }>> {
+export async function connect<R>(
+  options: { Debug?: boolean; Remix?: boolean },
+  code: (client: Midjourney) => Promise<R>,
+): Promise<R> {
   const client = new Midjourney({
     ServerId: <string>process.env.SERVER_ID,
     ChannelId: <string>process.env.CHANNEL_ID,
     SalaiToken: <string>process.env.SALAI_TOKEN,
     Debug: false,
+    Remix: true,
     Ws: true, //enable ws is required for remix mode (and custom zoom)
+    ...options,
   });
-
   console.log("connecting to midjourney bot (discord)...");
   await client.init();
-  // run all prompts on the same connection
-  const results = await Promise.all(
-    prompts.map(async (prompt, i) => {
-      // wait between each prompt
-      await new Promise((resolve) => setTimeout(resolve, 3000 + i * 5000));
-      const uri = await imagine(client, prompt.prompt);
-      return { filename: prompt.filename, prompt: prompt.prompt, uri };
-    }),
-  );
-  client.Close();
-
-  return results;
+  try {
+    return await code(client);
+  } catch (e) {
+    console.log("error:", e);
+    throw e;
+  } finally {
+    client.Close();
+    console.log("midjourney connection closed.");
+  }
 }
 
-async function imagine(client: Midjourney, prompt: string): Promise<string> {
+export async function imagineAndUpscale(
+  client: Midjourney,
+  prompt: string,
+): Promise<MJMessage> {
+  const imagined: MJMessage = await imagine(client, prompt);
+  const variant = getRandomIndex(4) + 1;
+  return await upscale(client, imagined, variant);
+}
+
+export async function imagine(
+  client: Midjourney,
+  prompt: string,
+): Promise<MJMessage> {
   console.log("scheduling prompt:", prompt);
-  const Imagine = await client.Imagine(
+  const imagined: MJMessage | null = await client.Imagine(
     prompt,
     (uri: string, progress: string) => {
       console.log(`imagining (${progress}):`, prompt);
     },
   );
-  // console.log(Imagine);
-  if (!Imagine) throw new Error("no message");
+  if (!imagined) throw new Error("no message");
+  return imagined;
+}
 
-  // random number between 1 and 4
-  const variant = Math.floor(Math.random() * 4) + 1;
-  console.log(`upscaling prompt variant ${variant}:`, prompt);
-  const customID = Imagine.options?.find((o) => o.label === `U${variant}`)
+export async function upscale(
+  client: Midjourney,
+  imagined: MJMessage,
+  variant: number,
+): Promise<MJMessage> {
+  console.log(`upscaling prompt variant ${variant} (${imagined.content})`);
+  const customID = imagined.options?.find((o) => o.label === `U${variant}`)
     ?.custom;
   if (!customID) throw new Error("upscale button not found");
-  const Upscale = await client.Custom({
-    msgId: <string>Imagine.id,
-    flags: Imagine.flags,
+  const upscaled: MJMessage | null = await client.Custom({
+    msgId: <string>imagined.id,
+    flags: imagined.flags,
     customId: customID,
     loading: (uri: string, progress: string) => {
-      console.log(`upscaling (${progress}):`, prompt);
+      console.log(`upscaling (${progress}):`, imagined);
     },
   });
-  if (!Upscale) throw new Error("no Upscale");
-  // console.log(Upscale);
-  console.log("finished prompt:", prompt);
-  return Upscale.uri;
+  if (!upscaled) throw new Error("no Upscale");
+  return upscaled;
+}
+
+export async function enableRemix(client: Midjourney): Promise<void> {
+  console.log("enabling remix mode...");
+  // returns string: "Remix mode turned off! You can always turn this on by running `/prefer remix` again."
+  const firstSwitch = await client.SwitchRemix();
+  console.log(firstSwitch);
+  if (!firstSwitch) throw new Error("failed switching remix mode");
+  if (firstSwitch.includes("turned off")) {
+    console.log("remix mode was already enabled, turing on again...");
+    await sleepMs(1000);
+    const secondSwitch = await client.SwitchRemix();
+    console.log(secondSwitch);
+  }
+}
+
+export async function varyRemix(
+  client: Midjourney,
+  upscaled: MJMessage,
+  strong: Boolean,
+  prompt?: string,
+): Promise<MJMessage> {
+  if (prompt != undefined) await enableRemix(client);
+
+  const varyLabel = strong ? "Vary (Strong)" : "Vary (Subtle)";
+  console.log(`${varyLabel} (${upscaled.content})\n  prompt: ${prompt}`);
+  const vary = upscaled?.options?.find((o) => o.label === varyLabel);
+  if (!vary) {
+    throw new Error("no variations available");
+  }
+  const varied: MJMessage | null = await client.Custom({
+    msgId: <string>upscaled.id,
+    flags: upscaled.flags,
+    content: prompt,
+    customId: vary.custom,
+    loading: (uri: string, progress: string) => {
+      console.log(`varying (${progress}):`, prompt);
+    },
+  });
+  if (!varied) throw new Error("no Vary");
+  return varied;
 }
