@@ -17,5 +17,5 @@ grinning monster, nice, cute --c 15 --ar 9:19
 monster behind courtain, shy, confused --c 15 --ar 9:19
 the tree of life, <%= monthCEST %>, <%= dayPeriodCEST %> --c 20 --ar 9:19
 futuristic clock, <%= timeOfDayCEST %> o'clock
-tasty <%= dayPeriodCEST %> food
+yummy <%= dayPeriodCEST %> meal, professional food photography --c 10 --stylize 250 --ar 9:19
 very tall tree, --no leaves --ar 9:19
