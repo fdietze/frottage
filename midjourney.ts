@@ -4,7 +4,7 @@ import { getRandomIndex } from "./random";
 import { sleepMs } from "./util";
 
 export async function connect<R>(
-  options: { Debug?: boolean; Remix?: boolean },
+  options: { Debug?: boolean },
   code: (client: Midjourney) => Promise<R>,
 ): Promise<R> {
   const client = new Midjourney({
@@ -12,7 +12,6 @@ export async function connect<R>(
     ChannelId: <string>process.env.CHANNEL_ID,
     SalaiToken: <string>process.env.SALAI_TOKEN,
     Debug: false,
-    Remix: true,
     Ws: true, //enable ws is required for remix mode (and custom zoom)
     ...options,
   });
@@ -58,6 +57,7 @@ export async function upscale(
   imagined: MJMessage,
   variant: number,
 ): Promise<MJMessage> {
+  await enableRemixMode(client, false);
   console.log(`upscaling prompt variant ${variant} (${imagined.content})`);
   const customID = imagined.options?.find((o) => o.label === `U${variant}`)
     ?.custom;
@@ -74,17 +74,20 @@ export async function upscale(
   return upscaled;
 }
 
-export async function enableRemix(client: Midjourney): Promise<void> {
-  console.log("enabling remix mode...");
-  // returns string: "Remix mode turned off! You can always turn this on by running `/prefer remix` again."
-  const firstSwitch = await client.SwitchRemix();
-  console.log(firstSwitch);
-  if (!firstSwitch) throw new Error("failed switching remix mode");
-  if (firstSwitch.includes("turned off")) {
-    console.log("remix mode was already enabled, turing on again...");
-    await sleepMs(1000);
-    const secondSwitch = await client.SwitchRemix();
-    console.log(secondSwitch);
+export async function remixModeIsEnabled(client: Midjourney): Promise<boolean> {
+  const settings = await client.Settings();
+  if (!settings) throw new Error("no settings");
+  const remix = settings.options.find((o) => o.label === "Remix mode");
+  if (!remix) throw new Error("no remix mode");
+  return remix.style == 3;
+}
+
+export async function enableRemixMode(
+  client: Midjourney,
+  enable: boolean,
+): Promise<void> {
+  if (await remixModeIsEnabled(client) !== enable) {
+    await client.SwitchRemix();
   }
 }
 
@@ -92,25 +95,22 @@ export async function varyRemix(
   client: Midjourney,
   upscaled: MJMessage,
   strong: Boolean,
-  prompt?: string,
+  remixPrompt: string,
 ): Promise<MJMessage> {
-  if (prompt != undefined) await enableRemix(client);
+  await enableRemixMode(client, true);
 
   const varyLabel = strong ? "Vary (Strong)" : "Vary (Subtle)";
-  console.log(`${varyLabel} (${upscaled.content})\n  prompt: ${prompt}`);
   const vary = upscaled?.options?.find((o) => o.label === varyLabel);
-  if (!vary) {
-    throw new Error("no variations available");
-  }
-  const varied: MJMessage | null = await client.Custom({
+  if (!vary) throw new Error("no vary button");
+  const varyCustom = await client.Custom({
     msgId: <string>upscaled.id,
     flags: upscaled.flags,
-    content: prompt,
+    content: remixPrompt,
     customId: vary.custom,
     loading: (uri: string, progress: string) => {
-      console.log(`varying (${progress}):`, prompt);
+      console.log(`varying (${progress}): ${remixPrompt}`);
     },
   });
-  if (!varied) throw new Error("no Vary");
-  return varied;
+  if (!varyCustom) throw new Error("error varying");
+  return varyCustom;
 }
