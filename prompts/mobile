@@ -19,3 +19,4 @@ the tree of life, <%= monthCEST %>, <%= dayPeriodCEST %> --c 20 --ar 9:19
 futuristic clock, showing <%= timeOfDayCEST %>h --ar 9:19
 yummy <%= dayPeriodCEST %> meal, healthy, hipster, professional food photography --c 10 --stylize 250 --ar 9:19
 very tall tree, --no leaves --ar 9:19
+hybrid <%= random(['elephant', 'butterfly', 'snail']) %> and <%= random(['eagle', 'centipede', 'dog', 'cat']) %> --ar 9:19
