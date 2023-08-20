@@ -21,3 +21,4 @@ yummy <%= dayPeriodCEST %> meal, healthy, hipster, professional food photography
 very tall tree, --no leaves --ar 9:19
 hybrid <%= random(['elephant', 'butterfly', 'snail']) %> and <%= random(['eagle', 'centipede', 'dog', 'cat']) %> --ar 9:19
 giraffe made from rope --ar 9:19
+metal statue, melting --9:19
