@@ -10,21 +10,74 @@ import { displayRemoteImage } from "./image-display";
 
 async function main() {
   // synchronously read all files in prompts folder into an Array
-  const promptTemplates: Array<{ filename: string; promptTemplate: string }> =
-    fs.readdirSync("./prompts").map((filename) => {
-      const allLines = fs.readFileSync(`prompts/${filename}`, "utf8").trim()
+  const promptTemplates: Array<{ fileName: string; promptTemplate: string }> =
+    fs.readdirSync("./prompts").map((fileName) => {
+      const allLines = fs.readFileSync(`prompts/${fileName}`, "utf8").trim()
         .split("\n");
       const randomLine = allLines[getRandomIndex(allLines.length)];
-      return { filename, promptTemplate: randomLine };
+      return { fileName, promptTemplate: randomLine };
     });
 
-  const prompts: Array<
-    { filename: string; promptTemplate: string; prompt: string }
+  // TODO: what if prompts want to remix multiple original prompts?
+
+  let promptsIntermediate: Array<
+    {
+      fileName: string;
+      promptTemplate: string;
+      fileNameDependencies: Array<string>;
+      renderedPrompt?: string;
+    }
   > = promptTemplates.map((promptTemplate) => ({
     ...promptTemplate,
-    prompt: render(promptTemplate.promptTemplate),
+    fileNameDependencies: [],
   }));
 
+  let lastRenderedPromptCount = 0;
+  while (promptsIntermediate.some((prompt) => !prompt.renderedPrompt)) {
+    promptsIntermediate = promptsIntermediate.map((promptTemplate) => {
+      if (promptTemplate.renderedPrompt) {
+        return promptTemplate;
+      }
+      try {
+        const { renderedPrompt, fileNameDependencies } = render(
+          promptTemplate.fileName,
+          promptTemplate.promptTemplate,
+          promptsIntermediate,
+        );
+        return {
+          ...promptTemplate,
+          renderedPrompt: renderedPrompt,
+          fileNameDependencies: fileNameDependencies,
+        };
+      } catch (e) {
+        // console.log(e);
+        console.log("  error. retrying prompt in next iteration...");
+        return promptTemplate;
+      }
+    });
+    const currentRenderedPromptCount = promptsIntermediate.filter((prompt) =>
+      prompt.renderedPrompt
+    ).length;
+    if (currentRenderedPromptCount == lastRenderedPromptCount) {
+      console.log("no new prompts, exiting to prevent infinite loop");
+      break;
+    }
+    lastRenderedPromptCount = currentRenderedPromptCount;
+  }
+
+  let prompts: Array<
+    {
+      fileName: string;
+      promptTemplate: string;
+      fileNameDependencies: Array<string>;
+      renderedPrompt: string;
+    }
+  > = promptsIntermediate.map((promptTemplate) => ({
+    ...promptTemplate,
+    renderedPrompt: promptTemplate.renderedPrompt!,
+  }));
+
+  console.log("rendered prompts:");
   console.log(prompts);
 
   // launch midjourney and generate images for each prompt
@@ -34,17 +87,20 @@ async function main() {
       prompts.map(async (prompt, i) => {
         // start each prompt 5 seconds apart
         await sleepMs(3000 + i * 5000);
-        const upscaled = await Mj.imagineAndUpscale(client, prompt.prompt);
+        const upscaled = await Mj.imagineAndUpscale(
+          client,
+          prompt.renderedPrompt,
+        );
         displayRemoteImage(upscaled.uri);
 
         await download(
           upscaled.uri,
-          `wallpapers/wallpaper-${prompt.filename}-original.png`,
+          `wallpapers/wallpaper-${prompt.fileName}-original.png`,
         );
 
         await upscale(
-          `wallpapers/wallpaper-${prompt.filename}-original.png`,
-          `wallpapers/wallpaper-${prompt.filename}-latest.png`,
+          `wallpapers/wallpaper-${prompt.fileName}-original.png`,
+          `wallpapers/wallpaper-${prompt.fileName}-latest.png`,
         );
       }),
     );

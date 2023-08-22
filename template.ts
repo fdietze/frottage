@@ -2,7 +2,11 @@ import { Eta } from "eta";
 // list of options: https://eta.js.org/docs/api/configuration
 const eta = new Eta({ useWith: true });
 
-export function render(template: string): string {
+export function render(
+  fileName: string,
+  template: string,
+  otherPrompts: Array<{ fileName: string; renderedPrompt?: string }>,
+): { renderedPrompt: string; fileNameDependencies: Array<string> } {
   // ideas:
   // - light/dark mode
   // - weather
@@ -19,9 +23,32 @@ export function render(template: string): string {
   // - random facial expression
   // - gpt
   // - gpt generated categories, like `randomColors`
-  return eta.renderString(template, {
+
+  console.log(`rendering fileName '${fileName}': '${template}'`);
+  const fileNameDependencies: Array<string> = [];
+  const rendered = eta.renderString(template, {
+    from: (
+      fileName: string,
+      transform: (original: string) => string = (x) => x,
+    ) => {
+      fileNameDependencies.push(fileName);
+      // , transform?: (string) => string
+      // let transform = (x) => x;
+      // this might crash and signal to the caller that the prompt dependencies does not exist (yet)
+      console.log(
+        `  looking for renderedPrompt for '${fileName}'...`,
+      );
+      const found: string | undefined = (otherPrompts.find((prompt) =>
+        prompt.fileName == fileName && prompt.renderedPrompt != undefined
+      ))?.renderedPrompt;
+      if (!found) {
+        throw new Error(`could not find renderedPrompt for '${fileName}'`);
+      }
+      return transform(found);
+    },
     random: randomElement,
-    color: () => randomElement(colorNames),
+    color: () =>
+      randomElement(colorNames),
     season: season(new Date().getMonth()),
     dayOfWeek: new Date().toLocaleString("default", { weekday: "long" }),
     monthCEST: new Date().toLocaleString("default", {
@@ -35,6 +62,11 @@ export function render(template: string): string {
     dayPeriodCEST: dayPeriod(new Date().getUTCHours() + 2),
     timeOfDayCEST: new Date().getUTCHours() + 2,
   });
+  console.log(`  rendered: '${rendered}'`);
+  return {
+    renderedPrompt: rendered,
+    fileNameDependencies: fileNameDependencies,
+  };
 }
 
 function dayPeriod(hourUTC: number): string {
