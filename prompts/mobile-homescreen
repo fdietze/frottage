@@ -5,3 +5,4 @@ tiling wall structure, <%= from('mobile') %>
 ambient occlusion, <%= color() %> colored accents matte, <%= from('mobile') %>
 pastel colors, <%= from('mobile') %> --no vivid colors
 https://cdn.discordapp.com/attachments/1094892992281718894/1144382764674711634/felixdietze_wood_texture_1825beac-24ad-40bd-b3ba-b4666943a4e6.png <%= from('mobile') %>
+blurred lines, <%= from('mobile') %>
