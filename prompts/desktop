@@ -1,7 +1,6 @@
-wallpaper --c 20 --ar 16:9
-wallpaper, lights --c 20 --ar 16:9
-a tree on top of a hill in a beautiful forest, in the style of epic fantasy scenes, earthcore, faith-inspired art, 8k, gigantic scale, pastoral charm, metropolis meets nature --c 20 --ar 16:9
-volcano and a river --ar 16:9
-cryptonite landscape --c 20 --ar 16:9
+4k wallpaper --c 20 --ar 16:9
+4k wallpaper, lights --c 20 --ar 16:9
+earthcore --c 20 --ar 16:9
+volcano and a river --c 20 --ar 16:9
 <%= random(['darth vader', 'hulk', 'spiderman', 'terminator', 'batman']) %> fighting dinosaurs --ar 16:9
 blueprint of a spacestation interior, floorplan, schematic, leonardo davinci --ar 16:9

@@ -1,6 +1,7 @@
-wallpaper, daylight --c 20 --ar 16:9
-utopian dream landscape, white matte texture, <%= color() %> colored details, contrast --no castle --c 25 --ar 16:9
-angry, dangerous polygon bird, detailed, daylight, light background --c 25 --ar 16:9
+4k wallpaper, bright day --c 20 --ar 16:9
+4k wallpaper, white --c 20 --ar 16:9
+tiny robots living in utopian dream landscape, white matte texture, <%= color() %> colored details, contrast --no castle --c 25 --ar 16:9
+angry, dangerous polygon bird, detailed, daylight, white background --c 25 --ar 16:9
 network of giant flying rocks with exotic plants on them, high in the mountains, fog, tropical, cinematic --c 10 --ar 16:9
 <%= dayOfWeekCEST %> funny work life --ar 16:9
-city full of life, flourishing ancient civilization, UFOs <%= season %> --c 20 --ar 16:9
+city full of life, flourishing ancient civilization, UFOs, bright day, <%= season %> --c 20 --ar 16:9
