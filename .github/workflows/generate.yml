@@ -52,13 +52,15 @@ jobs:
         run: |
           set -e
           CRONEXPR=$(yq '.on.schedule[0].cron' < .github/workflows/generate.yml)
-          npx tsx listCeiledCronHours.ts "$CRONEXPR" > updateHoursUTC.json
+          npx tsx ceiledCronExpression.ts "$CRONEXPR" > cronUTC
+          npx tsx ceiledCronHours.ts "$CRONEXPR" > updateHoursUTC.json
           cat updateHoursUTC.json
 
       - name: Prepare upload
         run: |
+          set -e
           mkdir -p static/wallpapers
-          cp updateHoursUTC.json static/updateHoursUTC.json
+          cp updateHoursUTC.json cronUTC static/
           cp -r wallpapers/*-latest.jpg static/wallpapers/
           find static
 
