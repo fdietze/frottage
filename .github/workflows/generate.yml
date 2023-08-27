@@ -54,7 +54,7 @@ jobs:
           CRONEXPR=$(yq '.on.schedule[0].cron' < .github/workflows/generate.yml)
           npx tsx ceiledCronExpression.ts "$CRONEXPR" > cronUTC
           npx tsx ceiledCronHours.ts "$CRONEXPR" > updateHoursUTC.json
-          cat updateHoursUTC.json
+          cat cronUTC updateHoursUTC.json
 
       - name: Prepare upload
         run: |
