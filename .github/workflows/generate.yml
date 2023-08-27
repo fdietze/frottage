@@ -68,3 +68,4 @@ jobs:
         uses: JamesIves/github-pages-deploy-action@v4
         with:
           folder: static
+          single-commit: true # don't keep history
