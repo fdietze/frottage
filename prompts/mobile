@@ -1,15 +1,14 @@
 wallpaper --c 20 --ar 9:19
 an old tree, filled with life, plants, dark green, blue, purple, fireflies --no person --c 36 --s 9 --ar 9:19
 laughing <%= random(['robot','tree', 'beer', 'glove', 'cake', 'walnut']) %>, <%= random(['evil', 'nice', 'cute', 'dangerous', 'sad']) %>, colorful drawing --ar 9:19
-crazy futuristic <%= random(['apple', 'banana', 'cucumber', 'durian']) %> machine, complicated --ar 9:19
-colorful tissue fighting for the soap to clean themselves, parrots --c 30 --ar 9:19
+crazy futuristic <%= random(fruits.concat(vegetables)) %> machine, complicated --ar 9:19
 silhouette of a deep sea monster, seen from submarine --c 20 --ar 9:19
 collision of fire and water --c 30 --ar 9:19
 crazy food fight, dwarfs --c 20 --ar 9:19
 meteor flying through hyperspace, watercolor --c 15 --ar 9:19
 butterfly wing, macro, full cover, vivid colors --c 20 --ar 9:19
 combinatorial explosion, abstract art --c 20 --ar 9:19
-dancing dolphins --c 20 --weird 666 --ar 9:19
+dancing dolphins --c 20 --weird 200 --ar 9:19
 study patient, surreal --ar 9:19
 a lemon eating a lime --c 20 --weird 3000 --ar 9:19
 headgear from the future, intense gaze, cyber punk colours --c 37 --ar 9:19
@@ -18,8 +17,9 @@ grinning monster, nice, cute --c 15 --ar 9:19
 monster behind courtain, shy, confused --c 15 --ar 9:19
 the tree of life, <%= monthCEST %>, <%= dayPeriodCEST %> --c 20 --ar 9:19
 futuristic clock, showing <%= timeOfDayCEST %>h --ar 9:19
-yummy <%= dayPeriodCEST %> meal, healthy, hipster, professional food photography --c 10 --stylize 250 --ar 9:19
 very tall tree, --no leaves --ar 9:19
-hybrid <%= random(['elephant', 'butterfly', 'snail', 'penguin']) %> <%= random(['eagle', 'centipede', 'dog', 'cat']) %> --ar 9:19
+hybrid <%= random(animals) %> <%= random(animals) %> --ar 9:19
 giraffe made from rope --ar 9:19
 metal statue, melting --9:19
+frottage --c 20 --9:19
+<%= random(songTitles90s) %>, <%= random(artStyles) %> --9:19
