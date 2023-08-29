@@ -20,6 +20,6 @@ futuristic clock, showing <%= timeOfDayCEST %>h --ar 9:19
 very tall tree, --no leaves --ar 9:19
 hybrid <%= random(animals) %> <%= random(animals) %> --ar 9:19
 giraffe made from rope --ar 9:19
-metal statue, melting --9:19
-frottage --c 20 --9:19
-<%= random(songTitles90s) %>, <%= random(artStyles) %> --9:19
+metal statue, melting --ar 9:19
+frottage --c 20 --ar 9:19
+<%= random(songTitles90s) %>, <%= random(artStyles) %> --ar 9:19
