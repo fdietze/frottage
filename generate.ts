@@ -81,7 +81,7 @@ async function main() {
   console.log(prompts);
 
   // launch midjourney and generate images for each prompt
-  await Mj.connect({}, async (client) => {
+  await Mj.connect({Debug: true}, async (client) => {
     // schedule all prompts in parallel
     await Promise.all(
       prompts.map(async (prompt, i) => {
