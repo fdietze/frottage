@@ -4,7 +4,6 @@ laughing <%= random(['robot','tree', 'beer', 'glove', 'cake', 'walnut']) %>, <%=
 crazy futuristic <%= random(fruits.concat(vegetables)) %> machine, complicated --ar 9:19
 silhouette of a deep sea monster, seen from submarine --c 20 --ar 9:19
 collision of fire and water --c 30 --ar 9:19
-crazy food fight, dwarfs --c 20 --ar 9:19
 meteor flying through hyperspace, watercolor --c 15 --ar 9:19
 butterfly wing, macro, full cover, vivid colors --c 20 --ar 9:19
 combinatorial explosion, abstract art --c 20 --ar 9:19
