@@ -12,11 +12,11 @@ a lemon eating a lime --c 20 --weird 3000 --ar 9:19
 headgear from the future, intense gaze, cyber punk colours --c 37 --ar 9:19
 large exotic butterflies covering screen, diverse, digital art --c 15 --ar 9:19
 grinning monster, nice, cute --c 15 --ar 9:19
-monster behind courtain, shy, confused --c 15 --ar 9:19
+monster behind courtain, shy, confused --c 20 --ar 9:19
 the tree of life, <%= monthCEST %>, <%= dayPeriodCEST %> --c 20 --ar 9:19
 futuristic clock, showing <%= timeOfDayCEST %>h --ar 9:19
 hybrid <%= random(animals) %> <%= random(animals) %> --ar 9:19
-giraffe made from rope --ar 9:19
+<%= random(animals) %> made from rope --ar 9:19
 metal statue, melting --ar 9:19
-frottage --c 20 --ar 9:19
+frottage --c 40 --ar 9:19
 <%= random(songTitles90s) %>, <%= random(artStyles) %> --ar 9:19
