@@ -1,6 +1,6 @@
 4k wallpaper, bright day --c 20 --ar 16:9
 4k wallpaper, white --c 20 --ar 16:9
-tiny <%= random(animal) %> population, living in utopian dream landscape, white matte texture, <%= color() %> colored details, contrast --no castle --c 25 --ar 16:9
+tiny <%= random(animal) %> population, living in utopian dream landscape, white matte texture, <%= random(colors) %> colored details, contrast --no castle --c 25 --ar 16:9
 angry, dangerous polygon <%= random(animals) %>, detailed, daylight, white background --c 25 --ar 16:9
 network of giant flying rocks with exotic plants on them, high in the mountains, fog, tropical, cinematic --c 20 --ar 16:9
 <%= dayOfWeekCEST %> funny work life --ar 16:9

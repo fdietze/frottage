@@ -17,6 +17,6 @@ the tree of life, <%= monthCEST %>, <%= dayPeriodCEST %> --c 20 --ar 9:19
 futuristic clock, showing <%= timeOfDayCEST %>h --ar 9:19
 hybrid <%= random(animals) %> <%= random(animals) %> --ar 9:19
 <%= random(animals) %> made from rope --ar 9:19
-metal statue, melting --ar 9:19
+<%= random(colors) %> <%= random(animals) %> --ar 9:19
 frottage --c 40 --ar 9:19
 <%= random(songTitles90s) %>, <%= random(artStyles) %> --ar 9:19
