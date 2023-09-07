@@ -1,4 +1,4 @@
-wallpaper --c 20 --ar 9:19
+wallpaper --no architecture --c 20 --ar 9:19
 an old tree, filled with life, plants, dark green, blue, purple, fireflies --no person --c 36 --s 9 --ar 9:19
 laughing <%= random(['robot','tree', 'beer', 'glove', 'cake', 'walnut']) %>, <%= random(['evil', 'nice', 'cute', 'dangerous', 'sad']) %>, colorful drawing --ar 9:19
 crazy futuristic <%= random(fruits.concat(vegetables)) %> machine, complicated --ar 9:19
