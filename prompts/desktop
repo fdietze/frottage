@@ -1,3 +1,4 @@
 4k wallpaper --c 20 --ar 16:9
 4k wallpaper, lights --c 20 --ar 16:9
 blueprint of a spacestation interior, floorplan, schematic, <%= random(artStyles) %> --c 20 --ar 16:9
+ocean landscape on an different planet <%= random(artStyles) %> --c 1 --ar 16:9
