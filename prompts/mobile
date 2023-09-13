@@ -1,21 +1,20 @@
 wallpaper --no architecture --c 20 --ar 9:19
-an old tree, filled with life, plants, dark green, blue, purple, fireflies --no person --c 36 --s 9 --ar 9:19
+life of the fea, filled with life, plants, dark green, blue, purple, fireflies --no person --c 36 --s 9 --ar 9:19
 laughing <%= random(['robot','tree', 'beer', 'glove', 'cake', 'walnut']) %>, <%= random(['evil', 'nice', 'cute', 'dangerous', 'sad']) %>, colorful drawing --ar 9:19
 crazy futuristic <%= random(fruits.concat(vegetables)) %> machine, complicated --ar 9:19
 silhouette of a deep sea monster, gigantic, cinematic --c 20 --ar 9:19
 collision of fire and water --c 30 --ar 9:19
-meteor flying through hyperspace, watercolor --c 15 --ar 9:19
-butterfly wing, macro, full cover, vivid colors --c 20 --ar 9:19
+meteor flying through hyperspace, <%= random(artStyles) %> --c 15 --ar 9:19
+bumblebee, macro, full cover, vivid colors --c 20 --ar 9:19
 combinatorial explosion, abstract art --c 20 --ar 9:19
 study patient, surreal --ar 9:19
-a lemon eating a lime --c 20 --weird 3000 --ar 9:19
-headgear from the future, intense gaze, cyber punk colours --c 37 --ar 9:19
+intense gaze, cyber punk colours --c 37 --ar 9:19
 large exotic butterflies covering screen, diverse, digital art --c 15 --ar 9:19
 grinning monster, nice, cute --c 15 --ar 9:19
-smiling monster behind courtain, shy, confused --c 20 --ar 9:19
+smiling monster behind curtain, shy, confused --c 20 --ar 9:19
 the tree of life, <%= monthCEST %>, <%= dayPeriodCEST %> --c 20 --ar 9:19
 hybrid <%= random(animals) %> <%= random(animals) %> --ar 9:19
-<%= random(animals) %> made from rope --ar 9:19
+<%= random(animals) %> made from wood --ar 9:19
 <%= random(colors) %> <%= random(animals) %> --ar 9:19
 frottage --c 40 --ar 9:19
 <%= random(songTitles90s) %>, <%= random(artStyles) %> --ar 9:19
