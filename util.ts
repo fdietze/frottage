@@ -3,11 +3,17 @@ export async function sleepMs(ms: number) {
 }
 
 export async function timeout<T>(fn: () => Promise<T>, ms: number): Promise<T> {
+    let timer: NodeJS.Timeout;
+
     const timeout = new Promise<T>((_, reject) => {
-        setTimeout(() => {
+        timer = setTimeout(() => {
             reject(new Error('Operation timed out'));
         }, ms);
     });
 
-    return Promise.race([fn(), timeout]);
+    try {
+        return await Promise.race([fn(), timeout]);
+    } finally {
+        clearTimeout(timer);
+    }
 }
