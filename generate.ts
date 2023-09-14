@@ -5,10 +5,9 @@ import { download } from "./download";
 import { upscale } from "./upscale";
 import { render } from "./template";
 import { getRandomIndex } from "./random";
-import { sleepMs } from "./util";
+import { sleepMs, timeout } from "./util";
 import { displayRemoteImage } from "./image-display";
 import retry from "async/retry";
-import timeout from "async/timeout";
 
 async function main() {
   // synchronously read all files in prompts folder into an Array
