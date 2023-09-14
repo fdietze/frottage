@@ -82,8 +82,23 @@ async function main() {
   console.log("rendered prompts:");
   console.log(prompts);
 
+  // write prompts to fileName.json
+  prompts.forEach((prompt) => {
+    fs.writeFileSync(
+      `wallpapers/${prompt.fileName}.json`,
+      JSON.stringify(
+        {
+          template: prompt.promptTemplate,
+          prompt: prompt.renderedPrompt,
+        },
+        null,
+        2,
+      ),
+    );
+  });
+
   // launch midjourney and generate images for each prompt
-  await Mj.connect({Debug: true}, async (client) => {
+  await Mj.connect({ Debug: true }, async (client) => {
     // schedule all prompts in parallel
     await Promise.all(
       prompts.map(async (prompt, i) => {
