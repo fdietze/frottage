@@ -17,3 +17,20 @@ export async function timeout<T>(fn: () => Promise<T>, ms: number): Promise<T> {
         clearTimeout(timer);
     }
 }
+
+
+async function retry<T>(fn: () => Promise<T>, maxTries: number): Promise<T> {
+    let tries = 0;
+    while (true) {
+        try {
+            return await fn();
+        } catch (error) {
+            if (++tries >= maxTries) {
+                throw error;
+            }
+            console.log(`Attempt ${tries} failed. Retrying...`);
+        }
+    }
+}
+
+
