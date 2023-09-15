@@ -19,7 +19,7 @@ export async function timeout<T>(fn: () => Promise<T>, ms: number): Promise<T> {
 }
 
 
-async function retry<T>(fn: () => Promise<T>, maxTries: number): Promise<T> {
+export async function retry<T>(fn: () => Promise<T>, maxTries: number): Promise<T> {
     let tries = 0;
     while (true) {
         try {
