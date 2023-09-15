@@ -5,7 +5,7 @@ import { download } from "./download";
 import { upscale } from "./upscale";
 import { render } from "./template";
 import { getRandomIndex } from "./random";
-import { sleepMs, timeout, retry } from "./util";
+import { retry, sleepMs, timeout } from "./util";
 import { displayRemoteImage } from "./image-display";
 
 async function main() {
@@ -50,8 +50,8 @@ async function main() {
           fileNameDependencies: fileNameDependencies,
         };
       } catch (e) {
-        // console.log(e);
-        console.log("  error. retrying prompt in next iteration...");
+        console.log(e);
+        console.log("  error. retrying prompt generation in next iteration...");
         return promptTemplate;
       }
     });
@@ -59,8 +59,9 @@ async function main() {
       prompt.renderedPrompt
     ).length;
     if (currentRenderedPromptCount == lastRenderedPromptCount) {
-      console.log("no new prompts, exiting to prevent infinite loop");
-      break;
+      throw new Error(
+        "could not generate more prompts, exiting to prevent infinite loop",
+      );
     }
     lastRenderedPromptCount = currentRenderedPromptCount;
   }
@@ -107,8 +108,10 @@ async function main() {
             timeout(
               () => Mj.imagineAndUpscale(client, prompt.renderedPrompt),
               1000 * 60 * 4,
+              `${prompt.renderedPrompt}`,
             ),
             2,
+          `${prompt.renderedPrompt}`,
         );
         displayRemoteImage(upscaled.uri);
 
