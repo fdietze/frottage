@@ -5,9 +5,8 @@ import { download } from "./download";
 import { upscale } from "./upscale";
 import { render } from "./template";
 import { getRandomIndex } from "./random";
-import { sleepMs, timeout } from "./util";
+import { sleepMs, timeout, retry } from "./util";
 import { displayRemoteImage } from "./image-display";
-import retry from "async/retry";
 
 async function main() {
   // synchronously read all files in prompts folder into an Array
@@ -104,12 +103,12 @@ async function main() {
         // start each prompt 5 seconds apart
         await sleepMs(3000 + i * 5000);
         const upscaled = await retry(
-          2,
           () =>
             timeout(
               () => Mj.imagineAndUpscale(client, prompt.renderedPrompt),
               1000 * 60 * 4,
             ),
+            2,
         );
         displayRemoteImage(upscaled.uri);
 
