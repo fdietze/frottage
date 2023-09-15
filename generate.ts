@@ -110,7 +110,7 @@ async function main() {
               1000 * 60 * 4,
               `${prompt.renderedPrompt}`,
             ),
-            2,
+          3,
           `${prompt.renderedPrompt}`,
         );
         displayRemoteImage(upscaled.uri);

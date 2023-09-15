@@ -32,12 +32,17 @@ export async function retry<T>(
     try {
       return await fn();
     } catch (error) {
+      console.error(error);
       if (++tries >= maxTries) {
+        console.log(
+          `Attempt ${tries}/${maxTries} failed. Failing (${label})`,
+        );
         throw error;
+      } else {
+        console.log(
+          `Attempt ${tries}/${maxTries} failed. Retrying... (${label})`,
+        );
       }
-      console.log(
-        `Attempt ${tries}/${maxTries} failed. Retrying... (${label})`,
-      );
     }
   }
 }
