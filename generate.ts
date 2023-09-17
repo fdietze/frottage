@@ -108,10 +108,10 @@ async function main() {
           () =>
             timeout(
               () => Mj.imagineAndUpscale(client, prompt.renderedPrompt),
-              1000 * 60 * 4,
+              1000 * 60 * 10,
               `${prompt.renderedPrompt}`,
             ),
-          3,
+          5,
           `${prompt.renderedPrompt}`,
         );
         displayRemoteImage(upscaled.uri);
