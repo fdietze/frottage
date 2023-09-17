@@ -1,8 +1,8 @@
-<%= imageFrom('mobile') %> --iw 2 wood texture --ar 9:19
-<%= imageFrom('mobile') %> --iw 2 stone texture --ar 9:19
-<%= imageFrom('mobile') %> --iw 2 silk texture, detailed, unrealistic --ar 9:19
-<%= imageFrom('mobile') %> --iw 2 tiling wall structure --ar 9:19
-<%= imageFrom('mobile') %> --iw 2 ambient occlusion, <%= random(colors) %> colored accents matte --ar 9:19
-<%= imageFrom('mobile') %> --iw 2 pastel colors --no vivid colors --ar 9:19
-<%= imageFrom('mobile') %> --iw 2 blurred lines --ar 9:19
-https://cdn.discordapp.com/attachments/1094892992281718894/1144382764674711634/felixdietze_wood_texture_1825beac-24ad-40bd-b3ba-b4666943a4e6.png <%= promptFrom('mobile') %>
+<%= imageFrom('mobile') %> wood texture --iw 1.5 --ar 9:19
+<%= imageFrom('mobile') %> stone texture --iw 1.5 --ar 9:19
+<%= imageFrom('mobile') %> silk texture, detailed, unrealistic --iw 1.5 --ar 9:19
+<%= imageFrom('mobile') %> tiling wall structure --iw 1.5 --ar 9:19
+<%= imageFrom('mobile') %> ambient occlusion, <%= random(colors) %> colored accents matte --iw 1.5 --ar 9:19
+<%= imageFrom('mobile') %> pastel colors --no vivid colors --iw 1.5 --ar 9:19
+<%= imageFrom('mobile') %> blurred lines --iw 1.5 --ar 9:19
+https://cdn.discordapp.com/attachments/1094892992281718894/1144382764674711634/felixdietze_wood_texture_1825beac-24ad-40bd-b3ba-b4666943a4e6.png <%= promptFrom('mobile') %> --iw 0.5
