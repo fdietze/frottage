@@ -1,21 +1,17 @@
+frottage --c 40 --ar 9:19
 wallpaper --no architecture --c 20 --ar 9:19
 life of the fea, filled with life, plants, dark green, blue, purple, fireflies --no person --c 36 --s 9 --ar 9:19
 laughing <%= random(['robot','tree', 'beer', 'glove', 'cake', 'walnut']) %>, <%= random(['evil', 'nice', 'cute', 'dangerous', 'sad']) %>, colorful drawing --ar 9:19
 crazy futuristic <%= random(fruits.concat(vegetables)) %> machine, complicated --ar 9:19
 proud <%= random(animals) %> robot, robotic robot pose, in the style of intricate steampunk, polychrome sculpture, colorful, <%= random(colors) %>, hyperrealistic details, eduard gaertner --ar 9:19
-silhouette of a deep sea monster, gigantic, cinematic --c 20 --ar 9:19
 collision of fire and water --c 30 --ar 9:19
 meteor flying through hyperspace, <%= random(artStyles) %> --c 15 --ar 9:19
-<%= random(animals) %>, macro, full cover, vivid colors --c 20 --ar 9:19
+<%= random(animals) %>, macro photography, vivid colors --c 20 --ar 9:19
 combinatorial explosion, abstract art --c 20 --ar 9:19
-study patient, surreal --ar 9:19
-intense gaze, cyber punk colours --c 37 --ar 9:19
+intense gaze, cyber punk colors --c 37 --ar 9:19
 large exotic butterflies covering screen, diverse, digital art --c 15 --ar 9:19
-grinning <%= random(animals) %> monster, nice, cute --c 40 --ar 9:19
-smiling monster behind curtain, shy, confused --c 40 --ar 9:19
 the tree of life, <%= monthCEST %>, <%= dayPeriodCEST %> --c 20 --ar 9:19
 hybrid <%= random(animals) %> <%= random(animals) %> --ar 9:19
 <%= random(animals) %> made from wood --ar 9:19
 <%= random(colors) %> <%= random(animals) %> --ar 9:19
-frottage --c 40 --ar 9:19
 <%= random(songTitles90s) %>, <%= random(artStyles) %> --ar 9:19
