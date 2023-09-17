@@ -1,6 +1,6 @@
 4k wallpaper, bright day --c 20 --ar 16:9
 4k wallpaper, white --c 20 --ar 16:9
-tiny <%= random(animals) %> population, living in utopian dream landscape, white matte texture, <%= random(colors) %> colored details, contrast --no castle --c 25 --ar 16:9
+population of miniature <%= random(animals) %>, living in utopian dream landscape, white matte texture, <%= random(colors) %> colored details, contrast --no castle --c 25 --ar 16:9
 angry, dangerous polygon <%= random(animals) %>, detailed, daylight, white background --c 25 --ar 16:9
 <%= dayOfWeekCEST %> funny work life --c 20 --ar 16:9
 city full of life, cityscape, flourishing ancient civilization, UFOs, bright day, <%= season %> --c 20 --ar 16:9
