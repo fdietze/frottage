@@ -2,6 +2,7 @@ wallpaper --no architecture --c 20 --ar 9:19
 life of the fea, filled with life, plants, dark green, blue, purple, fireflies --no person --c 36 --s 9 --ar 9:19
 laughing <%= random(['robot','tree', 'beer', 'glove', 'cake', 'walnut']) %>, <%= random(['evil', 'nice', 'cute', 'dangerous', 'sad']) %>, colorful drawing --ar 9:19
 crazy futuristic <%= random(fruits.concat(vegetables)) %> machine, complicated --ar 9:19
+proud <%= random(animals) %> robot, robotic robot pose, in the style of intricate steampunk, polychrome sculpture, colorful, <%= random(colors) %>, hyperrealistic details, eduard gaertner --ar 9:19
 silhouette of a deep sea monster, gigantic, cinematic --c 20 --ar 9:19
 collision of fire and water --c 30 --ar 9:19
 meteor flying through hyperspace, <%= random(artStyles) %> --c 15 --ar 9:19
