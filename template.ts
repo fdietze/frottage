@@ -5,8 +5,12 @@ const eta = new Eta({ useWith: true });
 export function render(
   fileName: string,
   template: string,
-  otherPrompts: Array<{ fileName: string; renderedPrompt?: string }>,
-): { renderedPrompt: string; fileNameDependencies: Array<string> } {
+  otherPrompts: Array<
+    { fileName: string; renderedPrompt?: string; imageUrl?: string }
+  >,
+): string {
+  // function throws, if dependencies are not yet available or template is invalid
+
   // ideas:
   // - light/dark mode
   // - weather
@@ -25,26 +29,41 @@ export function render(
   // - gpt generated categories, like `randomColors`
 
   console.log(`rendering fileName '${fileName}': '${template}'`);
-  const fileNameDependencies: Array<string> = [];
   const rendered = eta.renderString(template, {
-    from: (
+    promptFrom: (
       fileName: string,
       transform: (original: string) => string = (x) => x,
     ) => {
-      fileNameDependencies.push(fileName);
       // , transform?: (string) => string
       // let transform = (x) => x;
       // this might crash and signal to the caller that the prompt dependencies does not exist (yet)
       console.log(
-        `  looking for renderedPrompt for '${fileName}'...`,
+        `  looking for renderedPrompt from '${fileName}'...`,
       );
       const found: string | undefined = (otherPrompts.find((prompt) =>
         prompt.fileName == fileName && prompt.renderedPrompt != undefined
       ))?.renderedPrompt;
       if (!found) {
-        throw new Error(`could not find renderedPrompt for '${fileName}'`);
+        throw new Error(`could not find renderedPrompt from '${fileName}'`);
       }
       return transform(found);
+    },
+    imageFrom: (
+      fileName: string,
+    ) => {
+      // , transform?: (string) => string
+      // let transform = (x) => x;
+      // this might crash and signal to the caller that the prompt dependencies does not exist (yet)
+      console.log(
+        `  looking for imageUrl from '${fileName}'...`,
+      );
+      const found: string | undefined = (otherPrompts.find((prompt) =>
+        prompt.fileName == fileName && prompt.imageUrl != undefined
+      ))?.imageUrl;
+      if (!found) {
+        throw new Error(`could not find imageUrl from '${fileName}'`);
+      }
+      return found;
     },
     random: randomElement,
     season: season(new Date().getMonth()),
@@ -373,10 +392,7 @@ export function render(
     ],
   });
   console.log(`  rendered: '${rendered}'`);
-  return {
-    renderedPrompt: rendered,
-    fileNameDependencies: fileNameDependencies,
-  };
+  return rendered;
 }
 
 function dayPeriod(hourUTC: number): string {

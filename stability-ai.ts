@@ -2,7 +2,7 @@ import "dotenv/config";
 
 import fetch from "node-fetch";
 import FormData from "form-data";
-import fs from "node:fs";
+import * as fs from "fs";
 
 const API_KEY = <string> process.env.STABILITY_AI_API_KEY;
 

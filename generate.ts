@@ -1,5 +1,5 @@
 import "dotenv/config";
-import fs from "fs";
+import * as fs from "fs";
 import * as Mj from "./midjourney";
 import { download } from "./download";
 import { upscale } from "./upscale";
@@ -18,68 +18,94 @@ async function main() {
       return { fileName, promptTemplate: randomLine };
     });
 
-  // TODO: what if prompts want to remix multiple original prompts?
-
-  let promptsIntermediate: Array<
-    {
-      fileName: string;
-      promptTemplate: string;
-      fileNameDependencies: Array<string>;
-      renderedPrompt?: string;
-    }
-  > = promptTemplates.map((promptTemplate) => ({
-    ...promptTemplate,
-    fileNameDependencies: [],
-  }));
-
-  let lastRenderedPromptCount = 0;
-  while (promptsIntermediate.some((prompt) => !prompt.renderedPrompt)) {
-    promptsIntermediate = promptsIntermediate.map((promptTemplate) => {
-      if (promptTemplate.renderedPrompt) {
-        return promptTemplate;
-      }
-      try {
-        const { renderedPrompt, fileNameDependencies } = render(
-          promptTemplate.fileName,
-          promptTemplate.promptTemplate,
-          promptsIntermediate,
-        );
-        return {
-          ...promptTemplate,
-          renderedPrompt: renderedPrompt,
-          fileNameDependencies: fileNameDependencies,
-        };
-      } catch (e) {
-        console.log(e);
-        console.log("  error. retrying prompt generation in next iteration...");
-        return promptTemplate;
-      }
-    });
-    const currentRenderedPromptCount = promptsIntermediate.filter((prompt) =>
-      prompt.renderedPrompt
-    ).length;
-    if (currentRenderedPromptCount == lastRenderedPromptCount) {
-      throw new Error(
-        "could not generate more prompts, exiting to prevent infinite loop",
-      );
-    }
-    lastRenderedPromptCount = currentRenderedPromptCount;
-  }
-
   let prompts: Array<
     {
       fileName: string;
       promptTemplate: string;
-      fileNameDependencies: Array<string>;
-      renderedPrompt: string;
+      renderedPrompt?: string;
+      imageUrl?: string;
     }
-  > = promptsIntermediate.map((promptTemplate) => ({
+  > = promptTemplates.map((promptTemplate) => ({
     ...promptTemplate,
-    renderedPrompt: promptTemplate.renderedPrompt!,
   }));
+
+  await Mj.connect({ Debug: false }, async (client) => {
+    await client.Relax();
+    let lastFinishedPromptCount = 0;
+    await sleepMs(3000);
+    // iterate until all prompts have been generated
+    while (prompts.some((prompt) => !prompt.imageUrl)) {
+      // schedule all prompts in parallel
+      prompts = await Promise.all(
+        prompts.map(async (prompt, i) => {
+          // start each prompt 5 seconds apart
+          await sleepMs(i * 5000);
+
+          try {
+            // template rendering might crash if dependencies on other prompts are not yet available
+            const renderedPrompt = prompt.renderedPrompt ?? render(
+              prompt.fileName,
+              prompt.promptTemplate,
+              prompts,
+            );
+
+            const imaginedUrl = prompt.imageUrl ?? await retry(
+              () =>
+                timeout(
+                  async () =>
+                    (await Mj.imagineAndUpscale(client, renderedPrompt))
+                      .uri,
+                  1000 * 60 * 10,
+                  `${renderedPrompt}`,
+                ),
+              5,
+              `${renderedPrompt}`,
+            );
+            displayRemoteImage(imaginedUrl);
+
+            return { ...prompt, renderedPrompt, imageUrl: imaginedUrl };
+          } catch (e) {
+            console.log(e);
+            console.log(
+              "  error. retrying prompt generation in next iteration...",
+            );
+            return prompt;
+          }
+        }),
+      );
+
+      const currentRenderedPromptCount = prompts.filter((prompt) =>
+        prompt.renderedPrompt
+      ).length;
+      if (currentRenderedPromptCount == lastFinishedPromptCount) {
+        console.error(
+          "could not generate more prompts, exiting to prevent infinite loop",
+        );
+        break;
+      }
+      lastFinishedPromptCount = currentRenderedPromptCount;
+    }
+  });
 
   console.log("rendered prompts:");
   console.log(prompts);
+
+  await Promise.all(
+    prompts.map(async (prompt) => {
+      const imaginedUrl = prompt.imageUrl;
+      if (imaginedUrl) {
+        await download(
+          imaginedUrl,
+          `wallpapers/wallpaper-${prompt.fileName}-original.png`,
+        );
+
+        await upscale(
+          `wallpapers/wallpaper-${prompt.fileName}-original.png`,
+          `wallpapers/wallpaper-${prompt.fileName}-latest.png`,
+        );
+      }
+    }),
+  );
 
   // write prompts to fileName.json
   prompts.forEach((prompt) => {
@@ -93,39 +119,6 @@ async function main() {
         null,
         2,
       ),
-    );
-  });
-
-  // launch midjourney and generate images for each prompt
-  await Mj.connect({ Debug: false }, async (client) => {
-    await client.Relax();
-    // schedule all prompts in parallel
-    await Promise.all(
-      prompts.map(async (prompt, i) => {
-        // start each prompt 5 seconds apart
-        await sleepMs(3000 + i * 5000);
-        const upscaled = await retry(
-          () =>
-            timeout(
-              () => Mj.imagineAndUpscale(client, prompt.renderedPrompt),
-              1000 * 60 * 10,
-              `${prompt.renderedPrompt}`,
-            ),
-          5,
-          `${prompt.renderedPrompt}`,
-        );
-        displayRemoteImage(upscaled.uri);
-
-        await download(
-          upscaled.uri,
-          `wallpapers/wallpaper-${prompt.fileName}-original.png`,
-        );
-
-        await upscale(
-          `wallpapers/wallpaper-${prompt.fileName}-original.png`,
-          `wallpapers/wallpaper-${prompt.fileName}-latest.png`,
-        );
-      }),
     );
   });
 }
