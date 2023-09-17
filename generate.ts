@@ -53,8 +53,7 @@ async function main() {
               () =>
                 timeout(
                   async () =>
-                    (await Mj.imagineAndUpscale(client, renderedPrompt))
-                      .uri,
+                    (await Mj.imagineAndUpscale(client, renderedPrompt)).uri,
                   1000 * 60 * 10,
                   `${renderedPrompt}`,
                 ),
@@ -62,7 +61,6 @@ async function main() {
               `${renderedPrompt}`,
             );
             displayRemoteImage(imaginedUrl);
-
             return { ...prompt, renderedPrompt, imageUrl: imaginedUrl };
           } catch (e) {
             console.log(e);
@@ -73,7 +71,6 @@ async function main() {
           }
         }),
       );
-
       const currentRenderedPromptCount = prompts.filter((prompt) =>
         prompt.renderedPrompt
       ).length;
