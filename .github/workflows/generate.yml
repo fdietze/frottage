@@ -12,7 +12,7 @@ jobs:
     runs-on: ubuntu-22.04
     permissions:
       contents: write
-    timeout-minutes: 15
+    timeout-minutes: 60
     concurrency:
       # never run jobs in parallel, don't cancel jobs
       group: "generate"
