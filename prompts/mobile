@@ -13,5 +13,5 @@ large exotic butterflies covering screen, diverse, digital art --c 15 --ar 9:19
 the tree of life, <%= monthCEST %>, <%= dayPeriodCEST %> --c 20 --ar 9:19
 hybrid <%= random(animals) %> <%= random(animals) %> --ar 9:19
 <%= random(animals) %> made from wood --ar 9:19
-<%= random(colors) %> <%= random(animals) %> --ar 9:19
+<%= random(colors) %> color, <%= random(animals) %> --ar 9:19
 <%= random(songTitles90s) %>, <%= random(artStyles) %> --ar 9:19
