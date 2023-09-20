@@ -1,5 +1,9 @@
 frottage --c 40 --ar 9:19
+harmonious chaos, fragmental tessalations, frottage --c 20 --ar 9:19
 wallpaper --no architecture --c 20 --ar 9:19
+midjourney --c 20 --ar 9:19
+<%= random(['chaos', 'tesselation', 'explosion', 'causality']) %>, <%= random(artStyles) %> --c 20 --ar 9:19
+shattered glass, tessellation, 3d, bokeh --c 20 --ar 9:19
 life of the fea, filled with life, plants, dark green, blue, purple, fireflies --no person --c 36 --s 9 --ar 9:19
 laughing <%= random(['robot','tree', 'beer', 'glove', 'cake', 'walnut']) %>, <%= random(['evil', 'nice', 'cute', 'dangerous', 'sad']) %>, colorful drawing --ar 9:19
 crazy futuristic <%= random(fruits.concat(vegetables)) %> machine, complicated --ar 9:19
