@@ -28,3 +28,19 @@ feh --bg-fill https://fdietze.github.io/frottage/wallpapers/wallpaper-desktop-la
 1. Install Automate:
    https://play.google.com/store/apps/details?id=com.llamalab.automate&referrer=utm_source%3Dcommunity
 2. Download flow: https://llamalab.com/automate/community/flows/45884
+
+## iOS:
+
+1. Import Shortcut from https://www.icloud.com/shortcuts/e45ec32f36954eb4bf8e09db74df42a7
+2. Create schedule
+
+## macOS:
+
+1. Import Shortcut
+
+   Light:
+   https://www.icloud.com/shortcuts/a7d6a6029698463a9891ede2aa146f28
+
+   Dark: https://www.icloud.com/shortcuts/928200679e1144efa4f8a697934adcfe
+
+2. Create schedule
