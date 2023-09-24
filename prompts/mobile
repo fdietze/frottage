@@ -14,7 +14,6 @@ meteor flying through hyperspace, <%= random(artStyles) %> --c 15 --ar 9:19
 combinatorial explosion, abstract art --c 20 --ar 9:19
 intense gaze, <%= random(artStyles) %> --c 37 --ar 9:19
 large exotic butterflies covering screen, diverse, digital art --c 15 --ar 9:19
-the tree of life, <%= monthCEST %>, <%= dayPeriodCEST %> --c 20 --ar 9:19
 species that looks like cross between <%= random(animals) %> and <%= random(animals) %>, hybrid creature, full body, photorealistic, high resolution photography, studio light --ar 9:19
 <%= random(animals) %>, <%= random(artStyles) %> --ar 9:19
 <%= random(colors) %> color, <%= random(animals) %> --ar 9:19
