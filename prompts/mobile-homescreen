@@ -1,7 +1,7 @@
-<%= imageFrom('mobile') %> wood texture --iw 1.5 --ar 9:19
-<%= imageFrom('mobile') %> stone texture --iw 1.5 --ar 9:19
+<%= imageFrom('mobile') %> wood texture, brown --iw 1.5 --ar 9:19
+<%= imageFrom('mobile') %> stone texture, gray --iw 1.5 --ar 9:19
 <%= imageFrom('mobile') %> silk texture, detailed, unrealistic --iw 1.5 --ar 9:19
-<%= imageFrom('mobile') %> tiling wall structure --iw 1.5 --ar 9:19
+<%= imageFrom('mobile') %> tiling wall structure, gray --iw 1.5 --ar 9:19
 <%= imageFrom('mobile') %> ambient occlusion, <%= random(colors) %> colored accents matte --iw 1.5 --ar 9:19
 <%= imageFrom('mobile') %> pastel colors --no vivid colors --iw 1.5 --ar 9:19
 <%= imageFrom('mobile') %> blurred lines --iw 1.5 --ar 9:19
