@@ -54,7 +54,7 @@ async function main() {
                 timeout(
                   async () =>
                     (await Mj.imagineAndUpscale(client, renderedPrompt)).uri,
-                  1000 * 60 * 10,
+                  1000 * 60 * 15,
                   `${renderedPrompt}`,
                 ),
               5,
