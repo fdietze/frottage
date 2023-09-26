@@ -193,7 +193,6 @@ export function render(
     ],
     animals: [
       "eagle",
-      "centipede",
       "dog",
       "cat",
       "elephant",
@@ -212,10 +211,7 @@ export function render(
       "fish",
       "horse",
       "cow",
-      "crab",
-      "lobster",
       "octopus",
-      "squid",
       "spider",
       "scorpion",
       "snake",
