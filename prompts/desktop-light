@@ -1,6 +1,6 @@
 4k wallpaper, bright day --c 40 --ar 16:9
 4k wallpaper, white --c 20 --ar 16:9
-angry, dangerous polygon <%= random(animals) %>, detailed, daylight, white background --c 25 --ar 16:9
+<%= random(animals) %>, <%= season %>, digital art, bright day, bright background, vivid colors --c 30 --ar 16:9
 <%= dayOfWeekCEST %> funny work life --c 20 --ar 16:9
 cityscape, flourishing civilization, bright day, <%= season %>, <%= random(artStyles) %> --c 20 --ar 16:9
 civilization of <%= random(animals) %>s, advanced, high-tech, bright day --ar 16:9
