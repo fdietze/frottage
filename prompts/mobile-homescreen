@@ -1,6 +1,6 @@
 <%= imageFrom('mobile') %> wood texture, shades of brown --iw 1.5 --ar 9:19
 <%= imageFrom('mobile') %> stone texture, shades of gray --iw 1.5 --ar 9:19
 <%= imageFrom('mobile') %> tiling wall structure, shades of gray --iw 1.5 --ar 9:19
-<%= imageFrom('mobile') %> shades of pastel colors --no vivid colors --iw 1.5 --ar 9:19
+<%= imageFrom('mobile') %> shades of pastel colors --no vivid colors --no person --iw 1.5 --ar 9:19
 <%= imageFrom('mobile') %> blurred lines --iw 1.5 --ar 9:19
 https://cdn.discordapp.com/attachments/1094892992281718894/1144382764674711634/felixdietze_wood_texture_1825beac-24ad-40bd-b3ba-b4666943a4e6.png <%= promptFrom('mobile') %> --iw 0.5
