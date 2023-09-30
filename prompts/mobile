@@ -18,4 +18,4 @@ pokemon that looks like cross between <%= random(animals) %> and <%= random(anim
 <%= random(colors) %> color, <%= random(animals) %> --ar 9:19
 <%= random(songTitles90s) %>, <%= random(artStyles) %> --ar 9:19
 glowing circuitry, synthwave, <%= random(colors) %> color --c 30 --ar 9:19
-<%= random(musicalInstrument) %> in the spotlight, colorful --c 10 --ar 9:19
+<%= random(musicalInstruments) %> in the spotlight, colorful --c 10 --ar 9:19
