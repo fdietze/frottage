@@ -9,11 +9,11 @@ crazy futuristic <%= random(fruits.concat(vegetables)) %> machine, complicated -
 proud <%= random(animals) %> robot, robotic robot pose, in the style of intricate steampunk, polychrome sculpture, colorful, <%= random(colors) %>, hyperrealistic details, eduard gaertner --ar 9:19
 collision of fire and water --c 30 --ar 9:19
 meteor flying through hyperspace, <%= random(artStyles) %> --c 15 --ar 9:19
-<%= random(animals) %>, macro photography, vivid colors --c 20 --ar 9:19
+<%= random(insects) %>, macro photography, vivid colors --c 20 --ar 9:19
 combinatorial explosion, abstract art --c 20 --ar 9:19
 intense gaze, <%= random(artStyles) %> --c 37 --ar 9:19
 large exotic butterflies covering screen, diverse, digital art --c 15 --ar 9:19
-species that looks like cross between <%= random(animals) %> and <%= random(animals) %>, hybrid creature, full body, photorealistic, high resolution photography, studio light --ar 9:19
+pokemon that looks like cross between <%= random(animals) %> and <%= random(animals) %>, hybrid creature, full body, photorealistic, high resolution photography, studio light --ar 9:19
 <%= random(animals) %>, <%= random(artStyles) %> --ar 9:19
 <%= random(colors) %> color, <%= random(animals) %> --ar 9:19
 <%= random(songTitles90s) %>, <%= random(artStyles) %> --ar 9:19
