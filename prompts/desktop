@@ -4,4 +4,4 @@ midjourney --c 20 --ar 19:9
 ocean landscape on an different planet, <%= random(artStyles) %> --c 1 --ar 19:9
 harmonious chaos, fragmental tessalations, frottage, <%= random(colors) %> color --c 20 --ar 19:9
 <%= random(['chaos', 'tesselation', 'explosion', 'causality']) %>, <%= random(artStyles) %> --c 20 --ar 19:9
-fluid simulation, tesselation, 3d --c 20 --ar 19:9
+fluid simulation, tesselation, 3d --c 40 --ar 19:9
