@@ -38,3 +38,4 @@
 { "prompt": "room with crazy painting", "params": { "chaos": 10 }, "targets": [ "desktop" ] }
 { "prompt": "hyper realistic, <%= random(animals) %>, Side-View, fractal", "params": { "chaos": 10 }, "targets": [ "desktop", "mobile" ] }
 { "prompt": "synesthesia sculpture, 3d, chinoiserie, retro colors, stained glass", "params": { "chaos": 10 }, "targets": [ "desktop", "mobile" ] }
+{ "prompt": "synesthesia", "negativePrompt": "person", "params": { "chaos": 40 }, "targets": [ "desktop", "mobile" ] }
