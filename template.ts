@@ -6,7 +6,7 @@ export function render(
   fileName: string,
   template: string,
   otherPrompts: Array<
-    { fileName: string; renderedPrompt?: string; imageUrl?: string }
+    { target: string; renderedPrompt?: string; imageUrl?: string }
   >,
 ): string {
   // function throws, if dependencies are not yet available or template is invalid

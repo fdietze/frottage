@@ -8,20 +8,57 @@ import { getRandomIndex } from "./random";
 import { retry, sleepMs, timeout } from "./util";
 import { displayRemoteImage } from "./image-display";
 
+interface Prompt {
+  prompt: string;
+  negativePrompt?: string;
+  params?: {
+    chaos?: number;
+    weird?: number;
+    imageWeight?: number;
+    stylize?: number;
+  };
+  targets: string[];
+}
+
+interface Target {
+  name: string;
+  aspectRatio: string;
+}
+
+
+function constructMjPrompt(prompt: Prompt, renderedPrompt: string, target: Target): string {
+  let mjPrompt = renderedPrompt;
+  if (prompt.negativePrompt) { mjPrompt += ` --no ${prompt.negativePrompt}`; }
+  if (prompt.params?.chaos) { mjPrompt += ` --chaos ${prompt.params.chaos}`; }
+  if (prompt.params?.weird) { mjPrompt += ` --weird ${prompt.params.weird}`; }
+  mjPrompt += ` --aspect ${target.aspectRatio}`;
+  return mjPrompt;
+}
+
+
+
+
 async function main() {
-  // synchronously read all files in prompts folder into an Array
-  const promptTemplates: Array<{ fileName: string; promptTemplate: string }> =
-    fs.readdirSync("./prompts").map((fileName) => {
-      const allLines = fs.readFileSync(`prompts/${fileName}`, "utf8").trim()
-        .split("\n");
-      const randomLine = allLines[getRandomIndex(allLines.length)];
-      return { fileName, promptTemplate: randomLine };
-    });
+  // TODO: validate all jsons against interfaces
+  // ./propmts.json is a newline separated list of prompts
+  const promptDefinitions: Array<Prompt> = fs.readFileSync("./prompts.json", "utf8").trim().split("\n").map((line) => JSON.parse(line));
+  // ./targets.json is a newline separated list of targets
+  const targetDefinitions: Array<Target> = fs.readFileSync("./targets.json", "utf8").trim().split("\n").map((line) => JSON.parse(line));
+  const targetPromptMap = targetPrompts(promptDefinitions);
+
+  // random prompt for every target
+  const promptTemplates: Array<{ target: Target; promptTemplate: Prompt }> = targetDefinitions.map((target) => {
+    const prompts = targetPromptMap.get(target.name)!;
+    const prompt = prompts[getRandomIndex(prompts.length)];
+    return { target: target, promptTemplate: prompt };
+  });
+
+  console.log("prompt templates:", promptTemplates);
 
   let prompts: Array<
     {
-      fileName: string;
-      promptTemplate: string;
+      target: Target;
+      promptTemplate: Prompt;
       renderedPrompt?: string;
       imageUrl?: string;
     }
@@ -44,16 +81,18 @@ async function main() {
           try {
             // template rendering might crash if dependencies on other prompts are not yet available
             const renderedPrompt = prompt.renderedPrompt ?? render(
-              prompt.fileName,
-              prompt.promptTemplate,
-              prompts,
+              prompt.target.name,
+              prompt.promptTemplate.prompt,
+              prompts.map((p) => ({ target: prompt.target.name, renderedPrompt: p.renderedPrompt, imageUrl: p.imageUrl })),
             );
+
+            const finalMjPrompt = constructMjPrompt(prompt.promptTemplate, renderedPrompt, prompt.target);
 
             const imaginedUrl = prompt.imageUrl ?? await retry(
               () =>
                 timeout(
                   async () =>
-                    (await Mj.imagineAndUpscale(client, renderedPrompt)).uri,
+                    (await Mj.imagineAndUpscale(client, finalMjPrompt)).uri,
                   1000 * 60 * 15,
                   `${renderedPrompt}`,
                 ),
@@ -93,12 +132,12 @@ async function main() {
       if (imaginedUrl) {
         await download(
           imaginedUrl,
-          `wallpapers/wallpaper-${prompt.fileName}-original.png`,
+          `wallpapers/wallpaper-${prompt.target.name}-original.png`,
         );
 
         await upscale(
-          `wallpapers/wallpaper-${prompt.fileName}-original.png`,
-          `wallpapers/wallpaper-${prompt.fileName}-latest.png`,
+          `wallpapers/wallpaper-${prompt.target.name}-original.png`,
+          `wallpapers/wallpaper-${prompt.target.name}-latest.png`,
         );
       }
     }),
@@ -107,7 +146,7 @@ async function main() {
   // write prompts to fileName.json
   prompts.forEach((prompt) => {
     fs.writeFileSync(
-      `wallpapers/${prompt.fileName}.json`,
+      `wallpapers/${prompt.target.name}.json`,
       JSON.stringify(
         {
           template: prompt.promptTemplate,
@@ -118,6 +157,21 @@ async function main() {
       ),
     );
   });
+}
+
+function targetPrompts(prompts: Array<Prompt>): Map<string, Array<Prompt>> {
+  const map = new Map<string, Array<Prompt>>();
+  prompts.forEach((prompt) => {
+    prompt.targets.forEach((target) => {
+      const targetPrompts = map.get(target);
+      if (targetPrompts) {
+        targetPrompts.push(prompt);
+      } else {
+        map.set(target, [prompt]);
+      }
+    });
+  });
+  return map;
 }
 
 main()

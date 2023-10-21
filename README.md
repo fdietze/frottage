@@ -9,7 +9,7 @@ Regularly updated AI generated wallpapers.
 <img src="https://fdietze.github.io/frottage/wallpapers/wallpaper-mobile-homescreen-latest.jpg" height="200" />
 </div>
 
-[view prompts](/prompts), [view schedule](/.github/workflows/generate.yml#L6)
+[view prompts](/prompts.json), [view schedule](/.github/workflows/generate.yml#L6)
 
 The images are deployed to:
 
