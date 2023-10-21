@@ -29,7 +29,7 @@
 { "prompt": "fluid simulation, tesselation, 3d", "params": { "chaos": 40 }, "targets": [ "mobile", "desktop" ] }
 { "prompt": "4k wallpaper, bright day", "params": { "chaos": 40 }, "targets": [ "desktop-light" ] }
 { "prompt": "4k wallpaper, white, <%= random(colors) %> accents", "negativePrompt": "person, furniture", "params": { "chaos": 40 }, "targets": [ "desktop-light" ] }
-{ "prompt": "<%= random(animals) %>, <%= season %>, <%= monthCEST %> digital art, bright day, bright background, vivid colors", "params": { "chaos": 30 }, "targets": [ "desktop-light" ] }
+{ "prompt": "<%= random(animals) %>, <%= season %>, <%= monthCEST %>, digital art, bright day, bright background, vivid colors", "params": { "chaos": 30 }, "targets": [ "desktop-light" ] }
 { "prompt": "<%= dayOfWeekCEST %> funny work life", "params": { "chaos": 20 }, "targets": [ "desktop-light" ] }
 { "prompt": "cityscape, futuristic civilization, bright day, <%= season %>, <%= monthCEST %>, <%= random(artStyles) %>", "params": { "chaos": 20 }, "targets": [ "desktop-light" ] }
 { "prompt": "civilization of <%= random(animals) %>s, advanced, high-tech, bright day", "targets": [ "desktop-light" ] }
