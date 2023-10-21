@@ -36,3 +36,5 @@
 { "prompt": "spacestation interior, floorplan, schematic, <%= random(artStyles) %>", "params": { "chaos": 30 }, "targets": [ "desktop-light" ] }
 { "prompt": "white background, <%= random(animals) %>, full body, <%= random(colors) %> details, deep <%= random(colors) %> colored eyes, powerful, in the style of technological art, i can't believe how beautiful this is, intensely detailed, made of mist, mixes realistic and fantastical elements", "params": { "chaos": 30 }, "targets": [ "desktop-light" ] }
 { "prompt": "room with crazy painting", "params": { "chaos": 10 }, "targets": [ "desktop" ] }
+{ "prompt": "hyper realistic, <%= random(animals) %>, Side-View, fractal", "params": { "chaos": 10 }, "targets": [ "desktop", "mobile" ] }
+{ "prompt": "synesthesia sculpture, 3d, chinoiserie, retro colors, stained glass", "params": { "chaos": 10 }, "targets": [ "desktop", "mobile" ] }
