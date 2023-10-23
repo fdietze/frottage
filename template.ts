@@ -187,7 +187,6 @@ export function render(
       "Tomato Red",
       "Vanilla Cream White",
       "Wheat Light Brown",
-      "Wine Red",
       "Yam Orange",
       "Zaffre Blue",
     ],
