@@ -3,10 +3,10 @@ import { Eta } from "eta";
 const eta = new Eta({ useWith: true });
 
 export function render(
-  fileName: string,
+  target: string,
   template: string,
   otherPrompts: Array<
-    { target: string; renderedPrompt?: string; imageUrl?: string }
+    { target: string; renderedPrompt?: string; imageUrl: string }
   >,
 ): string {
   // function throws, if dependencies are not yet available or template is invalid
@@ -28,40 +28,38 @@ export function render(
   // - gpt
   // - gpt generated categories, like `randomColors`
 
-  console.log(`rendering fileName '${fileName}': '${template}'`);
+  console.log(`rendering target '${target}': '${template}'`);
   const rendered = eta.renderString(template, {
     promptFrom: (
-      fileName: string,
+      target: string,
       transform: (original: string) => string = (x) => x,
     ) => {
       // , transform?: (string) => string
       // let transform = (x) => x;
       // this might crash and signal to the caller that the prompt dependencies does not exist (yet)
       console.log(
-        `  looking for renderedPrompt from '${fileName}'...`,
+        `  looking for renderedPrompt from '${target}'...`,
       );
       const found: string | undefined = (otherPrompts.find((prompt) =>
-        prompt.fileName == fileName && prompt.renderedPrompt != undefined
+        prompt.target == target && prompt.renderedPrompt != undefined
       ))?.renderedPrompt;
       if (!found) {
-        throw new Error(`could not find renderedPrompt from '${fileName}'`);
+        throw new Error(`could not find renderedPrompt from '${target}'`);
       }
       return transform(found);
     },
-    imageFrom: (
-      fileName: string,
-    ) => {
+    imageFrom: (target: string) => {
       // , transform?: (string) => string
       // let transform = (x) => x;
       // this might crash and signal to the caller that the prompt dependencies does not exist (yet)
       console.log(
-        `  looking for imageUrl from '${fileName}'...`,
+        `  looking for imageUrl from '${target}'...`,
       );
       const found: string | undefined = (otherPrompts.find((prompt) =>
-        prompt.fileName == fileName && prompt.imageUrl != undefined
+        prompt.target == target && prompt.imageUrl != undefined
       ))?.imageUrl;
       if (!found) {
-        throw new Error(`could not find imageUrl from '${fileName}'`);
+        throw new Error(`could not find imageUrl from '${target}'`);
       }
       return found;
     },

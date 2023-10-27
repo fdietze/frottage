@@ -4,7 +4,7 @@ import fetch from "node-fetch";
 import FormData from "form-data";
 import * as fs from "fs";
 
-const API_KEY = <string> process.env.STABILITY_AI_API_KEY;
+const API_KEY = <string>process.env.STABILITY_AI_API_KEY;
 
 export async function upscaleESRGANx2(
   originalImage: string,

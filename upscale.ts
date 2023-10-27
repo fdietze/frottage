@@ -32,8 +32,7 @@ export async function prepare_image_for_upscaling(
     `(${originalImageSize.width}x${originalImageSize.height})`,
     "to",
     targetImage,
-    `(${requiredUpscaleSize.width * scaleFactor}x${
-      requiredUpscaleSize.height * scaleFactor
+    `(${requiredUpscaleSize.width * scaleFactor}x${requiredUpscaleSize.height * scaleFactor
     })`,
   );
   // scale image, but don't enlare

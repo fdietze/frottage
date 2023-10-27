@@ -83,7 +83,7 @@ async function main() {
             const renderedPrompt = prompt.renderedPrompt ?? render(
               prompt.target.name,
               prompt.promptTemplate.prompt,
-              prompts.map((p) => ({ target: prompt.target.name, renderedPrompt: p.renderedPrompt, imageUrl: p.imageUrl })),
+              prompts.map((p) => ({ target: p.target.name, renderedPrompt: p.renderedPrompt, imageUrl: p.imageUrl })),
             );
 
             const finalMjPrompt = constructMjPrompt(prompt.promptTemplate, renderedPrompt, prompt.target);
@@ -91,21 +91,30 @@ async function main() {
             const imaginedUrl = prompt.imageUrl ?? await retry(
               () =>
                 timeout(
-                  async () =>
-                    (await Mj.imagineAndUpscale(client, finalMjPrompt)).uri,
+                  async () => {
+                    const uri = (await Mj.imagineAndUpscale(client, finalMjPrompt)).uri
+                    displayRemoteImage(uri);
+                    return uri;
+                  },
                   1000 * 60 * 15,
                   `${renderedPrompt}`,
                 ),
               5,
               `${renderedPrompt}`,
             );
-            displayRemoteImage(imaginedUrl);
             return { ...prompt, renderedPrompt, imageUrl: imaginedUrl };
           } catch (e) {
-            console.log(e);
-            console.log(
-              "  error. retrying prompt generation in next iteration...",
-            );
+            // "could not find imageUrl from" is an expected error
+            // in case the rendered image from another prompt is not yet available
+            if (e.message.startsWith("could not find imageUrl from")) {
+              console.log("  skipping prompt generation because of missing imageUrl. Retry in next iteration...");
+            }
+            else {
+              console.log(e);
+              console.log(
+                "  error. retrying prompt generation in next iteration...",
+              );
+            }
             return prompt;
           }
         }),
