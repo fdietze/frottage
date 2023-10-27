@@ -17,7 +17,7 @@
 { "prompt": "pokemon that looks like cross between <%= random(animals) %> and <%= random(animals) %>, hybrid creature, full body, photorealistic, high resolution photography, studio light", "targets": [ "mobile", "desktop" ] }
 { "prompt": "<%= random(animals) %>, <%= random(artStyles) %>", "targets": [ "mobile", "desktop" ] }
 { "prompt": "glowing circuitry, synthwave, <%= random(colors) %> color", "params": { "chaos": 30 }, "targets": [ "mobile", "desktop" ] }
-{ "prompt": "<%= random(musicalInstruments) %>, musical instrument in the spotlight, colorful", "params": { "chaos": 20 }, "targets": [ "mobile", "desktop" ] }
+{ "prompt": "<%= random(musicalInstruments) %>, musical instrument in the spotlight, colorful", "params": { "chaos": 50 }, "targets": [ "mobile", "desktop" ] }
 { "prompt": "<%= imageFrom('mobile') %> wood texture, shades of brown", "params": { "imageWeight": 1.5 }, "targets": [ "mobile-homescreen" ] }
 { "prompt": "<%= imageFrom('mobile') %> stone texture, shades of gray", "params": { "imageWeight": 1.5 }, "targets": [ "mobile-homescreen" ] }
 { "prompt": "<%= imageFrom('mobile') %> tiling wall structure, shades of gray", "params": { "imageWeight": 1.5 }, "targets": [ "mobile-homescreen" ] }
@@ -37,5 +37,5 @@
 { "prompt": "white background, <%= random(animals) %>, full body, <%= random(colors) %> details, deep <%= random(colors) %> colored eyes, powerful, in the style of technological art, i can't believe how beautiful this is, intensely detailed, made of mist, mixes realistic and fantastical elements", "params": { "chaos": 30 }, "targets": [ "desktop-light" ] }
 { "prompt": "room with crazy painting", "params": { "chaos": 10 }, "targets": [ "desktop" ] }
 { "prompt": "hyper realistic, <%= random(animals) %>, Side-View, fractal", "params": { "chaos": 10 }, "targets": [ "desktop", "mobile" ] }
-{ "prompt": "synesthesia sculpture, 3d, chinoiserie, retro colors, stained glass", "params": { "chaos": 10 }, "targets": [ "desktop", "mobile" ] }
+{ "prompt": "synesthesia sculpture, 3d, chinoiserie, retro colors, stained glass", "params": { "chaos": 40 }, "targets": [ "desktop", "mobile" ] }
 { "prompt": "synesthesia", "negativePrompt": "person", "params": { "chaos": 40 }, "targets": [ "desktop", "mobile" ] }
