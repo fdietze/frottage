@@ -2,6 +2,7 @@
 { "prompt": "harmonious chaos, fragmental tessalations, frottage", "params": { "chaos": 20 }, "targets": [ "mobile", "desktop" ] }
 { "prompt": "harmonious chaos, fragmental tessalations, frottage, <%= random(colors) %> color", "params": { "chaos": 20 }, "targets": [ "mobile", "desktop" ] }
 { "prompt": "wallpaper", "negativePrompt": "architecture", "params": { "chaos": 20 }, "targets": [ "mobile" ] }
+{ "prompt": "psychedelic wallpaper", "params": {}, "targets": [ "desktop", "mobile" ] }
 { "prompt": "4k wallpaper", "params": { "chaos": 20 }, "targets": [ "desktop" ] }
 { "prompt": "midjourney", "negativePrompt": "person", "params": { "chaos": 20 }, "targets": [ "mobile", "desktop" ] }
 { "prompt": "<%= random(['chaos', 'tesselation', 'explosion', 'causality', 'orb', 'physics', 'recursion', 'random noise']) %>, <%= random(artStyles) %>", "params": { "chaos": 20 }, "targets": [ "mobile", "desktop" ] }
