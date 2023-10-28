@@ -10,28 +10,39 @@ const openai = new OpenAI({
   // apiKey: 'My API Key', // defaults to process.env["OPENAI_API_KEY"]
 });
 
+
+const dishes = ['Sweet Breakfast', 'Savory Breakfast', 'Vegan Breakfast', 'Lunch', 'Vegetarian Lunch', 'Appetizer', 'Dinner', 'Desert', 'Cocktail'];
+
 async function main() {
-  const name = await generateName();
-  console.log(name);
-  const ingredients = await generateIngredients(name);
-  console.log(ingredients);
-  const recipe = await generateRecipe(name, ingredients);
-  console.log(recipe);
-  const pictureDescription = await generatePictureDescription(recipe);
-  console.log(pictureDescription);
 
-  const pictureUrl = await generatePicture(pictureDescription);
-  await download(pictureUrl, 'recipe/picture.png');
+  for (const dish of dishes) {
+    console.log("\nGenerating", dish);
+    const name = await generateName(dish);
+    console.log(name);
+    const ingredients = await generateIngredients(name);
+    console.log(ingredients);
 
-  fs.writeFileSync('recipe/index.html', renderHtmlRecipe(recipe, 'picture.png'));
+
+    const recipe = await generateRecipe(name, ingredients);
+    console.log(recipe);
+    const pictureDescription = await generatePictureDescription(recipe);
+    console.log(pictureDescription);
+
+    const pictureUrl = await generatePicture(pictureDescription);
+    const pictureFile = `${toSnakeCase(dish)}.png`;
+    await download(pictureUrl, `recipe/${pictureFile}`);
+
+    fs.writeFileSync(`recipe/${toSnakeCase(dish)}.html`, renderHtmlRecipe(dish, dishes, recipe, pictureFile));
+    if (dish === dishes[0]) {
+      fs.writeFileSync(`recipe/index.html`, renderHtmlRecipe(dish, dishes, recipe, pictureFile));
+    }
+  }
 }
-
-
 
 main();
 
 
-function renderHtmlRecipe(recipe: string, imagePath: string) {
+function renderHtmlRecipe(dish: string, dishes: Array<string>, recipe: string, imagePath: string) {
   const recipeHtml = marked.parse(recipe);
   const html = `
 <!DOCTYPE html>
@@ -40,10 +51,12 @@ function renderHtmlRecipe(recipe: string, imagePath: string) {
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/water.css@2/out/water.css">
-  <title>Recipe of the day</title>
+  <title>${dish} of the day</title>
 </head>
 <body>
-  <img src="${imagePath}" style="border-radius: 10px; width: 400px; margin-top: 15px;" /><br />
+  ${dishes.map(d => `<a href="${toSnakeCase(d)}.html">${d}</a>`).join(' | ')}<br />
+  <h1>${dish} of the day</h1>
+  <a hre="${imagePath}"><img src="${imagePath}" style="border-radius: 10px; width: 600px; margin-top: 15px;" /></a><br />
   ${recipeHtml}
 </body>
 </html>
@@ -51,18 +64,17 @@ function renderHtmlRecipe(recipe: string, imagePath: string) {
   return html;
 }
 
-
-async function generatePicture(description: string): Promise<string> {
-  return await Mj.connect({ Debug: false }, async (client) => {
-    const prompt = `professional food photography, ${description}`;
-    const image = await Mj.imagineAndUpscale(client, prompt);
-    return image.uri;
-  });
+function toSnakeCase(str: string) {
+  return str.toLowerCase().replace(/\s+/g, '-');
 }
 
 
-async function generateName() {
-  const messages: Array<ChatCompletionMessageParam> = [{ role: 'user', content: 'Invent a short, artful name for a recipe that is itself an alliteration, but does not include any of the ingredients. Explain first, in the last line write the name. Examples: Alpine Antipasti, Tangy Teriyaki Tosses, Wild White Whirl, Crispy Coconut Crackers, Fiery Fruit Flirt.' }];
+
+
+
+
+async function generateName(dish: string) {
+  const messages: Array<ChatCompletionMessageParam> = [{ role: 'user', content: `Invent a short, artful name for a ${dish} recipe that is itself an alliteration, but does not include any of the ingredients. Explain first, in the last line write the name. Examples: Alpine Antipasti, Tangy Teriyaki Tosses, Wild White Whirl, Crispy Coconut Crackers, Fiery Fruit Flirt.` }];
   const completion = await openai.chat.completions.create({
     messages: messages,
     model: 'gpt-4',
@@ -102,4 +114,12 @@ async function generatePictureDescription(recipe: string) {
   });
 
   return completion.choices[0].message.content;
+}
+
+async function generatePicture(description: string): Promise<string> {
+  return await Mj.connect({ Debug: false }, async (client) => {
+    const prompt = `professional food photography, ${description} --ar 16:9`;
+    const image = await Mj.imagineAndUpscale(client, prompt);
+    return image.uri;
+  });
 }
