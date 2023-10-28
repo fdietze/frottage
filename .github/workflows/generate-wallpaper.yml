@@ -38,7 +38,7 @@ jobs:
       - name: "Generate wallpapers"
         run: |
           set -e
-          npx tsx generate.ts
+          npx tsx generate-wallpaper.ts
           rm -f wallpapers/.gitignore
           mogrify -format jpg -quality 95 wallpapers/*.png
           ls -la wallpapers
