@@ -51,7 +51,7 @@ jobs:
       - name: Generate cron timestamp
         run: |
           set -e
-          CRONEXPR=$(yq '.on.schedule[0].cron' < .github/workflows/generate.yml)
+          CRONEXPR=$(yq '.on.schedule[0].cron' < .github/workflows/generate-wallpapers.yml)
           npx tsx ceiledCronExpression.ts "$CRONEXPR" > cronUTC
           npx tsx ceiledCronHours.ts "$CRONEXPR" > updateHoursUTC.json
           cat cronUTC updateHoursUTC.json
