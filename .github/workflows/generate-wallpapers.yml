@@ -1,14 +1,14 @@
-name: Generate Recipe
+name: Generate Wallpapers
 
 on:
   workflow_dispatch:
   schedule:
-    - cron: "0 23 * * *"
+    - cron: "0 0,3,6,9,12,15,18 * * *" # one hour before the update (UTC)
 
 
 jobs:
   generate:
-    name: "Generate Recipe"
+    name: "Generate wallpapers"
     runs-on: ubuntu-22.04
     permissions:
       contents: write
@@ -27,28 +27,42 @@ jobs:
           node-version: "18"
           cache: "yarn"
 
+      - name: Install yq
+        run: |
+          curl --silent --location https://github.com/mikefarah/yq/releases/download/v4.35.1/yq_linux_amd64.tar.gz |\
+          tar xz && sudo mv yq_linux_amd64 /usr/bin/yq
+
       - name: "Install node dependencies"
         run: yarn install --frozen-lockfile
 
-      - name: "Generate recipes"
+      - name: "Generate wallpapers"
         run: |
           set -e
-          npx ts-node generate-recipe.ts
-          rm -f recipe/.gitignore
-          mogrify -format jpg -quality 95 recipe/*.png
-          ls -la recipe
+          npx tsx generate-wallpapers.ts
+          rm -f wallpapers/.gitignore
+          mogrify -format jpg -quality 95 wallpapers/*.png
+          ls -la wallpapers
         env:
-          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
           SERVER_ID: ${{ secrets.SERVER_ID }}
           CHANNEL_ID: ${{ secrets.CHANNEL_ID }}
           SALAI_TOKEN: ${{ secrets.SALAI_TOKEN }}
           STABILITY_AI_API_KEY: ${{ secrets.STABILITY_AI_API_KEY }}
 
+      - name: Generate cron timestamp
+        run: |
+          set -e
+          CRONEXPR=$(yq '.on.schedule[0].cron' < .github/workflows/generate.yml)
+          npx tsx ceiledCronExpression.ts "$CRONEXPR" > cronUTC
+          npx tsx ceiledCronHours.ts "$CRONEXPR" > updateHoursUTC.json
+          cat cronUTC updateHoursUTC.json
+
       - name: Prepare upload
         run: |
           set -e
-          mkdir -p static/recipe
-          cp -r recipe/* static/recipe
+          mkdir -p static/wallpapers
+          cp updateHoursUTC.json cronUTC static/
+          cp -r wallpapers/*-latest.jpg static/wallpapers/
+          cp -r wallpapers/*.json static/wallpapers/
           find static
 
       - name: Deploy 🚀

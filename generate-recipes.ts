@@ -5,6 +5,7 @@ import fs from 'fs';
 import { Midjourney } from "midjourney";
 import * as Mj from "./midjourney";
 import { download } from "./download";
+import { sleepMs } from './util';
 
 const openai = new OpenAI({
   // apiKey: 'My API Key', // defaults to process.env["OPENAI_API_KEY"]
@@ -15,7 +16,7 @@ const dishes = ['Sweet Breakfast', 'Savory Breakfast', 'Vegan Breakfast', 'Lunch
 
 async function main() {
 
-  for (const dish of dishes) {
+  const pictureDescriptions = await Promise.all(dishes.map(async (dish) => {
     console.log("\nGenerating", dish);
     const name = await generateName(dish);
     console.log(name);
@@ -28,14 +29,18 @@ async function main() {
     const pictureDescription = await generatePictureDescription(recipe);
     console.log(pictureDescription);
 
-    const pictureUrl = await generatePicture(pictureDescription);
     const pictureFile = `${toSnakeCase(dish)}.png`;
-    await download(pictureUrl, `recipe/${pictureFile}`);
-
     fs.writeFileSync(`recipe/${toSnakeCase(dish)}.html`, renderHtmlRecipe(dish, dishes, recipe, pictureFile));
     if (dish === dishes[0]) {
       fs.writeFileSync(`recipe/index.html`, renderHtmlRecipe(dish, dishes, recipe, pictureFile));
     }
+    return { dish, description: pictureDescription };
+  }));
+
+  const pictureUrls = await generatePictures(pictureDescriptions);
+  for (const { dish, url } of pictureUrls) {
+    const pictureFile = `${toSnakeCase(dish)}.png`;
+    await download(url, `recipe/${pictureFile}`);
   }
 }
 
@@ -116,10 +121,17 @@ async function generatePictureDescription(recipe: string) {
   return completion.choices[0].message.content;
 }
 
-async function generatePicture(description: string): Promise<string> {
+async function generatePictures(prompts: Array<{ dish: string, description: string }>): Promise<Array<{ dish: string, url: string }>> {
   return await Mj.connect({ Debug: false }, async (client) => {
-    const prompt = `professional food photography, ${description} --ar 16:9`;
-    const image = await Mj.imagineAndUpscale(client, prompt);
-    return image.uri;
+
+
+    return await Promise.all(prompts.map(async ({ dish, description }, i) => {
+      // start each prompt 5 seconds apart
+      await sleepMs(i * 5000);
+
+      const prompt = `professional food photography, ${description} --ar 16:9`;
+      const image = await Mj.imagineAndUpscale(client, prompt);
+      return { dish, url: image.uri };
+    }));
   });
 }
