@@ -1,42 +1,40 @@
 { "prompt": "frottage", "params": { "chaos": 40 }, "targets": [ "mobile", "desktop" ] }
 { "prompt": "harmonious chaos, fragmental tessalations, frottage", "params": { "chaos": 20 }, "targets": [ "mobile", "desktop" ] }
 { "prompt": "harmonious chaos, fragmental tessalations, frottage, <%= random(colors) %> color", "params": { "chaos": 20 }, "targets": [ "mobile", "desktop" ] }
-{ "prompt": "wallpaper", "negativePrompt": "architecture", "params": { "chaos": 20 }, "targets": [ "mobile" ] }
-{ "prompt": "psychedelic wallpaper", "params": {}, "targets": [ "desktop", "mobile" ] }
-{ "prompt": "4k wallpaper", "params": { "chaos": 20 }, "targets": [ "desktop" ] }
-{ "prompt": "midjourney", "negativePrompt": "person", "params": { "chaos": 20 }, "targets": [ "mobile", "desktop" ] }
 { "prompt": "<%= random(['chaos', 'tesselation', 'explosion', 'causality', 'orb', 'physics', 'recursion', 'random noise']) %>, <%= random(artStyles) %>", "params": { "chaos": 20 }, "targets": [ "mobile", "desktop" ] }
+{ "prompt": "combinatorial explosion, abstract art", "params": { "chaos": 20 }, "targets": [ "mobile", "desktop" ] }
+{ "prompt": "fluid simulation, tesselation, 3d", "params": { "chaos": 40 }, "targets": [ "mobile", "desktop" ] }
+{ "prompt": "wallpaper", "negativePrompt": "architecture", "params": { "chaos": 20 }, "targets": [ "mobile" ] }
+{ "prompt": "4k wallpaper", "params": { "chaos": 20 }, "targets": [ "desktop" ] }
+{ "prompt": "4k wallpaper, lights", "params": { "chaos": 20 }, "targets": [ "desktop" ] }
+{ "prompt": "4k wallpaper, bright day", "params": { "chaos": 40 }, "targets": [ "desktop-light" ] }
+{ "prompt": "4k wallpaper, white, <%= random(colors) %> accents", "negativePrompt": "person, furniture", "params": { "chaos": 40 }, "targets": [ "desktop-light" ] }
+{ "prompt": "psychedelic wallpaper", "params": {}, "targets": [ "desktop", "mobile" ] }
+{ "prompt": "midjourney", "negativePrompt": "person", "params": { "chaos": 20 }, "targets": [ "mobile", "desktop" ] }
+{ "prompt": "imagination", "negativePrompt": "person", "params": { "chaos": 20 }, "targets": [ "mobile", "desktop" ] }
 { "prompt": "shattered glass, tessellation, 3d, bokeh", "params": { "chaos": 20 }, "targets": [ "mobile", "desktop" ] }
 { "prompt": "life of the fea, filled with life, plants, dark green, blue, purple, fireflies", "negativePrompt": "person", "params": { "chaos": 36, "stylize": 9 }, "targets": [ "mobile", "desktop" ] }
-{ "prompt": "crazy futuristic <%= random(fruits.concat(vegetables)) %> machine, complicated", "targets": [ "mobile", "desktop" ] }
+{ "prompt": "crazy futuristic <%= random(fruits.concat(vegetables)) %> machine, complicated, <%= random(artStyles) %>", "targets": [ "mobile", "desktop" ] }
 { "prompt": "proud <%= random(animals) %> robot, robotic robot pose, in the style of intricate steampunk, polychrome sculpture, colorful, <%= random(colors) %>, hyperrealistic details, eduard gaertner", "targets": [ "mobile", "desktop" ] }
-{ "prompt": "collision of fire and water", "params": { "chaos": 30 }, "targets": [ "mobile", "desktop" ] }
+{ "prompt": "collision of fire and water, <%= random(artStyles) %>", "params": { "chaos": 30 }, "targets": [ "mobile", "desktop" ] }
 { "prompt": "meteor flying through hyperspace, <%= random(artStyles) %>", "params": { "chaos": 15 }, "targets": [ "mobile", "desktop" ] }
-{ "prompt": "<%= random(insects) %>, macro photography, vivid colors", "params": { "chaos": 20 }, "targets": [ "mobile" ] }
-{ "prompt": "combinatorial explosion, abstract art", "params": { "chaos": 20 }, "targets": [ "mobile", "desktop" ] }
-{ "prompt": "large exotic butterflies covering screen, diverse, digital art", "params": { "chaos": 15 }, "targets": [ "mobile" ] }
-{ "prompt": "pokemon that looks like cross between <%= random(animals) %> and <%= random(animals) %>, hybrid creature, full body, photorealistic, high resolution photography, studio light", "targets": [ "mobile", "desktop" ] }
+{ "prompt": "large exotic butterflies covering screen, diverse, digital art", "params": { "chaos": 20 }, "targets": [ "mobile" ] }
 { "prompt": "<%= random(animals) %>, <%= random(artStyles) %>", "targets": [ "mobile", "desktop" ] }
 { "prompt": "glowing circuitry, synthwave, <%= random(colors) %> color", "params": { "chaos": 30 }, "targets": [ "mobile", "desktop" ] }
-{ "prompt": "<%= random(musicalInstruments) %>, musical instrument in the spotlight, colorful", "params": { "chaos": 50 }, "targets": [ "mobile", "desktop" ] }
+{ "prompt": "<%= random(musicalInstruments) %>, musical instrument in the spotlight, colorful, immersive, abstract", "params": { "chaos": 50 }, "targets": [ "mobile", "desktop" ] }
 { "prompt": "<%= imageFrom('mobile') %> wood texture, shades of brown", "params": { "imageWeight": 1.5 }, "targets": [ "mobile-homescreen" ] }
 { "prompt": "<%= imageFrom('mobile') %> stone texture, shades of gray", "params": { "imageWeight": 1.5 }, "targets": [ "mobile-homescreen" ] }
 { "prompt": "<%= imageFrom('mobile') %> tiling wall structure, shades of gray", "params": { "imageWeight": 1.5 }, "targets": [ "mobile-homescreen" ] }
 { "prompt": "<%= imageFrom('mobile') %> shades of pastel colors", "negativePrompt": "vivid colors, person", "params": { "imageWeight": 1.5 }, "targets": [ "mobile-homescreen" ] }
-{ "prompt": "<%= imageFrom('mobile') %> blurred lines", "params": { "imageWeight": 1.5 }, "targets": [ "mobile-homescreen" ] }
 { "prompt": "https://cdn.discordapp.com/attachments/1094892992281718894/1144382764674711634/felixdietze_wood_texture_1825beac-24ad-40bd-b3ba-b4666943a4e6.png <%= promptFrom('mobile') %>", "params": { "imageWeight": 0.5 }, "targets": [ "mobile-homescreen" ] }
-{ "prompt": "4k wallpaper, lights", "params": { "chaos": 20 }, "targets": [ "desktop" ] }
 { "prompt": "ocean landscape on an different planet, <%= random(artStyles) %>", "params": { "chaos": 1 }, "targets": [ "desktop" ] }
-{ "prompt": "fluid simulation, tesselation, 3d", "params": { "chaos": 40 }, "targets": [ "mobile", "desktop" ] }
-{ "prompt": "4k wallpaper, bright day", "params": { "chaos": 40 }, "targets": [ "desktop-light" ] }
-{ "prompt": "4k wallpaper, white, <%= random(colors) %> accents", "negativePrompt": "person, furniture", "params": { "chaos": 40 }, "targets": [ "desktop-light" ] }
 { "prompt": "<%= random(animals) %>, <%= season %>, <%= monthCEST %>, digital art, bright day, bright background, vivid colors", "params": { "chaos": 30 }, "targets": [ "desktop-light" ] }
 { "prompt": "<%= dayOfWeekCEST %> funny work life", "params": { "chaos": 20 }, "targets": [ "desktop-light" ] }
-{ "prompt": "cityscape, futuristic civilization, bright day, <%= season %>, <%= monthCEST %>, <%= random(artStyles) %>", "params": { "chaos": 20 }, "targets": [ "desktop-light" ] }
+{ "prompt": "cityscape, futuristic city, bright day, <%= season %>, <%= monthCEST %>, <%= random(artStyles) %>", "params": { "chaos": 20 }, "targets": [ "desktop-light" ] }
 { "prompt": "civilization of <%= random(animals) %>s, advanced, high-tech, bright day", "targets": [ "desktop-light" ] }
 { "prompt": "spacestation interior, floorplan, schematic, <%= random(artStyles) %>", "params": { "chaos": 30 }, "targets": [ "desktop-light" ] }
 { "prompt": "white background, <%= random(animals) %>, full body, <%= random(colors) %> details, deep <%= random(colors) %> colored eyes, powerful, in the style of technological art, i can't believe how beautiful this is, intensely detailed, made of mist, mixes realistic and fantastical elements", "params": { "chaos": 30 }, "targets": [ "desktop-light" ] }
 { "prompt": "room with crazy painting", "params": { "chaos": 10 }, "targets": [ "desktop" ] }
 { "prompt": "hyper realistic, <%= random(animals) %>, Side-View, fractal", "params": { "chaos": 10 }, "targets": [ "desktop", "mobile" ] }
-{ "prompt": "synesthesia sculpture, 3d, chinoiserie, retro colors, stained glass", "params": { "chaos": 40 }, "targets": [ "desktop", "mobile" ] }
 { "prompt": "synesthesia", "negativePrompt": "person", "params": { "chaos": 40 }, "targets": [ "desktop", "mobile" ] }
+{ "prompt": "dream landscape, hyperrealistic", "params": { "chaos": 10 }, "targets": [ "desktop", "mobile" ] }
