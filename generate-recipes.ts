@@ -12,7 +12,7 @@ const openai = new OpenAI({
 });
 
 
-const dishes = ['Sweet Breakfast', 'Savory Breakfast', 'Vegan Breakfast', 'Lunch', 'Vegetarian Lunch', 'Appetizer', 'Dinner', 'Desert', 'Cocktail'];
+const dishes = ['Sweet Breakfast', 'Savory Breakfast', 'Vegan Breakfast', 'Smoothie', 'Lunch', 'Vegetarian Lunch', 'Appetizer', 'Dinner', 'Vegetarian Dinner', 'Desert', 'Cocktail'];
 
 async function main() {
 
