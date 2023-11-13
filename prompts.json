@@ -44,7 +44,7 @@
 { "prompt": "psychedelic fossils", "params": {}, "targets": [ "desktop", "mobile" ] }
 { "prompt": "psychedelic plants", "params": {}, "targets": [ "desktop", "mobile" ] }
 { "prompt": "psychedelic planet, close-up", "params": {}, "targets": [ "desktop", "mobile" ] }
-{ "prompt": "deep space, colorful", "params": {}, "targets": [ "desktop", "mobile" ] }
+{ "prompt": "deep space, colorful", "negativePrompts": "person", "params": {}, "targets": [ "desktop", "mobile" ] }
 { "prompt": "nano particles", "params": {}, "targets": [ "desktop", "mobile" ] }
 { "prompt": "meditation, microscopic", "params": {}, "targets": [ "desktop", "mobile" ] }
 
