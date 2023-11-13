@@ -26,7 +26,6 @@
 { "prompt": "large exotic butterflies covering screen, diverse, digital art", "params": { "chaos": 20 }, "targets": [ "mobile" ] }
 { "prompt": "<%= random(animals) %>, <%= random(artStyles) %>", "targets": [ "mobile", "desktop" ] }
 { "prompt": "glowing circuitry, synthwave, <%= random(colors) %> color", "params": { "chaos": 30 }, "targets": [ "mobile", "desktop" ] }
-{ "prompt": "<%= random(musicalInstruments) %>, musical instrument in the spotlight, colorful, immersive, abstract", "params": { "chaos": 50 }, "targets": [ "mobile", "desktop" ] }
 { "prompt": "<%= imageFrom('mobile') %> wood texture, shades of brown", "params": { "imageWeight": 1.5 }, "targets": [ "mobile-homescreen" ] }
 { "prompt": "<%= imageFrom('mobile') %> stone texture, shades of gray", "params": { "imageWeight": 1.5 }, "targets": [ "mobile-homescreen" ] }
 { "prompt": "<%= imageFrom('mobile') %> tiling wall structure, shades of gray", "params": { "imageWeight": 1.5 }, "targets": [ "mobile-homescreen" ] }
@@ -43,6 +42,9 @@
 { "prompt": "psychedelic still life", "params": { "chaos": 10 }, "targets": [ "desktop" ] }
 { "prompt": "multicolor microscopy", "params": {}, "targets": [ "desktop", "mobile" ] }
 { "prompt": "psychedelic fossils", "params": {}, "targets": [ "desktop", "mobile" ] }
+{ "prompt": "psychedelic plants", "params": {}, "targets": [ "desktop", "mobile" ] }
+{ "prompt": "psychedelic planet, close-up", "params": {}, "targets": [ "desktop", "mobile" ] }
+{ "prompt": "deep space, colorful", "params": {}, "targets": [ "desktop", "mobile" ] }
 { "prompt": "nano particles", "params": {}, "targets": [ "desktop", "mobile" ] }
 { "prompt": "meditation, microscopic", "params": {}, "targets": [ "desktop", "mobile" ] }
 
