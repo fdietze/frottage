@@ -24,7 +24,7 @@ async function main() {
   console.log("targets:", targetDefinitions);
 
   console.log("\nGenerating");
-  const words = await generateWords(200);
+  const words = await generateWords(100);
   console.log(words);
 
   const phrase = generatePhrase(words, 3);
@@ -94,7 +94,7 @@ async function generateWords(count: number): Promise<Array<string>> {
   }];
   const completion = await openai.chat.completions.create({
     messages: messages,
-    model: "gpt-4-1106-preview",
+    model: "gpt-3.5-turbo",
   });
 
   const jsonArray = completion.choices[0].message.content;
