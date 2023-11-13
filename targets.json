@@ -1,4 +1,4 @@
-{"name": "mobile", "aspectRatio": "9:19"}
-{"name": "mobile-homescreen", "aspectRatio": "9:19"}
-{"name": "desktop", "aspectRatio": "19:9"}
-{"name": "desktop-light", "aspectRatio": "19:9"}
+{"name": "mobile", "prompt": "", "aspectRatio": "9:19"}
+{"name": "mobile-homescreen", "prompt": "Subdued, faded, blurred", "aspectRatio": "9:19"}
+{"name": "desktop", "prompt": "", "aspectRatio": "19:9"}
+{"name": "desktop-light", "prompt": "white", "aspectRatio": "19:9"}
