@@ -1,6 +1,6 @@
 import "dotenv/config";
 import { Midjourney, MJMessage } from "midjourney";
-import { getRandomIndex } from "./random";
+import { getRandomIndex, randomInt } from "./random";
 import { sleepMs } from "./util";
 
 export async function connect<R>(
@@ -8,9 +8,9 @@ export async function connect<R>(
   code: (client: Midjourney) => Promise<R>,
 ): Promise<R> {
   const client = new Midjourney({
-    ServerId: <string>process.env.SERVER_ID,
-    ChannelId: <string>process.env.CHANNEL_ID,
-    SalaiToken: <string>process.env.SALAI_TOKEN,
+    ServerId: <string> process.env.SERVER_ID,
+    ChannelId: <string> process.env.CHANNEL_ID,
+    SalaiToken: <string> process.env.SALAI_TOKEN,
     Debug: false,
     Ws: true, //enable ws is required for remix mode (and custom zoom)
     ...options,
@@ -31,10 +31,11 @@ export async function connect<R>(
 export async function imagineAndUpscale(
   client: Midjourney,
   prompt: string,
+  variant?: number,
 ): Promise<MJMessage> {
   const imagined: MJMessage = await imagine(client, prompt);
-  const variant = getRandomIndex(4) + 1;
-  return await upscale(client, imagined, variant);
+  const chosenVariant = variant ?? randomInt(1, 4);
+  return await upscale(client, imagined, chosenVariant);
 }
 
 export async function imagine(
@@ -65,7 +66,7 @@ export async function upscale(
     throw new Error(`upscale button not found (${imagined.content})`);
   }
   const upscaled: MJMessage | null = await client.Custom({
-    msgId: <string>imagined.id,
+    msgId: <string> imagined.id,
     flags: imagined.flags,
     customId: customID,
     loading: (uri: string, progress: string) => {
@@ -96,7 +97,7 @@ export async function enableRemixMode(
 export async function varyRemix(
   client: Midjourney,
   upscaled: MJMessage,
-  strong: Boolean,
+  strong: boolean,
   remixPrompt: string,
 ): Promise<MJMessage> {
   await enableRemixMode(client, true);
@@ -105,7 +106,7 @@ export async function varyRemix(
   const vary = upscaled?.options?.find((o) => o.label === varyLabel);
   if (!vary) throw new Error("no vary button");
   const varyCustom = await client.Custom({
-    msgId: <string>upscaled.id,
+    msgId: <string> upscaled.id,
     flags: upscaled.flags,
     content: remixPrompt,
     customId: vary.custom,
@@ -115,4 +116,24 @@ export async function varyRemix(
   });
   if (!varyCustom) throw new Error("error varying");
   return varyCustom;
+}
+
+export async function upscale4x(
+  client: Midjourney,
+  upscaled: MJMessage,
+): Promise<MJMessage> {
+  const upscale_button = upscaled?.options?.find((o) =>
+    o.label === "Upscale (4x)"
+  );
+  if (!upscale_button) throw new Error("no upscale button");
+  const upscaled4k = await client.Custom({
+    msgId: <string> upscaled.id,
+    flags: upscaled.flags,
+    customId: upscale_button.custom,
+    loading: (uri: string, progress: string) => {
+      console.log(`upscaling 4x (${progress})`);
+    },
+  });
+  if (!upscaled4k) throw new Error("error upscaling 4x");
+  return upscaled4k;
 }
