@@ -24,11 +24,12 @@ async function main() {
   ).trim().split("\n").map((line) => JSON.parse(line));
   console.log("targets:", targets);
 
-  console.log("\nGenerating");
-  const generatedWords = await generateWords(100);
-  console.log(generatedWords);
-  fs.writeFileSync("./words.json", JSON.stringify(generatedWords, null, 2));
-  process.exit(0);
+  // uncomment to generate new words
+  // console.log("\nGenerating");
+  // const generatedWords = await generateWords(100);
+  // console.log(generatedWords);
+  // fs.writeFileSync("./words.json", JSON.stringify(generatedWords, null, 2));
+  // process.exit(0);
 
   const words = JSON.parse(fs.readFileSync("./words.json", "utf8"));
   console.log("words:", words.length);
