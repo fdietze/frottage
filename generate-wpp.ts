@@ -54,6 +54,20 @@ async function main() {
     }${phrase} --no person --aspect ${target.aspectRatio} --seed ${seed}`;
   });
 
+  prompts.forEach((prompt, i) => {
+    fs.writeFileSync(
+      `wallpapers/${targets[i].name}.json`,
+      JSON.stringify(
+        {
+          prompt: phrase,
+        },
+        null,
+        2,
+      ),
+    );
+  });
+  process.exit(0);
+
   const generatedImages = await generateImages(prompts, variant);
   await Promise.all(
     generatedImages.map(async (uri, i) => {
@@ -153,8 +167,9 @@ async function generateImages(
               prompt,
               variant,
             );
-            return await Mj.upscale4x(client, upscaled);
-          }, 1000 * 60 * 15), 3);
+            return upscaled;
+            // return await Mj.upscale4x(client, upscaled);
+          }, 1000 * 60 * 25), 3);
         return finalImage.uri;
       }),
     );
