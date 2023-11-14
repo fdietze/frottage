@@ -51,7 +51,7 @@ async function main() {
   const prompts = targets.map((target) => {
     return `${
       target.prefix ? `${target.prefix}, ` : ""
-    }${phrase} --no person --aspect ${target.aspectRatio} --seed ${seed}`;
+    }${phrase} --no person, woman --aspect ${target.aspectRatio} --seed ${seed}`;
   });
 
   prompts.forEach((prompt, i) => {
