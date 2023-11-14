@@ -6,14 +6,15 @@ import { Midjourney } from "midjourney";
 async function main() {
   await Mj.connect({ Debug: true }, async (client) => {
     const prompt = "time traveling monster --q .25";
-    const Upscale = await Mj.imagineAndUpscale(client, prompt);
+    const upscaled = await Mj.imagineAndUpscale(client, prompt);
+    await Mj.upscale4x(client, upscaled);
 
-    const varyCustom = await Mj.varyRemix(
-      client,
-      Upscale,
-      false,
-      `wood texture`,
-    );
+    // const varyCustom = await Mj.varyRemix(
+    //   client,
+    //   upscaled,
+    //   false,
+    //   `wood texture`,
+    // );
     return;
     // const prompt =
     //   "laughing king wearing crown, nice, wise, happy, tears, colorful drawing --stylize 700 --ar 9:19";
