@@ -47,6 +47,7 @@ jobs:
           CHANNEL_ID: ${{ secrets.CHANNEL_ID }}
           SALAI_TOKEN: ${{ secrets.SALAI_TOKEN }}
           STABILITY_AI_API_KEY: ${{ secrets.STABILITY_AI_API_KEY }}
+          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
 
       - name: Generate cron timestamp
         run: |
