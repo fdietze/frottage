@@ -66,7 +66,6 @@ async function main() {
       ),
     );
   });
-  process.exit(0);
 
   const generatedImages = await generateImages(prompts, variant);
   await Promise.all(
