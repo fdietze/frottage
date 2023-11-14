@@ -166,8 +166,8 @@ async function generateImages(
               prompt,
               variant,
             );
-            return upscaled;
-            // return await Mj.upscale4x(client, upscaled);
+            // return upscaled;
+            return await Mj.upscale4x(client, upscaled);
           }, 1000 * 60 * 25), 3);
         return finalImage.uri;
       }),
