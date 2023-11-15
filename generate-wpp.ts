@@ -40,7 +40,7 @@ async function main() {
   // }
   // process.exit(0);
 
-  const phrase = generatePhrase(words, 2);
+  const phrase = generatePhrase(words, 3);
   const variant = randomInt(1, 4);
   const seed = randomInt(0, 4294967295);
   console.log("phrase:", phrase);
