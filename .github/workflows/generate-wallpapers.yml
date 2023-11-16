@@ -38,7 +38,8 @@ jobs:
       - name: "Generate wallpapers"
         run: |
           set -e
-          npx ts-node generate-wpp.ts
+          # npx ts-node generate-wpp.ts
+          npx tsx generate-wallpapers.ts
           rm -f wallpapers/.gitignore
           mogrify -format jpg -quality 95 wallpapers/*.png
           ls -la wallpapers
