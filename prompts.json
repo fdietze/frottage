@@ -1,4 +1,4 @@
-{ "prompt": "frottage", "negativePrompt": "person, woman", "params": { "chaos": 40 }, "targets": [ "mobile", "desktop" ] }
+{ "prompt": "wallpaper, frottage", "negativePrompt": "person, woman, building, furniture", "params": { "chaos": 40 }, "targets": [ "mobile", "desktop" ] }
 { "prompt": "harmonious chaos, fragmental tessalations, frottage", "params": { "chaos": 20 }, "targets": [ "mobile", "desktop" ] }
 { "prompt": "harmonious chaos, fragmental tessalations, frottage, <%= random(colors) %> color", "params": { "chaos": 20 }, "targets": [ "mobile", "desktop" ] }
 { "prompt": "<%= random(['chaos', 'tesselation', 'explosion', 'causality', 'orb', 'physics', 'recursion', 'random noise']) %>, <%= random(artStyles) %>", "negativePrompt": "woman", "params": { "chaos": 20 }, "targets": [ "mobile", "desktop" ] }
@@ -33,7 +33,6 @@
 { "prompt": "white background, <%= promptFrom('desktop') %>", "params": {}, "targets": [ "desktop-light" ] }
 { "prompt": "<%= dayOfWeekCEST %> funny work life", "params": { "chaos": 20 }, "targets": [ "desktop" ] }
 { "prompt": "room with crazy painting", "params": { "chaos": 10 }, "targets": [ "desktop" ] }
-{ "prompt": "hyper realistic, <%= random(animals) %>, Side-View, fractal", "params": { "chaos": 10 }, "targets": [ "desktop" ] }
 { "prompt": "psychedelic still life", "params": { "chaos": 10 }, "targets": [ "desktop" ] }
 { "prompt": "multicolor microscopy", "params": {}, "targets": [ "desktop", "mobile" ] }
 { "prompt": "psychedelic fossils", "params": {}, "targets": [ "desktop", "mobile" ] }
