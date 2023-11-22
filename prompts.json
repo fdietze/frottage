@@ -23,10 +23,10 @@
 { "prompt": "large exotic butterflies covering screen, diverse, digital art", "params": { "chaos": 20 }, "targets": [ "mobile" ] }
 { "prompt": "<%= random(animals) %>, <%= random(artStyles) %>", "targets": [ "mobile", "desktop" ] }
 { "prompt": "glowing circuitry, synthwave, <%= random(colors) %> color", "params": { "chaos": 30 }, "targets": [ "mobile", "desktop" ] }
-{ "prompt": "<%= imageFrom('mobile') %> wood texture, shades of brown", "params": { "imageWeight": 1.5 }, "targets": [ "mobile-homescreen" ] }
-{ "prompt": "<%= imageFrom('mobile') %> stone texture, shades of gray", "params": { "imageWeight": 1.5 }, "targets": [ "mobile-homescreen" ] }
-{ "prompt": "<%= imageFrom('mobile') %> tiling wall structure, shades of gray", "params": { "imageWeight": 1.5 }, "targets": [ "mobile-homescreen" ] }
-{ "prompt": "<%= imageFrom('mobile') %> shades of pastel colors", "negativePrompt": "vivid colors, person", "params": { "imageWeight": 1.5 }, "targets": [ "mobile-homescreen" ] }
+{ "prompt": "<%= imageFrom('mobile') %> wood texture, shades of brown", "negativePrompt": "woman", "params": { "imageWeight": 1.5 }, "targets": [ "mobile-homescreen" ] }
+{ "prompt": "<%= imageFrom('mobile') %> stone texture, shades of gray", "negativePrompt": "woman", "params": { "imageWeight": 1.5 }, "targets": [ "mobile-homescreen" ] }
+{ "prompt": "<%= imageFrom('mobile') %> tiling wall structure, shades of gray", "negativePrompt": "woman", "params": { "imageWeight": 1.5 }, "targets": [ "mobile-homescreen" ] }
+{ "prompt": "<%= imageFrom('mobile') %> shades of pastel colors", "negativePrompt": "woman", "negativePrompt": "vivid colors, person", "params": { "imageWeight": 1.5 }, "targets": [ "mobile-homescreen" ] }
 { "prompt": "https://cdn.discordapp.com/attachments/1094892992281718894/1144382764674711634/felixdietze_wood_texture_1825beac-24ad-40bd-b3ba-b4666943a4e6.png <%= promptFrom('mobile') %>", "params": { "imageWeight": 0.5 }, "targets": [ "mobile-homescreen" ] }
 { "prompt": "ocean landscape on an different planet, <%= random(artStyles) %>", "params": { "chaos": 1 }, "targets": [ "desktop" ] }
 { "prompt": "<%= random(animals) %>, <%= season %>, <%= monthCEST %>, digital art, bright day, bright background, vivid colors", "params": { "chaos": 30 }, "targets": [ "desktop" ] }
