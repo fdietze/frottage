@@ -42,7 +42,7 @@
 { "prompt": "nano particles", "params": {}, "targets": [ "desktop", "mobile" ] }
 { "prompt": "meditation, microscopic", "params": {}, "targets": [ "desktop", "mobile" ] }
 { "prompt": "psychedelic, supernova", "params": {}, "targets": [ "desktop", "mobile" ] }
-{ "prompt": "digital, melancholy", "params": {}, "targets": [ "desktop", "mobile" ] }
+{ "prompt": "digital, melancholy", "negativePrompts": "woman, man, boy, girl, person", "params": {}, "targets": [ "desktop", "mobile" ] }
 { "prompt": "quantized, microorganisms", "params": {}, "targets": [ "desktop", "mobile" ] }
 
 
