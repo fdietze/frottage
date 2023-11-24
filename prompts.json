@@ -38,11 +38,11 @@
 { "prompt": "psychedelic fossils", "params": {}, "targets": [ "desktop", "mobile" ] }
 { "prompt": "psychedelic plants", "params": {}, "targets": [ "desktop", "mobile" ] }
 { "prompt": "psychedelic planet, close-up", "params": {}, "targets": [ "desktop", "mobile" ] }
-{ "prompt": "deep space, colorful", "negativePrompts": "person", "params": {}, "targets": [ "desktop", "mobile" ] }
+{ "prompt": "deep space, colorful", "negativePrompt": "person", "params": {}, "targets": [ "desktop", "mobile" ] }
 { "prompt": "nano particles", "params": {}, "targets": [ "desktop", "mobile" ] }
 { "prompt": "meditation, microscopic", "params": {}, "targets": [ "desktop", "mobile" ] }
 { "prompt": "psychedelic, supernova", "params": {}, "targets": [ "desktop", "mobile" ] }
-{ "prompt": "digital, melancholy", "negativePrompts": "woman, man, boy, girl, person", "params": {}, "targets": [ "desktop", "mobile" ] }
+{ "prompt": "digital, melancholy", "negativePrompt": "woman, man, boy, girl, person", "params": {}, "targets": [ "desktop", "mobile" ] }
 { "prompt": "quantized, microorganisms", "params": {}, "targets": [ "desktop", "mobile" ] }
 
 
