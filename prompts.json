@@ -16,7 +16,7 @@
 { "prompt": "midjourney", "negativePrompt": "woman, man, boy, girl, person", "params": { "chaos": 20 }, "targets": [ "mobile", "desktop" ] }
 { "prompt": "imagination", "negativePrompt": "woman, man, boy, girl, person", "params": { "chaos": 20 }, "targets": [ "mobile", "desktop" ] }
 { "prompt": "shattered glass, tessellation, 3d, bokeh", "params": { "chaos": 20 }, "targets": [ "mobile", "desktop" ] }
-{ "prompt": "life of the fea, filled with life, plants, dark green, blue, purple, fireflies", "negativePrompt": "person", "params": { "chaos": 36, "stylize": 9 }, "targets": [ "mobile", "desktop" ] }
+{ "prompt": "life of the fea, filled with life, plants, fireflies", "negativePrompt": "person", "params": { "chaos": 36, "stylize": 9 }, "targets": [ "desktop" ] }
 { "prompt": "crazy futuristic <%= random(fruits.concat(vegetables)) %> machine, complicated, <%= random(artStyles) %>", "targets": [ "desktop" ] }
 { "prompt": "collision of fire and water, psychedelic", "params": { "chaos": 30 }, "targets": [ "mobile", "desktop" ] }
 { "prompt": "meteor flying through hyperspace, <%= random(artStyles) %>", "negativePrompt": "person", "params": { "chaos": 15 }, "targets": [ "mobile", "desktop" ] }
