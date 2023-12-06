@@ -50,7 +50,6 @@
 { "prompt": "antimatter, antisymmetry, wallpaper", "params": {"chaos": 10}, "targets": [ "desktop" ] }
 { "prompt": "Dense crystallographic planes", "params": {"chaos": 10}, "targets": [ "desktop", "mobile" ] }
 { "prompt": "future lattice", "negativePrompt": "person", "params": {"chaos": 10}, "targets": [ "desktop" ] }
-{ "prompt": "delicately rendered landscapes, crystalline and geological forms, bryce 3d, light orange and sky-blue", "params": {"chaos": 30}, "targets": [ "desktop-light" ] }
 { "prompt": "Amorphous brazing foil, wallpaper", "negativePrompt": "furniture", "params": {"chaos": 10}, "targets": [ "mobile" ] }
 { "prompt": "Amorphous brazing foil, wallpaper, psychedelic", "negativePrompt": "furniture", "params": {"chaos": 10}, "targets": [ "mobile", "desktop" ] }
 { "prompt": "futuristic, nether, aether, matrix, wallpaper", "negativePrompt": "person, gloomy, dismal", "params": {"chaos": 10}, "targets": [ "mobile", "desktop" ] }
