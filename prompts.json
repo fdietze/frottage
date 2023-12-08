@@ -53,4 +53,5 @@
 { "prompt": "Amorphous brazing foil, wallpaper", "negativePrompt": "furniture", "params": {"chaos": 10}, "targets": [ "mobile" ] }
 { "prompt": "Amorphous brazing foil, wallpaper, psychedelic", "negativePrompt": "furniture", "params": {"chaos": 10}, "targets": [ "mobile", "desktop" ] }
 { "prompt": "futuristic, nether, aether, matrix, wallpaper", "negativePrompt": "person, gloomy, dismal", "params": {"chaos": 10}, "targets": [ "mobile", "desktop" ] }
+{ "prompt": "dangerous crazy psychedelic jungle chaos", "params": {"chaos": 20}, "targets": [ "mobile", "desktop" ] }
 
