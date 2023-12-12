@@ -2,3 +2,4 @@
 {"name": "mobile-homescreen", "prefix": "blurred, out of focus, Subdued, faded", "aspectRatio": "9:19"}
 {"name": "desktop", "aspectRatio": "19:9"}
 {"name": "desktop-light", "prefix": "white background", "aspectRatio": "19:9"}
+{"name": "watch", "aspectRatio": "4:5"}
