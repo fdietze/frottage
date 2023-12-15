@@ -7,7 +7,7 @@
 { "prompt": "wallpaper", "negativePrompt": "architecture", "params": { "chaos": 20 }, "targets": [ "mobile" ] }
 { "prompt": "4k wallpaper", "params": { "chaos": 20 }, "targets": [ "desktop" ] }
 { "prompt": "4k wallpaper, lights", "params": { "chaos": 20 }, "targets": [ "desktop" ] }
-{ "prompt": "psychedelic wallpaper", "params": {}, "targets": [ "desktop", "mobile", "watch" ] }
+{ "prompt": "psychedelic wallpaper, patterns", "negativePrompt": "people,face", "params": {"chaos": 10}, "targets": [ "desktop", "mobile", "watch" ] }
 { "prompt": "psychedelic dream, abstract", "negativePrompt": "person", "params": {"chaos": 30}, "targets": [ "desktop", "mobile" ] }
 { "prompt": "synesthesia, abstract", "params": {}, "targets": [ "desktop", "mobile" ] }
 { "prompt": "synesthesia, abstract, psychedelic", "negativePrompt": "person, woman", "params": {}, "targets": [ "desktop", "mobile" ] }
