@@ -12,11 +12,11 @@ Regularly updated AI stuff.
 <img src="https://fdietze.github.io/frottage/wallpapers/wallpaper-watch-latest.jpg" height="200" />
 </div>
 
-[view prompts](/prompts.json), [view schedule](/.github/workflows/generate-wallpapers.yml#L6)
+[view prompts](/prompts.json), [view targets](/targets.json), [view schedule](/.github/workflows/generate-wallpapers.yml#L6)
 
 The images are deployed to:
 
-`https://fdietze.github.io/frottage/wallpapers/wallpaper-<prompt>-latest.jpg`
+`https://fdietze.github.io/frottage/wallpapers/wallpaper-<target>-latest.jpg`
 
 
 
