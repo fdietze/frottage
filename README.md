@@ -9,6 +9,7 @@ Regularly updated AI stuff.
 <img src="https://fdietze.github.io/frottage/wallpapers/wallpaper-desktop-light-latest.jpg" height="200" />
 <img src="https://fdietze.github.io/frottage/wallpapers/wallpaper-mobile-latest.jpg" height="200" />
 <img src="https://fdietze.github.io/frottage/wallpapers/wallpaper-mobile-homescreen-latest.jpg" height="200" />
+<img src="https://fdietze.github.io/frottage/wallpapers/wallpaper-mobile-watch-latest.jpg" height="200" />
 </div>
 
 [view prompts](/prompts.json), [view schedule](/.github/workflows/generate-wallpapers.yml#L6)
