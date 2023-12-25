@@ -25,33 +25,40 @@ interface Target {
   aspectRatio: string;
 }
 
-
-function constructMjPrompt(prompt: Prompt, renderedPrompt: string, target: Target): string {
+function constructMjPrompt(
+  prompt: Prompt,
+  renderedPrompt: string,
+  target: Target,
+): string {
   let mjPrompt = renderedPrompt;
-  if (prompt.negativePrompt) { mjPrompt += ` --no ${prompt.negativePrompt}`; }
-  if (prompt.params?.chaos) { mjPrompt += ` --chaos ${prompt.params.chaos}`; }
-  if (prompt.params?.weird) { mjPrompt += ` --weird ${prompt.params.weird}`; }
+  if (prompt.negativePrompt) mjPrompt += ` --no ${prompt.negativePrompt}`;
+  if (prompt.params?.chaos) mjPrompt += ` --chaos ${prompt.params.chaos}`;
+  if (prompt.params?.weird) mjPrompt += ` --weird ${prompt.params.weird}`;
   mjPrompt += ` --aspect ${target.aspectRatio}`;
   return mjPrompt;
 }
 
-
-
-
 async function main() {
   // TODO: validate all jsons against interfaces
   // ./propmts.json is a newline separated list of prompts
-  const promptDefinitions: Array<Prompt> = fs.readFileSync("./prompts.json", "utf8").trim().split("\n").map((line) => JSON.parse(line));
+  const promptDefinitions: Array<Prompt> = fs.readFileSync(
+    "./prompts.json",
+    "utf8",
+  ).trim().split("\n").map((line) => JSON.parse(line));
   // ./targets.json is a newline separated list of targets
-  const targetDefinitions: Array<Target> = fs.readFileSync("./targets.json", "utf8").trim().split("\n").map((line) => JSON.parse(line));
+  const targetDefinitions: Array<Target> = fs.readFileSync(
+    "./targets.json",
+    "utf8",
+  ).trim().split("\n").map((line) => JSON.parse(line));
   const targetPromptMap = targetPrompts(promptDefinitions);
 
   // random prompt for every target
-  const promptTemplates: Array<{ target: Target; promptTemplate: Prompt }> = targetDefinitions.map((target) => {
-    const prompts = targetPromptMap.get(target.name)!;
-    const prompt = prompts[getRandomIndex(prompts.length)];
-    return { target: target, promptTemplate: prompt };
-  });
+  const promptTemplates: Array<{ target: Target; promptTemplate: Prompt }> =
+    targetDefinitions.map((target) => {
+      const prompts = targetPromptMap.get(target.name)!;
+      const prompt = prompts[getRandomIndex(prompts.length)];
+      return { target: target, promptTemplate: prompt };
+    });
 
   console.log("prompt templates:", promptTemplates);
 
@@ -69,37 +76,50 @@ async function main() {
   await Mj.connect({ Debug: false }, async (client) => {
     await client.Relax();
     let lastFinishedPromptCount = 0;
-    await sleepMs(3000);
+    await sleepMs(13000);
     // iterate until all prompts have been generated
     while (prompts.some((prompt) => !prompt.imageUrl)) {
       // schedule all prompts in parallel
       prompts = await Promise.all(
         prompts.map(async (prompt, i) => {
-          // start each prompt 5 seconds apart
-          await sleepMs(i * 5000);
+          // start each prompt some seconds apart
+          await sleepMs(i * 12000);
 
           try {
             // template rendering might crash if dependencies on other prompts are not yet available
             const renderedPrompt = prompt.renderedPrompt ?? render(
               prompt.target.name,
               prompt.promptTemplate.prompt,
-              prompts.map((p) => ({ target: p.target.name, renderedPrompt: p.renderedPrompt, imageUrl: p.imageUrl })),
+              prompts.map((p) => ({
+                target: p.target.name,
+                renderedPrompt: p.renderedPrompt,
+                imageUrl: p.imageUrl,
+              })),
             );
 
-            const finalMjPrompt = constructMjPrompt(prompt.promptTemplate, renderedPrompt, prompt.target);
+            const finalMjPrompt = constructMjPrompt(
+              prompt.promptTemplate,
+              renderedPrompt,
+              prompt.target,
+            );
 
             const imaginedUrl = prompt.imageUrl ?? await retry(
               () =>
                 timeout(
                   async () => {
-                    const uri = (await Mj.imagineAndUpscale(client, finalMjPrompt)).uri
+                    const upscaled = await Mj.imagineAndUpscale(
+                      client,
+                      finalMjPrompt,
+                    );
+                    // const upscaled4x = await Mj.upscale4x(client, upscaled);
+                    const uri = upscaled.uri;
                     displayRemoteImage(uri);
                     return uri;
                   },
-                  1000 * 60 * 15,
+                  1000 * 60 * 25,
                   `${renderedPrompt}`,
                 ),
-              5,
+              3,
               `${renderedPrompt}`,
             );
             return { ...prompt, renderedPrompt, imageUrl: imaginedUrl };
@@ -107,9 +127,10 @@ async function main() {
             // "could not find imageUrl from" is an expected error
             // in case the rendered image from another prompt is not yet available
             if (e.message.startsWith("could not find imageUrl from")) {
-              console.log("  skipping prompt generation because of missing imageUrl. Retry in next iteration...");
-            }
-            else {
+              console.log(
+                "  skipping prompt generation because of missing imageUrl. Retry in next iteration...",
+              );
+            } else {
               console.log(e);
               console.log(
                 "  error. retrying prompt generation in next iteration...",
@@ -143,6 +164,10 @@ async function main() {
           imaginedUrl,
           `wallpapers/wallpaper-${prompt.target.name}-original.png`,
         );
+        // await download(
+        //   imaginedUrl,
+        //   `wallpapers/wallpaper-${prompt.target.name}-latest.png`, // upscaled 4x is actually .webp
+        // );
 
         await upscale(
           `wallpapers/wallpaper-${prompt.target.name}-original.png`,
