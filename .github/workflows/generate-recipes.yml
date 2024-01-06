@@ -35,7 +35,7 @@ jobs:
           set -e
           npx ts-node generate-recipes.ts
           rm -f recipe/.gitignore
-          mogrify -format jpg -quality 95 recipe/*.png
+          # mogrify -format jpg -quality 95 recipe/*.png
           ls -la recipe
         env:
           OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
@@ -55,5 +55,5 @@ jobs:
         uses: JamesIves/github-pages-deploy-action@v4
         with:
           folder: static
-          clean: false # keep old files if not overridden
+          clean: true # keep old files if not overridden
           single-commit: true # don't keep history
