@@ -9,6 +9,7 @@ import { sleepMs } from "./util";
 const openai = new OpenAI({
   // apiKey: 'My API Key', // defaults to process.env["OPENAI_API_KEY"]
 });
+const gptmodel = "gpt-4-1106-preview";
 
 const dishes = [
   "Sweet Breakfast",
@@ -80,15 +81,15 @@ function renderHtmlRecipe(
   ${
     dishes.map((d) => `<a href="${toSnakeCase(d)}.html">${d}</a>`).join(" | ")
   }<br />
-  <h1>${dish} of the day</h1>
+  <h2>${dish} of the day</h2>
   ${
     imagePath
-      ? `<a hre= "${imagePath}" > <img src="${imagePath} " style = "border - radius: 10px; width: 600px; margin - top: 15px; " /> </a><br / >`
+      ? `<a href="${imagePath}"><img src="${imagePath}" style="border-radius: 10px; width: 600px; margin-top: 15px;"/></a><br/>`
       : ""
   }
   ${recipeHtml}
 </body>
-  < /html>
+  </html>
     `.trim();
   return html;
 }
@@ -105,7 +106,7 @@ async function generateName(dish: string) {
   }];
   const completion = await openai.chat.completions.create({
     messages: messages,
-    model: "gpt-4",
+    model: gptmodel,
   });
 
   const name = completion.choices[0].message.content;
@@ -123,7 +124,7 @@ async function generateIngredients(name: string) {
   }];
   const completion = await openai.chat.completions.create({
     messages: messages,
-    model: "gpt-4",
+    model: gptmodel,
   });
 
   return completion.choices[0].message.content;
@@ -141,7 +142,7 @@ async function generateRecipe(name: string, ingredients: string) {
   ];
   const completion = await openai.chat.completions.create({
     messages: messages,
-    model: "gpt-4",
+    model: gptmodel,
   });
 
   return completion.choices[0].message.content;
@@ -155,7 +156,7 @@ async function generatePictureDescription(recipe: string) {
   }];
   const completion = await openai.chat.completions.create({
     messages: messages,
-    model: "gpt-4",
+    model: gptmodel,
   });
 
   return completion.choices[0].message.content;
