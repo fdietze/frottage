@@ -55,5 +55,5 @@ jobs:
         uses: JamesIves/github-pages-deploy-action@v4
         with:
           folder: static
-          clean: true # keep old files if not overridden
+          clean: false # keep old files if not overridden
           single-commit: true # don't keep history
