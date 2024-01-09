@@ -1,0 +1,13 @@
+{
+  "template": {
+    "prompt": "fluid simulation, tesselation, 3d",
+    "params": {
+      "chaos": 40
+    },
+    "targets": [
+      "mobile",
+      "desktop"
+    ]
+  },
+  "prompt": "fluid simulation, tesselation, 3d"
+}

@@ -1,0 +1,12 @@
+{
+  "template": {
+    "prompt": "white background, <%= promptFrom('desktop') %>",
+    "params": {
+      "chaos": 30
+    },
+    "targets": [
+      "desktop-light"
+    ]
+  },
+  "prompt": "white background, fluid simulation, tesselation, 3d"
+}

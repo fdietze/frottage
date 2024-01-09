@@ -1,0 +1,13 @@
+{
+  "template": {
+    "prompt": "shattered glass, tessellation, 3d, bokeh",
+    "params": {
+      "chaos": 20
+    },
+    "targets": [
+      "mobile",
+      "desktop"
+    ]
+  },
+  "prompt": "shattered glass, tessellation, 3d, bokeh"
+}
