@@ -1,10 +1,13 @@
 { "prompt": "wallpaper, frottage", "negativePrompt": "person, woman, building, furniture", "params": { "chaos": 40 }, "targets": [ "mobile", "desktop" ] }
 { "prompt": "harmonious chaos, fragmental tessalations, frottage", "params": { "chaos": 20 }, "targets": [ "mobile", "desktop" ] }
+{ "prompt": "harmonious chaos, fragmental tessalations, nano particles", "params": { "chaos": 20 }, "targets": [ "mobile", "desktop" ] }
 { "prompt": "harmonious chaos, fragmental tessalations, frottage, <%= random(colors) %> color", "params": { "chaos": 20 }, "targets": [ "mobile", "desktop" ] }
-{ "prompt": "<%= random(['chaos', 'tesselation', 'explosion', 'causality', 'orb', 'physics', 'recursion', 'random noise']) %>, <%= random(artStyles) %>", "negativePrompt": "woman", "params": { "chaos": 20 }, "targets": [ "mobile", "desktop" ] }
-{ "prompt": "combinatorial explosion, abstract art", "params": { "chaos": 20 }, "targets": [ "mobile", "desktop" ] }
+{ "prompt": "chaotic particles", "negativePrompt": "people, face", "params": { "chaos": 20 }, "targets": [ "mobile", "desktop" ] }
+{ "prompt": "tesselation", "negativePrompt": "people, face", "params": { "chaos": 20 }, "targets": [ "mobile", "desktop" ] }
+{ "prompt": "recursion", "negativePrompt": "people, face", "params": { "chaos": 20 }, "targets": [ "mobile", "desktop" ] }
+{ "prompt": "random noise", "negativePrompt": "people, face", "params": { "chaos": 20 }, "targets": [ "mobile", "desktop" ] }
 { "prompt": "fluid simulation, tesselation, 3d", "params": { "chaos": 40 }, "targets": [ "mobile", "desktop" ] }
-{ "prompt": "wallpaper", "negativePrompt": "architecture", "params": { "chaos": 20 }, "targets": [ "mobile" ] }
+{ "prompt": "wallpaper", "negativePrompt": "people, face, architecture", "params": { "chaos": 20 }, "targets": [ "mobile" ] }
 { "prompt": "4k wallpaper", "params": { "chaos": 20 }, "targets": [ "desktop" ] }
 { "prompt": "4k wallpaper, lights", "params": { "chaos": 20 }, "targets": [ "desktop" ] }
 { "prompt": "psychedelic wallpaper, patterns", "negativePrompt": "people,face", "params": {"chaos": 10}, "targets": [ "desktop", "mobile", "watch" ] }
@@ -14,15 +17,14 @@
 { "prompt": "synesthesia, abstract, psychedelic", "negativePrompt": "person, woman", "params": {}, "targets": [ "desktop", "mobile" ] }
 { "prompt": "synesthesia, abstract, psychedelic", "negativePrompt": "person, woman", "params": { "chaos": 40 }, "targets": [ "desktop", "mobile" ] }
 { "prompt": "dream landscape, hyperrealistic", "params": { "chaos": 10 }, "targets": [ "desktop", "mobile" ] }
-{ "prompt": "midjourney", "negativePrompt": "woman, man, boy, girl, person", "params": { "chaos": 20 }, "targets": [ "mobile", "desktop" ] }
-{ "prompt": "imagination", "negativePrompt": "woman, man, boy, girl, person", "params": { "chaos": 20 }, "targets": [ "mobile", "desktop" ] }
-{ "prompt": "shattered glass, tessellation, 3d, bokeh", "params": { "chaos": 20 }, "targets": [ "mobile", "desktop" ] }
-{ "prompt": "life of the fea, filled with life, plants, fireflies", "negativePrompt": "person", "params": { "chaos": 36, "stylize": 9 }, "targets": [ "desktop" ] }
+{ "prompt": "midjourney", "negativePrompt": "people, face", "params": { "chaos": 20 }, "targets": [ "mobile", "desktop" ] }
+{ "prompt": "imagination", "negativePrompt": "people, face", "params": { "chaos": 20 }, "targets": [ "mobile", "desktop" ] }
+{ "prompt": "shattered glass, tessellation, 3d, bokeh", "params": { "chaos": 30 }, "targets": [ "mobile", "desktop" ] }
 { "prompt": "crazy futuristic <%= random(fruits.concat(vegetables)) %> machine, complicated, <%= random(artStyles) %>", "targets": [ "desktop" ] }
-{ "prompt": "collision of fire and water, psychedelic", "params": { "chaos": 30 }, "targets": [ "mobile", "desktop" ] }
-{ "prompt": "meteor flying through hyperspace, <%= random(artStyles) %>", "negativePrompt": "person", "params": { "chaos": 15 }, "targets": [ "mobile", "desktop" ] }
-{ "prompt": "large exotic butterflies covering screen, diverse, digital art", "params": { "chaos": 20 }, "targets": [ "mobile" ] }
-{ "prompt": "glowing circuitry, synthwave, <%= random(colors) %> color", "params": { "chaos": 30 }, "targets": [ "mobile", "desktop" ] }
+{ "prompt": "collision of fire and water, psychedelic", "negativePrompt": "people, face", "params": { "chaos": 30 }, "targets": [ "mobile", "desktop" ] }
+{ "prompt": "meteor flying through hyperspace, Art Brut", "params": { "chaos": 20 }, "targets": [ "mobile", "desktop" ] }
+{ "prompt": "large exotic butterflies covering screen, diverse, digital art", "params": { "chaos": 30 }, "targets": [ "mobile" ] }
+{ "prompt": "glowing circuitry, synthwave, <%= random(colors) %> color", "params": { "chaos": 40 }, "targets": [ "mobile", "desktop" ] }
 { "prompt": "<%= imageFrom('mobile') %> wood texture, shades of brown", "negativePrompt": "woman", "params": { "imageWeight": 1.5 }, "targets": [ "mobile-homescreen" ] }
 { "prompt": "<%= imageFrom('mobile') %> stone texture, shades of gray", "negativePrompt": "woman", "params": { "imageWeight": 1.5 }, "targets": [ "mobile-homescreen" ] }
 { "prompt": "<%= imageFrom('mobile') %> tiling wall structure, shades of gray", "negativePrompt": "woman", "params": { "imageWeight": 1.5 }, "targets": [ "mobile-homescreen" ] }
@@ -30,29 +32,17 @@
 { "prompt": "https://cdn.discordapp.com/attachments/1094892992281718894/1144382764674711634/felixdietze_wood_texture_1825beac-24ad-40bd-b3ba-b4666943a4e6.png <%= promptFrom('mobile') %>", "params": { "imageWeight": 0.5 }, "targets": [ "mobile-homescreen" ] }
 { "prompt": "ocean landscape on an different planet, <%= random(artStyles) %>", "params": { "chaos": 1 }, "targets": [ "desktop" ] }
 { "prompt": "white background, <%= promptFrom('desktop') %>", "params": { "chaos": 30 }, "targets": [ "desktop-light" ] }
-{ "prompt": "<%= dayOfWeekCEST %> funny work life", "params": { "chaos": 20 }, "targets": [ "desktop" ] }
 { "prompt": "room with crazy painting", "params": { "chaos": 10 }, "targets": [ "desktop" ] }
 { "prompt": "psychedelic still life", "params": { "chaos": 10 }, "targets": [ "desktop" ] }
 { "prompt": "multicolor microscopy", "params": {}, "targets": [ "desktop", "mobile" ] }
-{ "prompt": "psychedelic fossils", "params": {"chaos": 30}, "targets": [ "desktop", "mobile" ] }
 { "prompt": "psychedelic plants", "params": {}, "targets": [ "desktop", "mobile" ] }
 { "prompt": "psychedelic planet, close-up", "params": {}, "targets": [ "desktop", "mobile" ] }
-{ "prompt": "deep space, colorful", "negativePrompt": "person", "params": {}, "targets": [ "desktop", "mobile" ] }
 { "prompt": "nano particles", "params": {}, "targets": [ "desktop", "mobile" ] }
-{ "prompt": "meditation, microscopic", "params": {}, "targets": [ "desktop", "mobile" ] }
-{ "prompt": "psychedelic, supernova", "params": {}, "targets": [ "desktop", "mobile" ] }
-{ "prompt": "digital, melancholy", "negativePrompt": "woman, man, boy, girl, person", "params": {}, "targets": [ "desktop", "mobile" ] }
-{ "prompt": "quantized, microorganisms", "params": {}, "targets": [ "desktop", "mobile" ] }
-{ "prompt": "information flow in cyberspace", "params": {"chaos": 30}, "targets": [ "desktop" ] }
-{ "prompt": "pure chaos, wholesome", "params": {"chaos": 10}, "targets": [ "desktop" ] }
-{ "prompt": "Burnett baronets", "params": {"chaos": 10}, "targets": [ "desktop" ] }
-{ "prompt": "crystallization, fractal, psychedelic", "params": {"chaos": 10}, "targets": [ "desktop", "mobile" ] }
+{ "prompt": "micro particles", "params": {}, "targets": [ "desktop", "mobile" ] }
+{ "prompt": "meditation, microscopic", "negativePrompt": "people, face", "params": {}, "targets": [ "desktop", "mobile" ] }
+{ "prompt": "psychedelic, supernova", "negativePrompt": "people, face", "params": {}, "targets": [ "desktop", "mobile" ] }
 { "prompt": "dislocation, linear crystallographic defect, wallpaper", "params": {"chaos": 10}, "targets": [ "desktop", "mobile" ] }
 { "prompt": "antimatter, antisymmetry, wallpaper", "params": {"chaos": 10}, "targets": [ "desktop" ] }
-{ "prompt": "Dense crystallographic planes", "params": {"chaos": 10}, "targets": [ "desktop", "mobile" ] }
 { "prompt": "future lattice", "negativePrompt": "person", "params": {"chaos": 10}, "targets": [ "desktop" ] }
-{ "prompt": "Amorphous brazing foil, wallpaper", "negativePrompt": "furniture", "params": {"chaos": 10}, "targets": [ "mobile" ] }
-{ "prompt": "Amorphous brazing foil, wallpaper, psychedelic", "negativePrompt": "furniture", "params": {"chaos": 10}, "targets": [ "mobile", "desktop" ] }
-{ "prompt": "futuristic, nether, aether, matrix, wallpaper", "negativePrompt": "person, gloomy, dismal", "params": {"chaos": 10}, "targets": [ "mobile", "desktop" ] }
-{ "prompt": "dangerous crazy psychedelic jungle chaos", "params": {"chaos": 20}, "targets": [ "mobile", "desktop" ] }
+{ "prompt": "futuristic, nether, aether, matrix, wallpaper", "negativePrompt": "person, gloomy, dismal", "params": {"chaos": 10}, "targets": [ "desktop" ] }
 
