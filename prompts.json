@@ -43,6 +43,6 @@
 { "prompt": "psychedelic, supernova", "negativePrompt": "people, face", "params": {}, "targets": [ "desktop", "mobile" ] }
 { "prompt": "dislocation, linear crystallographic defect, wallpaper", "params": {"chaos": 10}, "targets": [ "desktop", "mobile" ] }
 { "prompt": "antimatter, antisymmetry, wallpaper", "params": {"chaos": 10}, "targets": [ "desktop" ] }
-{ "prompt": "future lattice", "negativePrompt": "person", "params": {"chaos": 10}, "targets": [ "desktop" ] }
+{ "prompt": "future lattice", "negativePrompt": "people, face", "params": {"chaos": 10}, "targets": [ "desktop" ] }
 { "prompt": "futuristic, nether, aether, matrix, wallpaper", "negativePrompt": "person, gloomy, dismal", "params": {"chaos": 10}, "targets": [ "desktop" ] }
 
