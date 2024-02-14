@@ -30,7 +30,7 @@
 { "prompt": "<%= imageFrom('mobile') %> shades of pastel colors", "negativePrompt": "woman", "negativePrompt": "vivid colors, person", "params": { "imageWeight": 1.5 }, "targets": [ "mobile-homescreen" ] }
 { "prompt": "https://cdn.discordapp.com/attachments/1094892992281718894/1144382764674711634/felixdietze_wood_texture_1825beac-24ad-40bd-b3ba-b4666943a4e6.png <%= promptFrom('mobile') %>", "params": { "imageWeight": 0.5 }, "targets": [ "mobile-homescreen" ] }
 { "prompt": "ocean landscape on an different planet, <%= random(artStyles) %>", "params": { "chaos": 1 }, "targets": [ "desktop" ] }
-{ "prompt": "white background, <%= promptFrom('desktop') %>", "params": { "chaos": 30 }, "targets": [ "desktop-light" ] }
+{ "prompt": "fragmental tesselation, depth, open, abstract, white structure, radiosity, ambient occlusion, color bleeding, outside, summer, saturated", "params": {"chaos": 10}, "targets": [ "desktop-light" ] }
 { "prompt": "room with crazy painting", "params": { "chaos": 10 }, "targets": [ "desktop" ] }
 { "prompt": "psychedelic still life", "params": { "chaos": 10 }, "targets": [ "desktop" ] }
 { "prompt": "multicolor microscopy", "params": {}, "targets": [ "desktop", "mobile" ] }
@@ -45,4 +45,5 @@
 { "prompt": "antimatter, antisymmetry, wallpaper", "params": {"chaos": 10}, "targets": [ "desktop" ] }
 { "prompt": "future lattice", "negativePrompt": "people, face", "params": {"chaos": 10}, "targets": [ "desktop" ] }
 { "prompt": "futuristic, nether, aether, matrix, wallpaper", "negativePrompt": "person, gloomy, dismal", "params": {"chaos": 10}, "targets": [ "desktop" ] }
+{ "prompt": "fragmental tesselation, depth, open, abstract, black structure, radiosity, ambient occlusion, color bleeding, outside, summer, saturated", "params": {"chaos": 20}, "targets": [ "desktop", "mobile" ] }
 
