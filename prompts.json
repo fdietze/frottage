@@ -45,5 +45,5 @@
 { "prompt": "antimatter, antisymmetry, wallpaper", "params": {"chaos": 10}, "targets": [ "desktop" ] }
 { "prompt": "future lattice", "negativePrompt": "people, face", "params": {"chaos": 10}, "targets": [ "desktop" ] }
 { "prompt": "futuristic, nether, aether, matrix, wallpaper", "negativePrompt": "person, gloomy, dismal", "params": {"chaos": 10}, "targets": [ "desktop" ] }
-{ "prompt": "fragmental tesselation, depth, open, abstract, black structure, radiosity, ambient occlusion, color bleeding, outside, summer, saturated", "params": {"chaos": 10}, "targets": [ "desktop", "mobile" ] }
+{ "prompt": "fragmental tesselation, depth, open, abstract, black structure, radiosity, ambient occlusion, outside, summer, saturated", "params": {"chaos": 10}, "targets": [ "desktop", "mobile" ] }
 
