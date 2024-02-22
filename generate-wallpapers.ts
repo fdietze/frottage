@@ -35,7 +35,7 @@ function constructMjPrompt(
   if (prompt.params?.chaos) mjPrompt += ` --chaos ${prompt.params.chaos}`;
   if (prompt.params?.weird) mjPrompt += ` --weird ${prompt.params.weird}`;
   mjPrompt += ` --aspect ${target.aspectRatio}`;
-  mjPrompt += ` --V 5.2`;
+  mjPrompt += ` --v 5.2`;
   return mjPrompt;
 }
 
