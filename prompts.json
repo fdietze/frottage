@@ -4,7 +4,6 @@
 { "prompt": "harmonious chaos, fragmental tessalations, frottage, <%= random(colors) %> color", "params": { "chaos": 20 }, "targets": [ "mobile", "desktop" ] }
 { "prompt": "chaotic particles", "negativePrompt": "people, face", "params": { "chaos": 20 }, "targets": [ "mobile", "desktop" ] }
 { "prompt": "tesselation", "negativePrompt": "people, face", "params": { "chaos": 20 }, "targets": [ "mobile", "desktop" ] }
-{ "prompt": "recursion", "negativePrompt": "people, face", "params": { "chaos": 20 }, "targets": [ "mobile", "desktop" ] }
 { "prompt": "random noise", "negativePrompt": "people, face", "params": { "chaos": 20 }, "targets": [ "mobile", "desktop" ] }
 { "prompt": "fluid simulation, tesselation, 3d", "params": { "chaos": 40 }, "targets": [ "mobile", "desktop" ] }
 { "prompt": "wallpaper", "negativePrompt": "people, face, architecture", "params": { "chaos": 20 }, "targets": [ "mobile" ] }
