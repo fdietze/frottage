@@ -11,10 +11,8 @@
 { "prompt": "psychedelic wallpaper, patterns", "negativePrompt": "people,face", "params": {"chaos": 10}, "targets": [ "desktop", "mobile", "watch" ] }
 { "prompt": "psychedelic landscape", "negativePrompt": "people,face", "params": {"chaos": 30}, "targets": [ "desktop", "mobile" ] }
 { "prompt": "psychedelic dream, abstract", "negativePrompt": "person", "params": {"chaos": 30}, "targets": [ "desktop", "mobile" ] }
-
 { "prompt": "synesthesia, abstract", "negativePrompt": "people, face", "params": { "chaos": 30 }, "targets": [ "desktop", "mobile" ] }
 { "prompt": "synesthesia, abstract, psychedelic", "negativePrompt": "people, face", "params": {}, "targets": [ "desktop", "mobile" ] }
-
 { "prompt": "midjourney", "negativePrompt": "people, face", "params": { "chaos": 20 }, "targets": [ "desktop" ] }
 { "prompt": "imagination", "negativePrompt": "people,face", "params": { "chaos": 20 }, "targets": [ "desktop" ] }
 { "prompt": "shattered glass, tessellation, 3d, bokeh", "params": { "chaos": 30 }, "targets": [ "mobile", "desktop" ] }
@@ -45,4 +43,5 @@
 { "prompt": "antimatter, antisymmetry, wallpaper", "params": {"chaos": 10}, "targets": [ "desktop" ] }
 { "prompt": "future lattice", "negativePrompt": "people, face", "params": {"chaos": 10}, "targets": [ "desktop" ] }
 { "prompt": "futuristic, nether, aether, matrix, wallpaper", "negativePrompt": "person, gloomy, dismal", "params": {"chaos": 10}, "targets": [ "desktop" ] }
-{ "prompt": "fragmental tesselation, depth, open, abstract, black structure, radiosity, ambient occlusion, outside, summer, saturated", "params": {"chaos": 10}, "targets": [ "desktop" ] }
+{ "prompt": "fragmental tesselation, depth, open, abstract, black structure, radiosity, ambient occlusion, saturated, design", "params": {"chaos": 10}, "targets": [ "desktop" ] }
+
