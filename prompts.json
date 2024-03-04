@@ -6,7 +6,6 @@
 { "prompt": "tesselation", "negativePrompt": "people, face", "params": { "chaos": 20 }, "targets": [ "mobile", "desktop" ] }
 { "prompt": "random noise, abstract", "negativePrompt": "people, face", "params": { "chaos": 20 }, "targets": [ "mobile", "desktop" ] }
 { "prompt": "fluid simulation, tesselation, 3d", "params": { "chaos": 40 }, "targets": [ "mobile", "desktop" ] }
-{ "prompt": "wallpaper", "negativePrompt": "people, face, architecture", "params": { "chaos": 20 }, "targets": [ "mobile" ] }
 { "prompt": "4k wallpaper", "params": { "chaos": 20 }, "targets": [ "desktop" ] }
 { "prompt": "4k wallpaper, lights", "params": { "chaos": 20 }, "targets": [ "desktop" ] }
 { "prompt": "psychedelic wallpaper, patterns", "negativePrompt": "people,face", "params": {"chaos": 10}, "targets": [ "desktop", "mobile", "watch" ] }
