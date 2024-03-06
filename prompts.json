@@ -35,7 +35,7 @@
 { "prompt": "cyberspace, abstract", "params": {}, "targets": [ "desktop", "mobile" ] }
 { "prompt": "quarks", "params": {}, "targets": [ "desktop", "mobile" ] }
 { "prompt": "caustics", "params": {}, "targets": [ "desktop", "mobile" ] }
-{ "prompt": "particles, bokeh", "params": {"chaos": 20}, "targets": [ "desktop", "mobile" ] }
+{ "prompt": "crazy futuristic particles, bokeh", "params": {"chaos": 20}, "targets": [ "desktop", "mobile" ] }
 { "prompt": "meditation, microscopic", "negativePrompt": "people, face", "params": {}, "targets": [ "desktop", "mobile" ] }
 { "prompt": "psychedelic, supernova", "negativePrompt": "people, face", "params": {"chaos": 20}, "targets": [ "desktop", "mobile" ] }
 { "prompt": "light confusion, abstract", "negativePrompt": "people, face", "params": {"chaos": 10}, "targets": [ "desktop", "mobile" ] }
