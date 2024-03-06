@@ -8,7 +8,8 @@
 { "prompt": "fluid simulation, tesselation, 3d", "params": { "chaos": 40 }, "targets": [ "mobile", "desktop" ] }
 { "prompt": "4k wallpaper", "params": { "chaos": 20 }, "targets": [ "desktop" ] }
 { "prompt": "4k wallpaper, lights", "params": { "chaos": 20 }, "targets": [ "desktop" ] }
-{ "prompt": "psychedelic wallpaper, patterns", "negativePrompt": "people,face", "params": {"chaos": 10}, "targets": [ "desktop", "mobile", "watch" ] }
+{ "prompt": "psychedelic wallpaper, patterns", "negativePrompt": "people,face", "params": {"chaos": 10}, "targets": [ "watch" ] }
+{ "prompt": "colorful and abstract poster, light and space movement, elongated forms, detailed dreamscapes, nightscape", "params": {"chaos": 10}, "targets": [ "mobile", "desktop" ] }
 { "prompt": "psychedelic landscape", "negativePrompt": "people,face", "params": {"chaos": 30}, "targets": [ "desktop", "mobile" ] }
 { "prompt": "psychedelic dream, abstract", "negativePrompt": "person", "params": {"chaos": 30}, "targets": [ "desktop", "mobile" ] }
 { "prompt": "synesthesia, abstract", "negativePrompt": "people, face", "params": { "chaos": 30 }, "targets": [ "desktop", "mobile" ] }
@@ -21,7 +22,6 @@
 { "prompt": "meteor flying through hyperspace, Art Brut", "params": { "chaos": 20 }, "targets": [ "mobile", "desktop" ] }
 { "prompt": "glowing circuitry", "negativePrompt": "people,face", "params": { "chaos": 30 }, "targets": [ "mobile", "desktop" ] }
 { "prompt": "ocean landscape on an different planet, <%= random(artStyles) %>", "params": { "chaos": 1 }, "targets": [ "desktop" ] }
-{ "prompt": "fragmental tesselation, depth, open, abstract, white structure, radiosity, ambient occlusion, color bleeding, outside, summer, saturated, design", "params": {"chaos": 10}, "targets": [ "desktop-light" ] }
 { "prompt": "room with crazy painting", "params": { "chaos": 10 }, "targets": [ "desktop" ] }
 { "prompt": "psychedelic still life", "params": { "chaos": 10 }, "targets": [ "desktop" ] }
 { "prompt": "multicolor microscopy", "params": {}, "targets": [ "desktop" ] }
@@ -44,4 +44,5 @@
 { "prompt": "future lattice", "negativePrompt": "people, face", "params": {"chaos": 10}, "targets": [ "desktop" ] }
 { "prompt": "futuristic, nether, aether, matrix, wallpaper", "negativePrompt": "person, gloomy, dismal", "params": {"chaos": 10}, "targets": [ "desktop" ] }
 { "prompt": "fragmental tesselation, depth, open, abstract, black structure, radiosity, ambient occlusion, saturated, design", "params": {"chaos": 10}, "targets": [ "desktop" ] }
-
+{ "prompt": "colorful and abstract poster, light and space movement, elongated forms, detailed daylight dreamscapes, dayscape", "params": {"chaos": 10}, "targets": [ "desktop-light" ] }
+{ "prompt": "fragmental tesselation, depth, open, abstract, white structure, radiosity, ambient occlusion, color bleeding, outside, summer, saturated, design", "params": {"chaos": 10}, "targets": [ "desktop-light" ] }
