@@ -43,7 +43,7 @@ jobs:
           convert wallpapers/wallpaper-mobile-latest.webp -blur 0x64 -modulate 100,150,100 wallpapers/wallpaper-mobile-homescreen-latest.webp
           rm -f wallpapers/.gitignore
           mogrify -format jpg -quality 95 wallpapers/*.webp
-          ls -la wallpapers
+          ls -lha wallpapers
         env:
           SERVER_ID: ${{ secrets.SERVER_ID }}
           CHANNEL_ID: ${{ secrets.CHANNEL_ID }}
