@@ -112,8 +112,8 @@ async function main() {
                       client,
                       finalMjPrompt,
                     );
-                    // const upscaled4x = await Mj.upscale4x(client, upscaled);
-                    const uri = upscaled.uri;
+                    const upscaled4x = await Mj.upscale4x(client, upscaled);
+                    const uri = upscaled4x.uri;
                     displayRemoteImage(uri);
                     return uri;
                   },
@@ -161,19 +161,19 @@ async function main() {
     prompts.map(async (prompt) => {
       const imaginedUrl = prompt.imageUrl;
       if (imaginedUrl) {
-        await download(
-          imaginedUrl,
-          `wallpapers/wallpaper-${prompt.target.name}-original.png`,
-        );
         // await download(
         //   imaginedUrl,
-        //   `wallpapers/wallpaper-${prompt.target.name}-latest.png`, // upscaled 4x is actually .webp
+        //   `wallpapers/wallpaper-${prompt.target.name}-original.png`,
         // );
-
-        await upscale(
-          `wallpapers/wallpaper-${prompt.target.name}-original.png`,
-          `wallpapers/wallpaper-${prompt.target.name}-latest.png`,
+        await download(
+          imaginedUrl,
+          `wallpapers/wallpaper-${prompt.target.name}-latest.webp`, // upscaled 4x is actually .webp
         );
+
+        // await upscale(
+        //   `wallpapers/wallpaper-${prompt.target.name}-original.png`,
+        //   `wallpapers/wallpaper-${prompt.target.name}-latest.png`,
+        // );
       }
     }),
   );
