@@ -25,6 +25,7 @@
 { "prompt": "room with crazy painting", "params": { "chaos": 10 }, "targets": [ "desktop" ] }
 { "prompt": "psychedelic still life", "params": { "chaos": 10 }, "targets": [ "desktop" ] }
 { "prompt": "multicolor microscopy", "params": {}, "targets": [ "desktop" ] }
+{ "prompt": "intricate abstract machine", "params": {"chaos": 20}, "targets": [ "desktop", "mobile" ] }
 { "prompt": "psychedelic plants", "params": {}, "targets": [ "desktop", "mobile" ] }
 { "prompt": "psychedelic planet, close-up", "params": {}, "targets": [ "desktop", "mobile" ] }
 { "prompt": "nano particles", "params": {"chaos": 20}, "targets": [ "desktop", "mobile" ] }
