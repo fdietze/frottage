@@ -14,8 +14,8 @@ interface Prompt {
     no?: string;
     chaos?: number;
     weird?: number;
-    imageWeight?: number;
     stylize?: number;
+    model?: string;
   };
   targets: string[];
 }
@@ -34,8 +34,9 @@ function constructMjPrompt(
   if (prompt.params?.no) mjPrompt += ` --no ${prompt.params?.no}`;
   if (prompt.params?.chaos) mjPrompt += ` --chaos ${prompt.params.chaos}`;
   if (prompt.params?.weird) mjPrompt += ` --weird ${prompt.params.weird}`;
+  if (prompt.params?.stylize) mjPrompt += ` --stylize ${prompt.params.stylize}`;
+  if (prompt.params?.model) mjPrompt += ` --version ${prompt.params.model}`;
   mjPrompt += ` --aspect ${target.aspectRatio}`;
-  mjPrompt += ` --v 5.2`;
   return mjPrompt;
 }
 
