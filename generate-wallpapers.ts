@@ -10,8 +10,8 @@ import { displayRemoteImage } from "./image-display";
 
 interface Prompt {
   prompt: string;
-  negativePrompt?: string;
   params?: {
+    no?: string;
     chaos?: number;
     weird?: number;
     imageWeight?: number;
@@ -31,7 +31,7 @@ function constructMjPrompt(
   target: Target,
 ): string {
   let mjPrompt = renderedPrompt;
-  if (prompt.negativePrompt) mjPrompt += ` --no ${prompt.negativePrompt}`;
+  if (prompt.params?.no) mjPrompt += ` --no ${prompt.params?.no}`;
   if (prompt.params?.chaos) mjPrompt += ` --chaos ${prompt.params.chaos}`;
   if (prompt.params?.weird) mjPrompt += ` --weird ${prompt.params.weird}`;
   mjPrompt += ` --aspect ${target.aspectRatio}`;
