@@ -112,9 +112,9 @@ async function main() {
                       client,
                       finalMjPrompt,
                     );
-                    const upscaled4x = await Mj.upscale4x(client, upscaled);
+                    const upscaled4x = await Mj.upscale4x(client, upscaled); // webp
                     const uri = upscaled4x.uri;
-                    displayRemoteImage(uri);
+                    // displayRemoteImage(uri); // does not support webp
                     return uri;
                   },
                   1000 * 60 * 25,
