@@ -9,13 +9,12 @@
 {"prompt":"4k wallpaper","params":{"chaos":20,"model":"5.2"},"targets":["desktop"]}
 {"prompt":"4k wallpaper, lights","params":{"chaos":20,"model":"5.2"},"targets":["desktop"]}
 {"prompt":"psychedelic wallpaper, patterns","params":{"chaos":10,"no":"people,face","model":"5.2"},"targets":["watch"]}
-{"prompt":"colorful and abstract poster, light and space movement, elongated forms, detailed dreamscapes, nightscape","params":{"chaos":10,"model":"5.2"},"targets":["mobile","desktop"]}
+{"prompt":"colorful and abstract poster, light and space movement, elongated forms, detailed dreamscapes, nightscape","params":{"chaos":20,"model":"5.2"},"targets":["mobile","desktop"]}
 {"prompt":"psychedelic landscape","params":{"chaos":30,"no":"people,face","model":"5.2"},"targets":["desktop","mobile"]}
 {"prompt":"psychedelic dream, abstract","params":{"chaos":30,"no":"person","model":"5.2"},"targets":["desktop","mobile"]}
 {"prompt":"synesthesia, abstract","params":{"chaos":30,"no":"people, face","model":"5.2"},"targets":["desktop","mobile"]}
 {"prompt":"synesthesia, abstract, psychedelic","params":{"no":"people, face","model":"5.2"},"targets":["desktop","mobile"]}
 {"prompt":"midjourney","params":{"chaos":20,"no":"people, face","model":"5.2"},"targets":["desktop"]}
-{"prompt":"imagination","params":{"chaos":20,"no":"people,face","model":"5.2"},"targets":["desktop"]}
 {"prompt":"shattered glass, tessellation, 3d, bokeh","params":{"chaos":30,"model":"5.2"},"targets":["mobile","desktop"]}
 {"prompt":"crazy futuristic <%= random(fruits.concat(vegetables)) %> machine, complicated, <%= random(artStyles) %>","targets":["desktop"],"params":{"model":"5.2"}}
 {"prompt":"collision of fire and water, psychedelic","params":{"chaos":30,"no":"people, face","model":"5.2"},"targets":["mobile","desktop"]}
