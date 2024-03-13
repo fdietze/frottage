@@ -118,10 +118,10 @@ async function main() {
                     // displayRemoteImage(uri); // does not support webp
                     return uri;
                   },
-                  1000 * 60 * 25,
+                  1000 * 60 * 60,
                   `${renderedPrompt}`,
                 ),
-              3,
+              1,
               `${renderedPrompt}`,
             );
             return { ...prompt, renderedPrompt, imageUrl: imaginedUrl };
