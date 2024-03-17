@@ -118,6 +118,27 @@ export async function varyRemix(
   return varyCustom;
 }
 
+
+export async function upscale2x(
+  client: Midjourney,
+  upscaled: MJMessage,
+): Promise<MJMessage> {
+  const upscale_button = upscaled?.options?.find((o) =>
+    o.label === "Upscale (2x)"
+  );
+  if (!upscale_button) throw new Error("no upscale button");
+  const upscaled2x = await client.Custom({
+    msgId: <string> upscaled.id,
+    flags: upscaled.flags,
+    customId: upscale_button.custom,
+    loading: (uri: string, progress: string) => {
+      console.log(`upscaling 2x (${progress})`);
+    },
+  });
+  if (!upscaled2x) throw new Error("error upscaling 2x");
+  return upscaled2x;
+}
+
 export async function upscale4x(
   client: Midjourney,
   upscaled: MJMessage,
@@ -126,7 +147,7 @@ export async function upscale4x(
     o.label === "Upscale (4x)"
   );
   if (!upscale_button) throw new Error("no upscale button");
-  const upscaled4k = await client.Custom({
+  const upscaled4x = await client.Custom({
     msgId: <string> upscaled.id,
     flags: upscaled.flags,
     customId: upscale_button.custom,
@@ -134,6 +155,6 @@ export async function upscale4x(
       console.log(`upscaling 4x (${progress})`);
     },
   });
-  if (!upscaled4k) throw new Error("error upscaling 4x");
-  return upscaled4k;
+  if (!upscaled4x) throw new Error("error upscaling 4x");
+  return upscaled4x;
 }
