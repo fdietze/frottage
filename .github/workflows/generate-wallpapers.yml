@@ -40,9 +40,9 @@ jobs:
           set -e
           # npx ts-node generate-wpp.ts
           npx tsx generate-wallpapers.ts
-          convert wallpapers/wallpaper-mobile-latest.webp -blur 0x64 -modulate 100,150,100 wallpapers/wallpaper-mobile-homescreen-latest.webp
+          convert wallpapers/wallpaper-mobile-latest.png -blur 0x64 -modulate 100,150,100 wallpapers/wallpaper-mobile-homescreen-latest.png
           rm -f wallpapers/.gitignore
-          mogrify -format jpg -quality 95 wallpapers/*.webp
+          mogrify -format jpg -quality 95 wallpapers/*.png
           ls -lha wallpapers
         env:
           SERVER_ID: ${{ secrets.SERVER_ID }}
