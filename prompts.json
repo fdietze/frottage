@@ -15,7 +15,6 @@
 {"prompt":"synesthesia, abstract, psychedelic","params":{"no":"people, face","model":"5.2"},"targets":["desktop","mobile"]}
 {"prompt":"midjourney","params":{"chaos":20,"no":"people, face","model":"5.2"},"targets":["desktop"]}
 {"prompt":"shattered glass, tessellation, 3d, bokeh","params":{"chaos":30,"model":"5.2"},"targets":["mobile","desktop"]}
-{"prompt":"crazy futuristic <%= random(fruits.concat(vegetables)) %> machine, complicated, <%= random(artStyles) %>","targets":["desktop"],"params":{"model":"5.2"}}
 {"prompt":"collision of fire and water, psychedelic","params":{"chaos":30,"no":"people, face","model":"5.2"},"targets":["mobile","desktop"]}
 {"prompt":"meteor flying through hyperspace, Art Brut","params":{"chaos":20,"model":"5.2"},"targets":["mobile","desktop"]}
 {"prompt":"glowing circuitry","params":{"chaos":30,"no":"people,face","model":"5.2"},"targets":["mobile","desktop"]}
@@ -40,6 +39,9 @@
 {"prompt":"dislocation, linear crystallographic defect, wallpaper","params":{"chaos":10,"model":"5.2"},"targets":["desktop","mobile"]}
 {"prompt":"antimatter, antisymmetry, wallpaper","params":{"chaos":10,"model":"5.2"},"targets":["desktop"]}
 {"prompt":"future lattice","params":{"chaos":10,"no":"people, face","model":"5.2"},"targets":["desktop"]}
+{"prompt":"graffiti, 3d","params":{"chaos":10,"model":"5.2"},"targets":["desktop"]}
+{"prompt":"graffiti","params":{"no": "people,face", "chaos":10,"model":"5.2"},"targets":["desktop"]}
+{"prompt":"graffiti, abstract","params":{"no": "people,face", "chaos":10,"model":"5.2"},"targets":["mobile"]}
 {"prompt":"fragmental tesselation, depth, open, abstract, black structure, radiosity, ambient occlusion, saturated, design","params":{"chaos":10,"model":"5.2"},"targets":["desktop"]}
 {"prompt":"colorful and abstract poster, light and space movement, elongated forms, detailed daylight dreamscapes, dayscape","params":{"chaos":20,"model":"5.2"},"targets":["desktop-light"]}
 {"prompt":"spring day, colorful design, abstract","params":{"model":"5.2"},"targets":["desktop-light", "mobile"]}
