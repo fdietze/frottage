@@ -42,4 +42,5 @@
 {"prompt":"future lattice","params":{"chaos":10,"no":"people, face","model":"5.2"},"targets":["desktop"]}
 {"prompt":"fragmental tesselation, depth, open, abstract, black structure, radiosity, ambient occlusion, saturated, design","params":{"chaos":10,"model":"5.2"},"targets":["desktop"]}
 {"prompt":"colorful and abstract poster, light and space movement, elongated forms, detailed daylight dreamscapes, dayscape","params":{"chaos":20,"model":"5.2"},"targets":["desktop-light"]}
+{"prompt":"spring day, colorful design, abstract","params":{"model":"5.2"},"targets":["desktop-light", "mobile"]}
 {"prompt":"fragmental tesselation, depth, open, abstract, white structure, radiosity, ambient occlusion, color bleeding, outside, summer, saturated, design","params":{"chaos":10,"model":"5.2"},"targets":["desktop-light"]}
