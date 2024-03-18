@@ -2,10 +2,9 @@
 {"prompt":"harmonious chaos, fragmental tessalations, frottage","params":{"chaos":20,"model":"5.2"},"targets":["mobile","desktop"]}
 {"prompt":"harmonious chaos, fragmental tessalations, nano particles","params":{"chaos":20,"model":"5.2"},"targets":["mobile","desktop"]}
 {"prompt":"harmonious chaos, fragmental tessalations, frottage, <%= random(colors) %> color","params":{"chaos":20,"model":"5.2"},"targets":["mobile","desktop"]}
-{"prompt":"chaotic particles","params":{"chaos":20,"no":"people, face","model":"5.2"},"targets":["mobile","desktop"]}
 {"prompt":"tesselation","params":{"chaos":20,"no":"people, face","model":"5.2"},"targets":["mobile","desktop"]}
 {"prompt":"random noise, abstract","params":{"chaos":20,"no":"people, face","model":"5.2"},"targets":["mobile","desktop"]}
-{"prompt":"fluid simulation, tesselation, 3d","params":{"chaos":40,"model":"5.2"},"targets":["mobile","desktop"]}
+{"prompt":"fluid simulation, tesselation","params":{"chaos":40,"model":"5.2"},"targets":["mobile","desktop"]}
 {"prompt":"4k wallpaper","params":{"chaos":20,"model":"5.2"},"targets":["desktop"]}
 {"prompt":"4k wallpaper, lights","params":{"chaos":20,"model":"5.2"},"targets":["desktop"]}
 {"prompt":"psychedelic wallpaper, patterns","params":{"chaos":10,"no":"people,face","model":"5.2"},"targets":["watch"]}
@@ -29,7 +28,6 @@
 {"prompt":"psychedelic planet, close-up","params":{"model":"5.2"},"targets":["desktop","mobile"]}
 {"prompt":"nano particles","params":{"chaos":20,"model":"5.2"},"targets":["desktop","mobile"]}
 {"prompt":"micro particles","params":{"chaos":20,"model":"5.2"},"targets":["desktop","mobile"]}
-{"prompt":"milli particles","params":{"chaos":20,"model":"5.2"},"targets":["desktop","mobile"]}
 {"prompt":"microcosmos, abstract","params":{"model":"5.2"},"targets":["desktop","mobile"]}
 {"prompt":"particle acceleration","params":{"model":"5.2"},"targets":["desktop","mobile"]}
 {"prompt":"cyberspace, abstract","params":{"model":"5.2"},"targets":["desktop","mobile"]}
@@ -42,7 +40,6 @@
 {"prompt":"dislocation, linear crystallographic defect, wallpaper","params":{"chaos":10,"model":"5.2"},"targets":["desktop","mobile"]}
 {"prompt":"antimatter, antisymmetry, wallpaper","params":{"chaos":10,"model":"5.2"},"targets":["desktop"]}
 {"prompt":"future lattice","params":{"chaos":10,"no":"people, face","model":"5.2"},"targets":["desktop"]}
-{"prompt":"futuristic, nether, aether, matrix, wallpaper","params":{"chaos":10,"no":"person, gloomy, dismal","model":"5.2"},"targets":["desktop"]}
 {"prompt":"fragmental tesselation, depth, open, abstract, black structure, radiosity, ambient occlusion, saturated, design","params":{"chaos":10,"model":"5.2"},"targets":["desktop"]}
 {"prompt":"colorful and abstract poster, light and space movement, elongated forms, detailed daylight dreamscapes, dayscape","params":{"chaos":20,"model":"5.2"},"targets":["desktop-light"]}
 {"prompt":"fragmental tesselation, depth, open, abstract, white structure, radiosity, ambient occlusion, color bleeding, outside, summer, saturated, design","params":{"chaos":10,"model":"5.2"},"targets":["desktop-light"]}
