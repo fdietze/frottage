@@ -31,7 +31,6 @@
 {"prompt":"particle acceleration","params":{"model":"5.2"},"targets":["desktop","mobile"]}
 {"prompt":"cyberspace, abstract","params":{"model":"5.2"},"targets":["desktop","mobile"]}
 {"prompt":"quarks","params":{"model":"5.2"},"targets":["desktop","mobile"]}
-{"prompt":"caustics","params":{"model":"5.2"},"targets":["desktop","mobile"]}
 {"prompt":"crazy futuristic particles, bokeh","params":{"chaos":20,"model":"5.2"},"targets":["desktop","mobile"]}
 {"prompt":"meditation, microscopic","params":{"no":"people, face","model":"5.2"},"targets":["desktop","mobile"]}
 {"prompt":"psychedelic, supernova","params":{"chaos":20,"no":"people, face","model":"5.2"},"targets":["desktop","mobile"]}
