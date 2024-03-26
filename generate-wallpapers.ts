@@ -31,10 +31,10 @@ function constructMjPrompt(
   target: Target,
 ): string {
   let mjPrompt = renderedPrompt;
-  if (prompt.params?.no) mjPrompt += ` --no ${prompt.params?.no}`;
+  if (prompt.params?.no) mjPrompt += ` --no ${prompt.params.no}`;
   if (prompt.params?.chaos) mjPrompt += ` --chaos ${prompt.params.chaos}`;
   if (prompt.params?.weird) mjPrompt += ` --weird ${prompt.params.weird}`;
-  if (prompt.params?.stylize) mjPrompt += ` --stylize ${prompt.params.stylize}`;
+  mjPrompt += ` --stylize ${prompt.params?.stylize ?? 1000}`;
   if (prompt.params?.model) mjPrompt += ` --version ${prompt.params.model}`;
   mjPrompt += ` --aspect ${target.aspectRatio}`;
   return mjPrompt;
