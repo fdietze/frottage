@@ -34,7 +34,7 @@ function constructMjPrompt(
   if (prompt.params?.no) mjPrompt += ` --no ${prompt.params.no}`;
   if (prompt.params?.chaos) mjPrompt += ` --chaos ${prompt.params.chaos}`;
   if (prompt.params?.weird) mjPrompt += ` --weird ${prompt.params.weird}`;
-  mjPrompt += ` --stylize ${prompt.params?.stylize ?? 1000}`;
+  mjPrompt += ` --stylize ${prompt.params?.stylize ?? 400}`;
   if (prompt.params?.model) mjPrompt += ` --version ${prompt.params.model}`;
   mjPrompt += ` --aspect ${target.aspectRatio}`;
   return mjPrompt;
