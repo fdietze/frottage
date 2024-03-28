@@ -1,0 +1,15 @@
+{
+  "template": {
+    "prompt": "wallpaper, frottage",
+    "params": {
+      "chaos": 40,
+      "no": "person, woman, building, furniture",
+      "model": "5.2"
+    },
+    "targets": [
+      "mobile",
+      "desktop"
+    ]
+  },
+  "prompt": "wallpaper, frottage"
+}

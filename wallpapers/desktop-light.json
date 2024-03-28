@@ -1,0 +1,13 @@
+{
+  "template": {
+    "prompt": "spring day, colorful design, abstract",
+    "params": {
+      "model": "5.2"
+    },
+    "targets": [
+      "desktop-light",
+      "mobile"
+    ]
+  },
+  "prompt": "spring day, colorful design, abstract"
+}

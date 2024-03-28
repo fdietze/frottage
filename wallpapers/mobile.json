@@ -1,0 +1,14 @@
+{
+  "template": {
+    "prompt": "micro particles",
+    "params": {
+      "chaos": 20,
+      "model": "5.2"
+    },
+    "targets": [
+      "desktop",
+      "mobile"
+    ]
+  },
+  "prompt": "micro particles"
+}
