@@ -23,7 +23,8 @@
 {"prompt":"multicolor microscopy, abstract","params":{"chaos": 20, "model":"5.2"},"targets":["desktop"]}
 {"prompt":"intricate abstract machine","params":{"chaos":20,"model":"5.2"},"targets":["desktop","mobile"]}
 {"prompt":"elegant fluorescent geometric shapes on dark matte surface","params":{"model":"5.2"},"targets":["desktop","mobile"]}
-{"prompt":"fluid thin line pattern","params":{"chaos":20, "model":"5.2"},"targets":["mobile"]}
+{"prompt":"fluid thin line pattern","params":{"no": "black and white", "chaos":20, "model":"5.2"},"targets":["mobile"]}
+{"prompt":"fluid thin line pattern, muted tones","params":{"chaos":20, "model":"5.2"},"targets":["mobile", "desktop-light"]}
 {"prompt":"psychedelic planet, close-up","params":{"model":"5.2"},"targets":["desktop","mobile"]}
 {"prompt":"nano particles","params":{"chaos":20,"model":"5.2"},"targets":["desktop","mobile"]}
 {"prompt":"micro particles","params":{"chaos":20,"model":"5.2"},"targets":["desktop","mobile"]}
@@ -44,4 +45,5 @@
 {"prompt":"colorful and abstract poster, light and space movement, elongated forms, detailed daylight, dayscape, intricate","params":{"chaos":30,"model":"5.2"},"targets":["desktop-light"]}
 {"prompt":"lush green, drone photography","params":{"chaos":20,"model":"5.2"},"targets":["desktop-light"]}
 {"prompt":"spring day, colorful design, abstract","params":{"model":"5.2"},"targets":["desktop-light", "mobile"]}
+{"prompt":"A minimalist full body cartoonish grinning animal isolated and cut-out on white background. Widely spaced eyes. Small pupils. In the style of childish and whimsy illustrations. Anthropomorphic style. Endearing and funny. Muted tones. In the style of watercolor paintings. Isolated on muted background.","params":{"no": "outline, realistic photo details", "chaos":5, "model":"5.2"},"targets":["mobile"]}
 {"prompt":"fragmental tesselation, depth, open, abstract, white structure, radiosity, ambient occlusion, color bleeding, outside, summer, saturated, design","params":{"chaos":10,"model":"5.2"},"targets":["desktop-light"]}
