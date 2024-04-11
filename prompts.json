@@ -1,7 +1,7 @@
 {"prompt":"wallpaper, frottage","params":{"chaos":40,"no":"person, woman, building, furniture","model":"5.2"},"targets":["mobile","desktop"]}
 {"prompt":"harmonious chaos, fragmental tessalations, frottage","params":{"chaos":20,"model":"5.2"},"targets":["mobile","desktop"]}
 {"prompt":"harmonious chaos, fragmental tessalations, nano particles","params":{"chaos":20,"model":"5.2"},"targets":["mobile","desktop"]}
-{"prompt":"harmonious chaos, fragmental tessalations, frottage, <%= random(colors) %> color","params":{"chaos":20,"model":"5.2"},"targets":["mobile","desktop"]}
+{"prompt":"extremely complicated tesselation, intricate, <%= random(colors) %> color","params":{"chaos":20,"model":"5.2"},"targets":["mobile","desktop"]}
 {"prompt":"tesselation","params":{"chaos":20,"no":"people, face","model":"5.2"},"targets":["mobile","desktop"]}
 {"prompt":"random noise, abstract","params":{"chaos":20,"no":"people, face","model":"5.2"},"targets":["mobile","desktop"]}
 {"prompt":"fluid simulation, tesselation","params":{"chaos":40,"model":"5.2"},"targets":["mobile","desktop"]}
@@ -43,6 +43,6 @@
 {"prompt":"fragmental tesselation, depth, open, abstract, black structure, radiosity, ambient occlusion, saturated, design","params":{"chaos":10,"model":"5.2"},"targets":["desktop"]}
 {"prompt":"colorful and abstract poster, light and space movement, elongated forms, detailed daylight, dayscape, intricate","params":{"chaos":30,"model":"5.2"},"targets":["desktop-light"]}
 {"prompt":"lush green, drone photography","params":{"chaos":20,"model":"5.2"},"targets":["desktop-light"]}
-{"prompt":"spring day, colorful design, abstract","params":{"model":"5.2"},"targets":["desktop-light", "mobile"]}
+{"prompt":"nature spring day, flat design, aesthetic, epic","params":{"no": "people,face", "chaos": 30, "model":"5.2"},"targets":["desktop-light", "mobile"]}
 {"prompt":"A minimalist full body cartoonish grinning animal isolated and cut-out on white background. Widely spaced eyes. Small pupils. In the style of childish and whimsy illustrations. Anthropomorphic style. Endearing and funny. Muted tones. In the style of watercolor paintings. Isolated on muted background.","params":{"no": "outline, realistic photo details", "chaos":5, "model":"5.2"},"targets":["mobile"]}
 {"prompt":"fragmental tesselation, depth, open, abstract, white structure, radiosity, ambient occlusion, color bleeding, outside, summer, saturated, design","params":{"chaos":10,"model":"5.2"},"targets":["desktop-light"]}
