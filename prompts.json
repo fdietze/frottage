@@ -41,7 +41,7 @@
 {"prompt":"graffiti, abstract","params":{"no": "people,face", "chaos":10,"model":"5.2"},"targets":["mobile"]}
 {"prompt":"nostalgic landscape, comic, peaceful day","params":{"no": "people,face", "chaos":10,"model":"5.2"},"targets":["desktop-light"]}
 {"prompt":"fragmental tesselation, depth, open, abstract, black structure, radiosity, ambient occlusion, saturated, design","params":{"chaos":10,"model":"5.2"},"targets":["desktop"]}
-{"prompt":"colorful and abstract poster, light and space movement, elongated forms, detailed daylight, dayscape, intricate","params":{"chaos":30,"model":"5.2"},"targets":["desktop-light"]}
+{"prompt":"flat design abstract poster, daylight, aesthetic dayscape","params":{"chaos":30,"model":"5.2"},"targets":["desktop-light"]}
 {"prompt":"lush green, drone photography","params":{"chaos":20,"model":"5.2"},"targets":["desktop-light"]}
 {"prompt":"nature spring day, flat design, aesthetic, epic","params":{"no": "people,face", "chaos": 30, "model":"5.2"},"targets":["desktop-light", "mobile"]}
 {"prompt":"A minimalist full body cartoonish grinning animal isolated and cut-out on white background. Widely spaced eyes. Small pupils. In the style of childish and whimsy illustrations. Anthropomorphic style. Endearing and funny. Muted tones. In the style of watercolor paintings. Isolated on muted background.","params":{"no": "outline, realistic photo details", "chaos":5, "model":"5.2"},"targets":["mobile"]}
