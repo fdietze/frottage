@@ -40,7 +40,6 @@
 {"prompt":"graffiti","params":{"no": "people,face", "chaos":10,"model":"5.2"},"targets":["desktop"]}
 {"prompt":"graffiti, abstract","params":{"no": "people,face", "chaos":10,"model":"5.2"},"targets":["mobile"]}
 {"prompt":"nostalgic landscape, comic, peaceful day","params":{"no": "people,face", "chaos":10,"model":"5.2"},"targets":["desktop-light"]}
-{"prompt":"fragmental tesselation, depth, open, abstract, black structure, radiosity, ambient occlusion, saturated, design","params":{"chaos":10,"model":"5.2"},"targets":["desktop"]}
 {"prompt":"flat design abstract poster, daylight, aesthetic dayscape","params":{"chaos":30,"model":"5.2"},"targets":["desktop-light"]}
 {"prompt":"lush green, drone photography","params":{"chaos":20,"model":"5.2"},"targets":["desktop-light"]}
 {"prompt":"nature spring day, flat design, aesthetic, epic","params":{"no": "people,face", "chaos": 30, "model":"5.2"},"targets":["desktop-light", "mobile"]}
