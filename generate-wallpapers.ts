@@ -46,12 +46,12 @@ async function main() {
   const promptDefinitions: Array<Prompt> = fs.readFileSync(
     "./prompts.json",
     "utf8",
-  ).trim().split("\n").map((line) => JSON.parse(line));
+  ).trim().split("\n").map((line) => { try { return JSON.parse(line) } catch (e) { console.error(line); throw e } });
   // ./targets.json is a newline separated list of targets
   const targetDefinitions: Array<Target> = fs.readFileSync(
     "./targets.json",
     "utf8",
-  ).trim().split("\n").map((line) => JSON.parse(line));
+  ).trim().split("\n").map((line) => { try { return JSON.parse(line) } catch (e) { console.error(line); throw e } });
   const targetPromptMap = targetPrompts(promptDefinitions);
 
   // random prompt for every target
