@@ -6,7 +6,6 @@
 {"prompt":"random noise, abstract","params":{"chaos":20,"no":"people, face","model":"5.2"},"targets":["mobile","desktop"]}
 {"prompt":"fluid simulation, tesselation","params":{"chaos":40,"model":"5.2"},"targets":["mobile","desktop"]}
 {"prompt":"4k wallpaper","params":{"chaos":20,"model":"5.2"},"targets":["desktop"]}
-{"prompt":"4k wallpaper, lights","params":{"chaos":20,"model":"5.2"},"targets":["desktop"]}
 {"prompt":"psychedelic wallpaper, patterns","params":{"chaos":10,"no":"people,face","model":"5.2"},"targets":["watch"]}
 {"prompt":"colorful and abstract poster, light and space movement, elongated forms, detailed dreamscapes, nightscape","params":{"chaos":20,"model":"5.2"},"targets":["mobile","desktop"]}
 {"prompt":"Psychedelic landscape, friendly, idyllic, strong colors, intricate detail","params":{"chaos":30,"no":"people,face","model":"5.2"},"targets":["desktop","mobile"]}
