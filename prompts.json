@@ -35,7 +35,6 @@
 {"prompt":"future lattice","params":{"chaos":10,"no":"people, face","model":"5.2"},"targets":["desktop"]}
 {"prompt":"graffiti, 3d","params":{"chaos":10,"model":"5.2"},"targets":["desktop"]}
 {"prompt":"graffiti","params":{"no": "people,face", "chaos":10,"model":"5.2"},"targets":["desktop"]}
-{"prompt":"graffiti, abstract","params":{"no": "people,face", "chaos":10,"model":"5.2"},"targets":["mobile"]}
 {"prompt":"nostalgic landscape, comic, peaceful day","params":{"no": "people,face", "chaos":10,"model":"5.2"},"targets":["desktop-light"]}
 {"prompt":"flat design abstract poster, daylight, aesthetic dayscape","params":{"chaos":30,"model":"5.2"},"targets":["desktop-light"]}
 {"prompt":"nature spring day, flat design, aesthetic, epic","params":{"no": "people,face", "chaos": 30, "model":"5.2"},"targets":["desktop-light", "mobile"]}
