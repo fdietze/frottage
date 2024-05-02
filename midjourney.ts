@@ -123,8 +123,12 @@ export async function upscale2x(
   client: Midjourney,
   upscaled: MJMessage,
 ): Promise<MJMessage> {
-  const upscale_button = upscaled?.options?.find((o) =>
+  let upscale_button = upscaled?.options?.find((o) =>
     o.label === "Upscale (2x)"
+  );
+  if (!upscale_button) upscale_button = upscaled?.options?.find((o) =>
+    // relevant for v6 model
+    o.label === "Upscale (Subtle)"
   );
   if (!upscale_button) throw new Error("no upscale button");
   const upscaled2x = await client.Custom({
