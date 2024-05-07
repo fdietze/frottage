@@ -29,6 +29,14 @@ The images are deployed to:
 
 ## Linux
 
+### GNOME
+
+```
+gsettings set org.gnome.desktop.background picture-uri https://fdietze.github.io/frottage/wallpapers/wallpaper-desktop-latest.jpg
+```
+
+### Using feh
+
 ```
 feh --bg-fill https://fdietze.github.io/frottage/wallpapers/wallpaper-desktop-latest.jpg
 ```
