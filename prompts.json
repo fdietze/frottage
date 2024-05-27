@@ -8,7 +8,7 @@
 {"prompt":"4k wallpaper","params":{"chaos":20,"model":"5.2"},"targets":["desktop"]}
 {"prompt":"psychedelic wallpaper, patterns","params":{"chaos":10,"no":"people,face","model":"5.2"},"targets":["watch"]}
 {"prompt":"colorful and abstract poster, light and space movement, elongated forms, detailed dreamscapes, nightscape","params":{"chaos":20,"model":"5.2"},"targets":["mobile","desktop"]}
-{"prompt":"Psychedelic landscape, friendly, idyllic, strong colors, intricate detail","params":{"chaos":30,"no":"people,face","model":"5.2"},"targets":["desktop","mobile"]}
+{"prompt":"Psychedelic landscape, friendly, idyllic, strong colors, intricate detail","params":{"chaos":30,"no":"people,face","model":"6.0"},"targets":["desktop","mobile"]}
 {"prompt":"synesthesia, abstract","params":{"chaos":30,"no":"people, face","model":"6.0"},"targets":["desktop","mobile"]}
 {"prompt":"synesthesia, abstract, psychedelic","params":{"chaos":20,"no":"people, face","model":"6.0"},"targets":["desktop","mobile"]}
 {"prompt":"daytime,100mm lens,isometric,tilt shift,3d blender render,4k,UHD","params":{"chaos":10,"model":"6.0"},"targets":["desktop-light"]}
@@ -16,6 +16,7 @@
 {"prompt":"shattered glass, tessellation, 3d, bokeh","params":{"chaos":30,"model":"5.2"},"targets":["mobile","desktop"]}
 {"prompt":"collision of fire and water, psychedelic","params":{"chaos":30,"no":"people, face","model":"5.2"},"targets":["mobile","desktop"]}
 {"prompt":"meteor flying through hyperspace, Art Brut","params":{"chaos":20,"model":"5.2"},"targets":["mobile","desktop"]}
+{"prompt":"Tatsuro, top view, a small wooden boat floating in the pond, with lotus leaves and a few small fish swimming in the pond. A little boy is lying on the small wooden boat,with their back to us,It has a fresh and peaceful atmosphere,Graphic illustration style","params":{"chaos":10,"model":"6.0"},"targets":["mobile","desktop-light"]}
 {"prompt":"glowing circuitry","params":{"chaos":30,"no":"people,face","model":"5.2"},"targets":["desktop"]}
 {"prompt":"ocean landscape on an different planet, <%= random(artStyles) %>","params":{"chaos":1,"model":"5.2"},"targets":["desktop"]}
 {"prompt":"room with crazy painting","params":{"chaos":10,"model":"5.2"},"targets":["desktop"]}
@@ -32,7 +33,7 @@
 {"prompt":"psychedelic supernova, psychedelic comic style","params":{"chaos":20,"no":"people, face","model":"6.0"},"targets":["desktop-light"]}
 {"prompt":"light confusion, abstract","params":{"chaos":10,"no":"people, face","model":"5.2"},"targets":["desktop","mobile"]}
 {"prompt":"dislocation, linear crystallographic defect, wallpaper","params":{"chaos":10,"model":"5.2"},"targets":["desktop","mobile"]}
-{"prompt":"antimatter, antisymmetry, wallpaper","params":{"chaos":10,"model":"5.2"},"targets":["desktop"]}
+{"prompt":"antimatter, antisymmetry, wallpaper","params":{"chaos":10,"model":"6.0"},"targets":["desktop"]}
 {"prompt":"future lattice","params":{"chaos":10,"no":"people, face","model":"5.2"},"targets":["desktop"]}
 {"prompt":"graffiti, 3d","params":{"chaos":10,"model":"5.2"},"targets":["desktop"]}
 {"prompt":"graffiti","params":{"no": "people,face", "chaos":10,"model":"5.2"},"targets":["desktop"]}
