@@ -1,4 +1,5 @@
 {"prompt":"wallpaper, frottage","params":{"chaos":40,"no":"person, woman, building, furniture","model":"5.2"},"targets":["mobile","desktop"]}
+{"prompt":"lonely spaceship crashed on planet with strange plants, comic style","params":{"model":"6.0"},"targets":["mobile","desktop"]}
 {"prompt":"harmonious chaos, fragmental tessalations, frottage","params":{"chaos":20,"model":"5.2"},"targets":["mobile","desktop"]}
 {"prompt":"harmonious chaos, fragmental tessalations, nano particles","params":{"chaos":20,"model":"5.2"},"targets":["mobile","desktop"]}
 {"prompt":"extremely complicated tesselation, intricate, <%= random(colors) %> color","params":{"chaos":20,"model":"5.2"},"targets":["mobile","desktop"]}
