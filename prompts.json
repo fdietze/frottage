@@ -42,6 +42,7 @@
 {"prompt":"flat design abstract poster, daylight, aesthetic dayscape","params":{"chaos":30,"model":"5.2"},"targets":["desktop-light"]}
 {"prompt":"nature spring day, flat design, aesthetic, epic","params":{"no": "people,face", "chaos": 30, "model":"5.2"},"targets":["desktop-light", "mobile"]}
 {"prompt":"A minimalist full body cartoonish grinning animal isolated and cut-out on white background. Widely spaced eyes. Small pupils. In the style of childish and whimsy illustrations. Anthropomorphic style. Endearing and funny. Muted tones. In the style of watercolor paintings. Isolated on muted background.","params":{"no": "outline, realistic photo details", "chaos":5, "model":"6.0"},"targets":["mobile"]}
+{"prompt":"the king of pigs is a fractal starring into infinity","params":{"model":"6.0"},"targets":["mobile"]}
 {"prompt":"color dispersion, abstract, glitches","params":{"model":"5.2"},"targets":["desktop","mobile"]}
 {"prompt":"jupiter clouds, close up","params":{"no":"moon,planet", "model":"5.2"},"targets":["desktop-light"]}
 {"prompt":"particle tracks, particle collision, diagram","params":{"no":"text","model":"5.2"},"targets":["desktop"]}
