@@ -6,7 +6,6 @@
 {"prompt":"tesselation","params":{"chaos":20,"no":"people, face","model":"5.2"},"targets":["mobile","desktop"]}
 {"prompt":"random noise, abstract","params":{"chaos":20,"no":"people, face","model":"5.2"},"targets":["mobile","desktop"]}
 {"prompt":"fluid simulation, tesselation","params":{"chaos":40,"model":"5.2"},"targets":["mobile","desktop"]}
-{"prompt":"4k wallpaper","params":{"chaos":20,"model":"5.2"},"targets":["desktop"]}
 {"prompt":"psychedelic wallpaper, patterns","params":{"chaos":10,"no":"people,face","model":"5.2"},"targets":["watch"]}
 {"prompt":"colorful and abstract poster, light and space movement, elongated forms, detailed dreamscapes, nightscape","params":{"chaos":20,"model":"5.2"},"targets":["mobile","desktop"]}
 {"prompt":"Psychedelic landscape, friendly, idyllic, strong colors, intricate detail","params":{"chaos":30,"no":"people,face","model":"6.0"},"targets":["desktop","mobile"]}
@@ -48,3 +47,7 @@
 {"prompt":"particle tracks, particle collision, diagram","params":{"no":"text","model":"5.2"},"targets":["desktop"]}
 {"prompt":"cryptic writing, aztec, colorful, plastic","params":{"no":"people","model":"5.2"},"targets":["desktop","mobile"]}
 {"prompt":"intricate abstract liquid machine, cinematic","params":{"chaos":20,"model":"6.0"},"targets":["desktop", "mobile"]}
+{"prompt":"light pushing through clouds, cinematic","params":{"no":"ocean","chaos":20,"model":"6.0"},"targets":["desktop", "mobile"]}
+{"prompt":"light pushing through clouds","params":{"no":"ocean","chaos":20,"model":"6.0"},"targets":["desktop-light"]}
+{"prompt":"fractured time, dark, glitches","params":{"no":"clock,person","chaos":20,"model":"6.0"},"targets":["desktop", "mobile"]}
+  
