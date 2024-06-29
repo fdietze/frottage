@@ -24,7 +24,8 @@
 {"prompt":"elegant fluorescent geometric shapes on dark matte surface","params":{"model":"5.2"},"targets":["desktop","mobile"]}
 {"prompt":"fluid thin line pattern","params":{"no": "black and white", "chaos":20, "model":"5.2"},"targets":["mobile"]}
 {"prompt":"fluid thin line pattern, muted tones","params":{"chaos":20, "model":"5.2"},"targets":["mobile", "desktop-light"]}
-{"prompt":"psychedelic planet, close-up","params":{"model":"5.2"},"targets":["desktop","mobile"]}
+{"prompt":"psychedelic planet, close-up, cinematic","params":{"model":"6.0"},"targets":["desktop","mobile"]}
+{"prompt":"psychedelic planet, close-up","params":{"model":"6.0"},"targets":["desktop", "mobile"]}
 {"prompt":"nano particles, magnetic field, glow","params":{"chaos":20,"model":"5.2"},"targets":["desktop","mobile"]}
 {"prompt":"micro particles","params":{"chaos":20,"model":"5.2"},"targets":["desktop","mobile"]}
 {"prompt":"particle acceleration","params":{"model":"5.2"},"targets":["desktop"]}
