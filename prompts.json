@@ -14,7 +14,7 @@
 {"prompt":"daytime,100mm lens,isometric,tilt shift,3d blender render,4k,UHD","params":{"chaos":10,"model":"6.0"},"targets":["desktop-light"]}
 {"prompt":"midjourney","params":{"chaos":20,"no":"people, face","model":"5.2"},"targets":["desktop"]}
 {"prompt":"shattered glass, tessellation, 3d, bokeh","params":{"chaos":30,"model":"5.2"},"targets":["mobile","desktop"]}
-{"prompt":"collision of fire and water, psychedelic","params":{"chaos":30,"no":"people, face","model":"5.2"},"targets":["mobile","desktop"]}
+{"prompt":"collision of fire and water, psychedelic art","params":{"chaos":10,"no":"people, face","model":"6.0"},"targets":["mobile","desktop"]}
 {"prompt":"meteor flying through hyperspace, Art Brut","params":{"chaos":20,"model":"5.2"},"targets":["mobile","desktop"]}
 {"prompt":"Tatsuro, top view, a small wooden boat floating in the pond, with lotus leaves and a few small fish swimming in the pond. A little boy is lying on the small wooden boat,with their back to us,It has a fresh and peaceful atmosphere,Graphic illustration style","params":{"chaos":10,"model":"6.0"},"targets":["mobile","desktop-light"]}
 {"prompt":"glowing circuitry","params":{"chaos":30,"no":"people,face","model":"5.2"},"targets":["desktop"]}
@@ -27,7 +27,6 @@
 {"prompt":"psychedelic planet, close-up, cinematic","params":{"model":"6.0"},"targets":["desktop","mobile"]}
 {"prompt":"psychedelic planet, close-up","params":{"model":"6.0"},"targets":["desktop", "mobile"]}
 {"prompt":"nano particles, magnetic field, glow","params":{"chaos":20,"model":"5.2"},"targets":["desktop","mobile"]}
-{"prompt":"micro particles","params":{"chaos":20,"model":"5.2"},"targets":["desktop","mobile"]}
 {"prompt":"particle acceleration","params":{"model":"5.2"},"targets":["desktop"]}
 {"prompt":"crazy futuristic particles, bokeh","params":{"chaos":20,"model":"5.2"},"targets":["desktop","mobile"]}
 {"prompt":"meditation flow, minimal, abstract","params":{"no":"sitting,person,people,face","model":"5.2"},"targets":["desktop","mobile"]}
