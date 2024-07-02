@@ -1,0 +1,13 @@
+{
+  "template": {
+    "prompt": "color dispersion, abstract, glitches",
+    "params": {
+      "model": "5.2"
+    },
+    "targets": [
+      "desktop",
+      "mobile"
+    ]
+  },
+  "prompt": "color dispersion, abstract, glitches"
+}

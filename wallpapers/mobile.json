@@ -1,0 +1,15 @@
+{
+  "template": {
+    "prompt": "nature spring day, flat design, aesthetic, epic",
+    "params": {
+      "no": "people,face",
+      "chaos": 30,
+      "model": "5.2"
+    },
+    "targets": [
+      "desktop-light",
+      "mobile"
+    ]
+  },
+  "prompt": "nature spring day, flat design, aesthetic, epic"
+}

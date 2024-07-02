@@ -1,0 +1,13 @@
+{
+  "template": {
+    "prompt": "flat design abstract poster, daylight, aesthetic dayscape",
+    "params": {
+      "chaos": 30,
+      "model": "5.2"
+    },
+    "targets": [
+      "desktop-light"
+    ]
+  },
+  "prompt": "flat design abstract poster, daylight, aesthetic dayscape"
+}
