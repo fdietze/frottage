@@ -7,7 +7,7 @@
 {"prompt":"random noise, abstract","params":{"chaos":20,"no":"people, face","model":"5.2"},"targets":["mobile","desktop"]}
 {"prompt":"fluid simulation, tesselation","params":{"chaos":40,"model":"5.2"},"targets":["mobile","desktop"]}
 {"prompt":"psychedelic wallpaper, patterns","params":{"chaos":10,"no":"people,face","model":"5.2"},"targets":["watch"]}
-{"prompt":"colorful and abstract poster, light and space movement, elongated forms, detailed dreamscapes, nightscape","params":{"chaos":20,"model":"5.2"},"targets":["mobile","desktop"]}
+{"prompt":"colorful and abstract poster, light and space movement, elongated forms, detailed dreamscapes, nightscape","params":{"model":"6.0"},"targets":["mobile"]}
 {"prompt":"Psychedelic landscape, friendly, idyllic, strong colors, intricate detail","params":{"chaos":30,"no":"people,face","model":"6.0"},"targets":["desktop","mobile"]}
 {"prompt":"synesthesia, abstract","params":{"chaos":30,"no":"people, face","model":"6.0"},"targets":["desktop","mobile"]}
 {"prompt":"synesthesia, abstract, psychedelic","params":{"chaos":20,"no":"people, face","model":"6.0"},"targets":["desktop","mobile"]}
