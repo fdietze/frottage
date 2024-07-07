@@ -31,7 +31,6 @@
 {"prompt":"crazy futuristic particles, bokeh","params":{"chaos":20,"model":"5.2"},"targets":["desktop","mobile"]}
 {"prompt":"meditation flow, minimal, abstract","params":{"no":"sitting,person,people,face","model":"5.2"},"targets":["desktop","mobile"]}
 {"prompt":"psychedelic supernova, psychedelic comic style","params":{"chaos":20,"no":"people, face","model":"6.0"},"targets":["desktop-light"]}
-{"prompt":"light confusion, abstract","params":{"chaos":10,"no":"people, face","model":"5.2"},"targets":["desktop","mobile"]}
 {"prompt":"dislocation, linear crystallographic defect, wallpaper","params":{"chaos":10,"model":"5.2"},"targets":["desktop","mobile"]}
 {"prompt":"antimatter, antisymmetry, wallpaper","params":{"chaos":10,"model":"6.0"},"targets":["desktop"]}
 {"prompt":"future lattice","params":{"chaos":10,"no":"people, face","model":"5.2"},"targets":["desktop"]}
