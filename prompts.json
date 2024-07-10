@@ -27,7 +27,12 @@
 {"prompt":"psychedelic planet, close-up, cinematic","params":{"model":"6.0"},"targets":["desktop","mobile"]}
 {"prompt":"psychedelic planet, close-up","params":{"model":"6.0"},"targets":["desktop", "mobile"]}
 {"prompt":"nano particles, magnetic field, glow","params":{"chaos":20,"model":"5.2"},"targets":["desktop","mobile"]}
-{"prompt":"particle acceleration","params":{"model":"5.2"},"targets":["desktop"]}
+{"prompt":"particle acceleration","params":{"model":"6.0"},"targets":["desktop", "mobile"]}
+{"prompt":"gold vein","params":{"model":"6.0"},"targets":["desktop", "mobile"]}
+{"prompt":"isometric farytale","params":{"model":"6.0"},"targets":["desktop-light"]}
+{"prompt":"quantum mechanics","params":{"model":"6.0"},"targets":["desktop", "mobile"]}
+{"prompt":"infographic describing quantum mechanics","params":{"model":"6.0"},"targets":["desktop"]}
+{"prompt":"detailed infographic of quantum mechanics, high-tech UI design elements, futuristic","params":{"model":"6.0"},"targets":["desktop"]}
 {"prompt":"crazy futuristic particles, bokeh","params":{"chaos":20,"model":"5.2"},"targets":["desktop","mobile"]}
 {"prompt":"meditation flow, minimal, abstract","params":{"no":"sitting,person,people,face","model":"5.2"},"targets":["desktop","mobile"]}
 {"prompt":"psychedelic supernova, psychedelic comic style","params":{"chaos":20,"no":"people, face","model":"6.0"},"targets":["desktop-light"]}
