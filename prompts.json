@@ -30,7 +30,7 @@
 {"prompt":"particle acceleration","params":{"model":"6.0"},"targets":["desktop", "mobile"]}
 {"prompt":"gold vein","params":{"model":"6.0"},"targets":["desktop", "mobile"]}
 {"prompt":"isometric farytale","params":{"model":"6.0"},"targets":["desktop-light"]}
-{"prompt":"quantum mechanics","params":{"model":"6.0"},"targets":["desktop", "mobile"]}
+{"prompt":"quantum mechanics","params":{"model":"6.0", "no": "people, face"},"targets":["desktop", "mobile"]}
 {"prompt":"infographic describing quantum mechanics","params":{"model":"6.0"},"targets":["desktop"]}
 {"prompt":"detailed infographic of quantum mechanics, high-tech UI design elements, futuristic","params":{"model":"6.0"},"targets":["desktop"]}
 {"prompt":"crazy futuristic particles, bokeh","params":{"chaos":20,"model":"5.2"},"targets":["desktop","mobile"]}
