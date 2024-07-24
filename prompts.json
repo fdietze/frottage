@@ -54,4 +54,4 @@
 {"prompt":"light pushing through clouds, cinematic","params":{"no":"ocean","chaos":20,"model":"6.0"},"targets":["desktop", "mobile"]}
 {"prompt":"light pushing through clouds","params":{"no":"ocean","chaos":20,"model":"6.0"},"targets":["desktop-light"]}
 {"prompt":"fractured time, dark, glitches","params":{"no":"clock,person","chaos":20,"model":"6.0"},"targets":["desktop", "mobile"]}
-  
+{"prompt":"warp signature residue","params":{"chaos":20,"stylize":200,"weird":300,"model":"6.0"},"targets":["desktop"]}
