@@ -1,0 +1,14 @@
+{
+  "template": {
+    "prompt": "fluid thin line pattern, muted tones",
+    "params": {
+      "chaos": 20,
+      "model": "5.2"
+    },
+    "targets": [
+      "mobile",
+      "desktop-light"
+    ]
+  },
+  "prompt": "fluid thin line pattern, muted tones"
+}

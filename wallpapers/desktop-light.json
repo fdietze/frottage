@@ -1,0 +1,14 @@
+{
+  "template": {
+    "prompt": "light pushing through clouds",
+    "params": {
+      "no": "ocean",
+      "chaos": 20,
+      "model": "6.0"
+    },
+    "targets": [
+      "desktop-light"
+    ]
+  },
+  "prompt": "light pushing through clouds"
+}

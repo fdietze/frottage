@@ -1,0 +1,13 @@
+{
+  "template": {
+    "prompt": "antimatter, antisymmetry, wallpaper",
+    "params": {
+      "chaos": 10,
+      "model": "6.0"
+    },
+    "targets": [
+      "desktop"
+    ]
+  },
+  "prompt": "antimatter, antisymmetry, wallpaper"
+}
