@@ -1,5 +1,6 @@
 {"prompt":"wallpaper, frottage","params":{"chaos":40,"no":"person, woman, building, furniture","model":"5.2"},"targets":["mobile","desktop"]}
-{"prompt":"lonely spaceship crashed on planet with strange plants, comic style","params":{"model":"6.0"},"targets":["mobile","desktop"]}
+{"prompt":"forgotten spaceship crashed on planet with strange plants, beautiful night sky, nostalgic, comic style","params":{"no": "photorealistic, people", "model":"6.1"},"targets":["mobile","desktop"]}
+{"prompt":"cute but professional little spaceship crashed on planet with strange plants, daytime, light sky, comic style","params":{"no": "photorealistic, people", "model":"6.1"},"targets":["mobile", "desktop-light"]}
 {"prompt":"harmonious chaos, fragmental tessalations, frottage","params":{"chaos":20,"model":"5.2"},"targets":["mobile","desktop"]}
 {"prompt":"harmonious chaos, fragmental tessalations, nano particles","params":{"chaos":20,"model":"5.2"},"targets":["mobile","desktop"]}
 {"prompt":"extremely complicated tesselation, intricate, <%= random(colors) %> color","params":{"chaos":20,"model":"5.2"},"targets":["mobile","desktop"]}
@@ -55,3 +56,4 @@
 {"prompt":"light pushing through clouds","params":{"no":"ocean","chaos":20,"model":"6.0"},"targets":["desktop-light"]}
 {"prompt":"fractured time, dark, glitches","params":{"no":"clock,person","chaos":20,"model":"6.0"},"targets":["desktop", "mobile"]}
 {"prompt":"warp signature residue","params":{"chaos":20,"stylize":200,"weird":300,"model":"6.0"},"targets":["desktop"]}
+{"prompt":"A graphic featuring mandala art depicting a <%= random(animals) %>, symbolizing wisdom and spirit. The minimalistic design uses bold black lines on a light background. a few colored accents. It captures the essence of culture through its intricate patterns and symbolism","params":{"chaos":10,"stylize":300,"model":"6.1"},"targets":["desktop-light"]}
