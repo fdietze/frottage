@@ -57,3 +57,10 @@
 {"prompt":"fractured time, dark, glitches","params":{"no":"clock,person","chaos":20,"model":"6.0"},"targets":["desktop", "mobile"]}
 {"prompt":"warp signature residue","params":{"chaos":20,"stylize":200,"weird":300,"model":"6.0"},"targets":["desktop"]}
 {"prompt":"A graphic featuring mandala art depicting a <%= random(animals) %>, symbolizing wisdom and spirit. The minimalistic design uses bold black lines on a light background. a few colored accents. It captures the essence of culture through its intricate patterns and symbolism","params":{"chaos":10,"stylize":300,"model":"6.1"},"targets":["desktop-light"]}
+{"prompt":"dream computing","params":{"model":"6.1"},"targets":["desktop"]}
+{"prompt":"gradient descent","params":{"model":"6.1"},"targets":["mobile"]}
+{"prompt":"graph algorithm, angry","params":{"model":"6.1"},"targets":["mobile"]}
+{"prompt":"graph algorithm, mellow, very detailed, painted by very patient artist","params":{"model":"6.1"},"targets":["mobile"]}
+{"prompt":"an illustration, showing a hundred animals tightly packed","params":{"model":"6.1"},"targets":["desktop"]}
+{"prompt":"an illustration, showing a hundred music instruments tightly packed","params":{"model":"6.1"},"targets":["desktop"]}
+{"prompt":"an illustration, showing a hundred peaks tightly packed","params":{"model":"6.1"},"targets":["desktop"]}
