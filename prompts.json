@@ -63,4 +63,5 @@
 {"prompt":"graph algorithm, mellow, very detailed, painted by very patient artist","params":{"model":"6.1"},"targets":["mobile"]}
 {"prompt":"an illustration, showing a hundred animals tightly packed","params":{"model":"6.1"},"targets":["desktop"]}
 {"prompt":"an illustration, showing a hundred music instruments tightly packed","params":{"model":"6.1"},"targets":["desktop"]}
-{"prompt":"an illustration, showing a hundred peaks tightly packed","params":{"model":"6.1"},"targets":["desktop"]}
+{"prompt":"an illustration, showing a hundred peaks tightly packed","params":{"model":"6.1"},"targets":["desktop-light"]}
+{"prompt":"an illustration, showing a hundred trees having a party, tightly packed","params":{"model":"6.1"},"targets":["desktop-light"]}
