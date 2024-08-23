@@ -4,6 +4,7 @@
 {"prompt":"harmonious chaos, fragmental tessalations, frottage","params":{"chaos":20,"model":"5.2"},"targets":["mobile","desktop"]}
 {"prompt":"harmonious chaos, fragmental tessalations, frottage","params":{"chaos":20,"model":"6.1"},"targets":["mobile","desktop"]}
 {"prompt":"harmonious chaos, fragmental tessalations, nano particles","params":{"chaos":20,"model":"5.2"},"targets":["mobile","desktop"]}
+{"prompt":"harmonious shapes, fragmental tessalations, elegant intricate patterns, 3d, depth","params":{"no":"fractal, white", "stylize":200,"model":"6.1"},"targets":["mobile","desktop"]}
 {"prompt":"extremely complicated tesselation, intricate, <%= random(colors) %> color","params":{"chaos":20,"model":"5.2"},"targets":["mobile","desktop"]}
 {"prompt":"tesselation","params":{"chaos":20,"no":"people, face","model":"5.2"},"targets":["mobile","desktop"]}
 {"prompt":"random noise, abstract","params":{"chaos":20,"no":"people, face","model":"5.2"},"targets":["mobile","desktop"]}
@@ -61,7 +62,7 @@
 {"prompt":"an illustration, showing a hundred animals tightly packed","params":{"model":"6.1"},"targets":["desktop"]}
 {"prompt":"an illustration, showing a hundred music instruments tightly packed","params":{"model":"6.1"},"targets":["desktop"]}
 {"prompt":"an illustration, showing a hundred peaks tightly packed","params":{"model":"6.1"},"targets":["desktop-light"]}
-{"prompt":"an illustration, showing a hundred trees having a party, tightly packed","params":{"model":"6.1"},"targets":["desktop-light"]}
+{"prompt":"an illustration, showing a hundred trees having a party, tightly packed, filling screen","params":{"no": "people", "chaos":15,"model":"6.1"},"targets":["desktop-light"]}
 {"prompt":"hybrid phenomena, mandala","params":{"model":"6.1", "chaos":10},"targets":["desktop"]}
 {"prompt":"hybrid phenomena, liquid","params":{"model":"6.1", "chaos":10},"targets":["desktop"]}
 {"prompt":"hybrid phenomena, high viscosity","params":{"model":"6.1"},"targets":["desktop"]}
