@@ -1,7 +1,6 @@
 {"prompt":"kaleidoscope mosaic, frottage","params":{"chaos":20,"model":"6.1"},"targets":["mobile","desktop"]}
 {"prompt":"forgotten spaceship crashed on planet with strange plants, beautiful night sky, nostalgic, comic style","params":{"no": "photorealistic, people", "model":"6.1"},"targets":["mobile","desktop"]}
 {"prompt":"cute but professional little spaceship crashed on planet with strange plants, daytime, light sky, comic style","params":{"no": "photorealistic, people", "model":"6.1"},"targets":["mobile", "desktop-light"]}
-{"prompt":"harmonious chaos, fragmental tessalations, frottage","params":{"chaos":20,"model":"5.2"},"targets":["mobile","desktop"]}
 {"prompt":"harmonious chaos, fragmental tessalations, frottage","params":{"chaos":20,"model":"6.1"},"targets":["mobile","desktop"]}
 {"prompt":"harmonious chaos, fragmental tessalations, nano particles","params":{"chaos":20,"model":"5.2"},"targets":["mobile","desktop"]}
 {"prompt":"harmonious shapes, fragmental tessalations, elegant intricate patterns, 3d, depth","params":{"no":"fractal, white", "stylize":200,"model":"6.1"},"targets":["mobile","desktop"]}
@@ -37,12 +36,12 @@
 {"prompt":"detailed infographic of quantum mechanics, high-tech UI design elements, futuristic","params":{"model":"6.1"},"targets":["desktop"]}
 {"prompt":"crazy futuristic particles, bokeh","params":{"chaos":20,"model":"5.2"},"targets":["desktop","mobile"]}
 {"prompt":"meditation flow, minimal, abstract","params":{"no":"sitting,person,people,face","model":"5.2"},"targets":["desktop","mobile"]}
-{"prompt":"psychedelic supernova, psychedelic comic style","params":{"chaos":20,"no":"people, face","model":"6.1"},"targets":["desktop-light"]}
 {"prompt":"dislocation, linear crystallographic defect, wallpaper","params":{"chaos":10,"model":"5.2"},"targets":["desktop","mobile"]}
 {"prompt":"future lattice","params":{"chaos":10,"no":"people, face","model":"5.2"},"targets":["desktop"]}
 {"prompt":"graffiti, 3d","params":{"chaos":10,"model":"5.2"},"targets":["desktop"]}
 {"prompt":"graffiti","params":{"no": "people,face", "chaos":10,"model":"5.2"},"targets":["desktop"]}
 {"prompt":"nostalgic landscape, comic, peaceful day","params":{"no": "people,face", "chaos":10,"model":"5.2"},"targets":["desktop-light"]}
+{"prompt":"nostalgic landscape, comic, sunrise, cartoonish vector style","params":{"chaos":20,"model":"6.1", "stylize": 200},"targets":["desktop"]}
 {"prompt":"flat design abstract poster, daylight, aesthetic dayscape","params":{"chaos":30,"model":"5.2"},"targets":["desktop-light"]}
 {"prompt":"nature spring day, flat design, aesthetic, epic","params":{"no": "people,face", "chaos": 30, "model":"5.2"},"targets":["desktop-light", "mobile"]}
 {"prompt":"A minimalist full body cartoonish grinning animal isolated and cut-out on white background. Widely spaced eyes. Small pupils. In the style of childish and whimsy illustrations. Anthropomorphic style. Endearing and funny. Muted tones. In the style of watercolor paintings. Isolated on muted background.","params":{"no": "outline, realistic photo details", "chaos":5, "model":"6.1"},"targets":["mobile"]}
@@ -70,3 +69,7 @@
 {"prompt":"jupiter clouds, close up, psychedelic colors","params":{"no":"clouds, jupiter","stylize":150,"model":"6.1"},"targets":["desktop","mobile"]}
 {"prompt":"liquid vortices","params":{"stylize":150,"model":"6.1"},"targets":["desktop","mobile"]}
 {"prompt":"crowd worshipping a gigantic holy <%= random(fruits.concat(vegetables)) %>, cult, sermon by messiah, tilt-shift photography, dramatic composition","params":{"model":"6.1"},"targets":["desktop"]}
+{"prompt":"a poster, in the style of a vintage poster from the 80s","params":{"no": "person", "stylize":200,"model":"6.1"},"targets":["mobile"]}
+{"prompt":"pattern, flowers, sunset light, pastel art","params":{"chaos": 10, "stylize":500,"model":"6.1"},"targets":["mobile"]}
+{"prompt":"macro fingerprint pattern in dust, enigma, labyrinth, vector style","params":{"chaos": 5, "stylize":200,"model":"6.1"},"targets":["desktop"]}
+{"prompt":"Fantasy illustration, magnificent, dreamy fairyland, orange blue background, flowing clouds and fog, Eastern style, intricate lines.","params":{"model":"6.1"},"targets":["mobile", "desktop"]}
