@@ -1,7 +1,7 @@
 {"prompt":"kaleidoscope mosaic, frottage","params":{"chaos":20,"model":"6.1"},"targets":["mobile","desktop"]}
 {"prompt":"forgotten spaceship crashed on planet with strange plants, beautiful night sky, nostalgic, comic style","params":{"no": "photorealistic, people", "model":"6.1"},"targets":["mobile","desktop"]}
 {"prompt":"cute but professional little spaceship crashed on planet with strange plants, daytime, light sky, comic style","params":{"no": "photorealistic, people", "model":"6.1"},"targets":["mobile", "desktop-light"]}
-{"prompt":"harmonious chaos, fragmental tessalations, frottage","params":{"chaos":20,"model":"6.1"},"targets":["mobile","desktop"]}
+{"prompt":"harmonious chaos, fragmental tessalations, frottage, hyperrealistic","params":{"no": "people,face,tiles", "chaos":20,"model":"6.1"},"targets":["desktop"]}
 {"prompt":"harmonious chaos, fragmental tessalations, nano particles","params":{"chaos":20,"model":"5.2"},"targets":["mobile","desktop"]}
 {"prompt":"harmonious shapes, fragmental tessalations, elegant intricate patterns, 3d, depth","params":{"no":"fractal, white", "stylize":200,"model":"6.1"},"targets":["mobile","desktop"]}
 {"prompt":"extremely complicated tesselation, intricate, <%= random(colors) %> color","params":{"chaos":20,"model":"5.2"},"targets":["mobile","desktop"]}
@@ -47,7 +47,7 @@
 {"prompt":"A minimalist full body cartoonish grinning animal isolated and cut-out on white background. Widely spaced eyes. Small pupils. In the style of childish and whimsy illustrations. Anthropomorphic style. Endearing and funny. Muted tones. In the style of watercolor paintings. Isolated on muted background.","params":{"no": "outline, realistic photo details", "chaos":5, "model":"6.1"},"targets":["mobile"]}
 {"prompt":"the king of pigs is a fractal starring into infinity","params":{"model":"6.1"},"targets":["mobile"]}
 {"prompt":"color dispersion, abstract, glitches","params":{"model":"5.2"},"targets":["desktop","mobile"]}
-{"prompt":"jupiter clouds, close up","params":{"no":"moon,planet", "model":"5.2"},"targets":["desktop-light"]}
+{"prompt":"jupiter clouds, close up","params":{"no":"moon,planet,blurred", "chaos": 30, "stylize":600, "weird":500, "model":"5.2"},"targets":["desktop-light"]}
 {"prompt":"particle tracks, particle collision, diagram","params":{"no":"text","model":"5.2"},"targets":["desktop"]}
 {"prompt":"cryptic writing, aztec, colorful, plastic","params":{"chaos":8,"no":"people","model":"5.2"},"targets":["desktop","mobile"]}
 {"prompt":"intricate abstract liquid machine, cinematic","params":{"chaos":20,"model":"6.1"},"targets":["desktop", "mobile"]}
@@ -73,3 +73,5 @@
 {"prompt":"pattern, flowers, sunset light, pastel art","params":{"chaos": 10, "stylize":500,"model":"6.1"},"targets":["mobile"]}
 {"prompt":"macro fingerprint pattern in dust, enigma, labyrinth, vector style","params":{"chaos": 5, "stylize":200,"model":"6.1"},"targets":["desktop"]}
 {"prompt":"Fantasy illustration, magnificent, dreamy fairyland, orange blue background, flowing clouds and fog, Eastern style, intricate lines.","params":{"model":"6.1"},"targets":["mobile", "desktop"]}
+{"prompt":"choker up shot of a small ancient animal starring curiously into the camera, 35mm cinematic, detailed","params":{"stylize": "300", "model":"6.1"},"targets":["desktop"]}
+{"prompt":"choker up shot of a small ancient animal starring curiously into the camera, 35mm cinematic, detailed, daylight, vibrant colors","params":{"stylize": "300", "model":"6.1"},"targets":["desktop-light"]}
