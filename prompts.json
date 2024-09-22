@@ -27,7 +27,7 @@
 {"prompt":"intricate abstract machine","params":{"chaos":20,"model":"5.2"},"targets":["desktop","mobile"]}
 {"prompt":"elegant fluorescent geometric shapes on dark matte surface","params":{"model":"5.2"},"targets":["desktop","mobile"]}
 {"prompt":"fluid thin line pattern","params":{"no": "black and white", "chaos":20, "model":"5.2"},"targets":["mobile"]}
-{"prompt":"fluid thin line pattern, muted tones","params":{"chaos":20, "model":"5.2"},"targets":["mobile", "desktop-light"]}
+{"prompt":"fluid thin line pattern, muted tones","params":{"chaos":30, "model":"5.2"},"targets":["mobile", "desktop-light"]}
 {"prompt":"psychedelic planet, close-up, cinematic","params":{"model":"6.1"},"targets":["desktop","mobile"]}
 {"prompt":"psychedelic planet, close-up","params":{"model":"6.1"},"targets":["desktop", "mobile"]}
 {"prompt":"gold vein","params":{"model":"6.1"},"targets":["desktop", "mobile"]}
@@ -61,7 +61,7 @@
 {"prompt":"an illustration, showing a hundred animals tightly packed","params":{"model":"6.1"},"targets":["desktop"]}
 {"prompt":"an illustration, showing a hundred music instruments tightly packed","params":{"model":"6.1"},"targets":["desktop"]}
 {"prompt":"an illustration, showing a hundred peaks tightly packed","params":{"model":"6.1"},"targets":["desktop-light"]}
-{"prompt":"an illustration, showing a hundred trees having a party, tightly packed, filling screen","params":{"no": "people", "chaos":15,"model":"6.1"},"targets":["desktop-light"]}
+{"prompt":"an illustration, showing a hundred different trees having a party, tightly packed, filling screen","params":{"no": "people", "chaos":15,"model":"6.1"},"targets":["desktop-light"]}
 {"prompt":"hybrid phenomena, mandala","params":{"model":"6.1", "chaos":10},"targets":["desktop"]}
 {"prompt":"hybrid phenomena, liquid","params":{"model":"6.1", "chaos":10},"targets":["desktop"]}
 {"prompt":"hybrid phenomena, high viscosity","params":{"model":"6.1"},"targets":["desktop"]}
@@ -75,3 +75,4 @@
 {"prompt":"Fantasy illustration, magnificent, dreamy fairyland, orange blue background, flowing clouds and fog, Eastern style, intricate lines.","params":{"model":"6.1"},"targets":["mobile", "desktop"]}
 {"prompt":"choker up shot of a small ancient animal starring curiously into the camera, 35mm cinematic, detailed","params":{"stylize": "300", "model":"6.1"},"targets":["desktop"]}
 {"prompt":"choker up shot of a small ancient animal starring curiously into the camera, 35mm cinematic, detailed, daylight, vibrant colors","params":{"stylize": "300", "model":"6.1"},"targets":["desktop-light"]}
+{"prompt":"Elegant and minimalistic logo of a proud confusing cute creature. color accents. The design should have a modern style, with a focus on simplicity and elegance. The background is white.","params":{"stylize": "250", "model":"6.1"},"targets":["mobile", "desktop-light"]}
