@@ -30,7 +30,7 @@
 {"prompt":"fluid thin line pattern, muted tones","params":{"chaos":30, "model":"5.2"},"targets":["mobile", "desktop-light"]}
 {"prompt":"psychedelic planet, close-up, cinematic","params":{"model":"6.1"},"targets":["desktop","mobile"]}
 {"prompt":"psychedelic planet, close-up","params":{"model":"6.1"},"targets":["desktop", "mobile"]}
-{"prompt":"gold vein","params":{"model":"6.1"},"targets":["desktop", "mobile"]}
+{"prompt":"gold vein","params":{"chaos": "10", "model":"6.1"},"targets":["desktop", "mobile"]}
 {"prompt":"isometric fairytale","params":{"model":"6.1"},"targets":["desktop-light"]}
 {"prompt":"infographic describing quantum mechanics","params":{"model":"6.1"},"targets":["desktop"]}
 {"prompt":"detailed infographic of quantum mechanics, high-tech UI design elements, futuristic","params":{"model":"6.1"},"targets":["desktop"]}
@@ -76,3 +76,5 @@
 {"prompt":"choker up shot of a small ancient animal starring curiously into the camera, 35mm cinematic, detailed","params":{"stylize": "300", "model":"6.1"},"targets":["desktop"]}
 {"prompt":"choker up shot of a small ancient animal starring curiously into the camera, 35mm cinematic, detailed, daylight, vibrant colors","params":{"stylize": "300", "model":"6.1"},"targets":["desktop-light"]}
 {"prompt":"Elegant and minimalistic logo of a proud confusing cute creature. color accents. The design should have a modern style, with a focus on simplicity and elegance. The background is white.","params":{"stylize": "250", "model":"6.1"},"targets":["mobile", "desktop-light"]}
+{"prompt":"3d papercuts view, in the style of surrealistic cartoons, detailed shading, realistic landscapes with soft, tonal colors, swirling vortexes traditional, vibrant","params":{"model":"6.1"},"targets":["mobile"]}
+{"prompt":"abstract trippy psychedelic dream art, paper cut craft, paper craft, paper illustration","params":{"no": "face", "model":"6.1"},"targets":["desktop-light"]}
