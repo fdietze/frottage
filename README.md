@@ -9,7 +9,6 @@ Regularly updated AI stuff.
 <img src="https://fdietze.github.io/frottage/wallpapers/wallpaper-desktop-light-latest.jpg" height="200" />
 <img src="https://fdietze.github.io/frottage/wallpapers/wallpaper-mobile-latest.jpg" height="200" />
 <img src="https://fdietze.github.io/frottage/wallpapers/wallpaper-mobile-homescreen-latest.jpg" height="200" />
-<img src="https://fdietze.github.io/frottage/wallpapers/wallpaper-watch-latest.jpg" height="200" />
 </div>
 
 [view prompts](/prompts.json), [view targets](/targets.json), [view schedule](/.github/workflows/generate-wallpapers.yml#L6)
@@ -23,6 +22,7 @@ The images are deployed to:
 ## Recipes
 
 <https://fdietze.github.io/frottage/recipes>
+(not updating for now. let me know if you want it back or cooked something!)
 
 
 # Wallpaper Usage
@@ -44,7 +44,9 @@ feh --bg-fill https://fdietze.github.io/frottage/wallpapers/wallpaper-desktop-la
 ## Android:
 
 1. Install Automate:
-   https://play.google.com/store/apps/details?id=com.llamalab.automate&referrer=utm_source%3Dcommunity
+  
+A minimal Android app is on the way. Until then you can use this automation app:
+ https://play.google.com/store/apps/details?id=com.llamalab.automate&referrer=utm_source%3Dcommunity
 2. Download flow: https://llamalab.com/automate/community/flows/45884
 
 ## iOS:
