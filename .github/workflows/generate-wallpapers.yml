@@ -69,7 +69,7 @@ jobs:
           find static | sort
 
       - name: Deploy 🚀
-        uses: JamesIves/github-pages-deploy-action@v4
+        uses: JamesIves/github-pages-deploy-action@920cbb300dcd3f0568dbc42700c61e2fd9e6139c # v4
         with:
           folder: static
           clean: false # keep old files if not overridden
