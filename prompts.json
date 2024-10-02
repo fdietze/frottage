@@ -48,7 +48,6 @@
 {"prompt":"the king of pigs is a fractal starring into infinity","params":{"model":"6.1"},"targets":["mobile"]}
 {"prompt":"color dispersion, abstract, glitches","params":{"model":"5.2"},"targets":["desktop","mobile"]}
 {"prompt":"jupiter clouds, close up","params":{"no":"moon,planet,blurred", "chaos": 30, "stylize":600, "weird":500, "model":"5.2"},"targets":["desktop-light"]}
-{"prompt":"particle tracks, particle collision, diagram","params":{"no":"text","model":"5.2"},"targets":["desktop"]}
 {"prompt":"cryptic writing, aztec, colorful, plastic","params":{"chaos":8,"no":"people","model":"5.2"},"targets":["desktop","mobile"]}
 {"prompt":"intricate abstract liquid machine, cinematic","params":{"chaos":20,"model":"6.1"},"targets":["desktop", "mobile"]}
 {"prompt":"fractured time, dark, glitches","params":{"no":"clock,person","chaos":20,"model":"6.1"},"targets":["desktop", "mobile"]}
