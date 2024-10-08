@@ -78,14 +78,14 @@ async function main() {
   await Mj.connect({ Debug: false }, async (client) => {
     await client.Relax();
     let lastFinishedPromptCount = 0;
-    await sleepMs(13000);
+    await sleepMs(3000);
     // iterate until all prompts have been generated
     while (prompts.some((prompt) => !prompt.imageUrl)) {
       // schedule all prompts in parallel
       prompts = await Promise.all(
         prompts.map(async (prompt, i) => {
           // start each prompt some seconds apart
-          await sleepMs(i * 12000);
+          await sleepMs(i * 11000);
 
           try {
             // template rendering might crash if dependencies on other prompts are not yet available
