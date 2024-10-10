@@ -1,0 +1,16 @@
+{
+  "template": {
+    "prompt": "jupiter clouds, close up",
+    "params": {
+      "no": "moon,planet,blurred",
+      "chaos": 30,
+      "stylize": 600,
+      "weird": 500,
+      "model": "5.2"
+    },
+    "targets": [
+      "desktop-light"
+    ]
+  },
+  "prompt": "jupiter clouds, close up"
+}
