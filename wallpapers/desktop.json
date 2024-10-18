@@ -1,0 +1,13 @@
+{
+  "template": {
+    "prompt": "psychedelic planet, close-up, cinematic",
+    "params": {
+      "model": "6.1"
+    },
+    "targets": [
+      "desktop",
+      "mobile"
+    ]
+  },
+  "prompt": "psychedelic planet, close-up, cinematic"
+}

@@ -1,0 +1,14 @@
+{
+  "template": {
+    "prompt": "pattern, flowers, sunset light, pastel art",
+    "params": {
+      "chaos": 10,
+      "stylize": 500,
+      "model": "6.1"
+    },
+    "targets": [
+      "mobile"
+    ]
+  },
+  "prompt": "pattern, flowers, sunset light, pastel art"
+}

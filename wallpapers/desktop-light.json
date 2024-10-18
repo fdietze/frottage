@@ -1,0 +1,12 @@
+{
+  "template": {
+    "prompt": "an illustration, showing a hundred peaks tightly packed",
+    "params": {
+      "model": "6.1"
+    },
+    "targets": [
+      "desktop-light"
+    ]
+  },
+  "prompt": "an illustration, showing a hundred peaks tightly packed"
+}
