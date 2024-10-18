@@ -1,0 +1,14 @@
+{
+  "template": {
+    "prompt": "meditation flow, minimal, abstract",
+    "params": {
+      "no": "sitting,person,people,face",
+      "model": "5.2"
+    },
+    "targets": [
+      "desktop",
+      "mobile"
+    ]
+  },
+  "prompt": "meditation flow, minimal, abstract"
+}

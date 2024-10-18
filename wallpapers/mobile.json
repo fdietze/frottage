@@ -1,0 +1,14 @@
+{
+  "template": {
+    "prompt": "forgotten spaceship crashed on planet with strange plants, beautiful night sky, nostalgic, comic style",
+    "params": {
+      "no": "photorealistic, people",
+      "model": "6.1"
+    },
+    "targets": [
+      "mobile",
+      "desktop"
+    ]
+  },
+  "prompt": "forgotten spaceship crashed on planet with strange plants, beautiful night sky, nostalgic, comic style"
+}
