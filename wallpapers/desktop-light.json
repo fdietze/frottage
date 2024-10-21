@@ -1,0 +1,14 @@
+{
+  "template": {
+    "prompt": "an illustration, showing a hundred different trees having a party, tightly packed, filling screen",
+    "params": {
+      "no": "people",
+      "chaos": 15,
+      "model": "6.1"
+    },
+    "targets": [
+      "desktop-light"
+    ]
+  },
+  "prompt": "an illustration, showing a hundred different trees having a party, tightly packed, filling screen"
+}
