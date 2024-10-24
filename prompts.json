@@ -77,3 +77,6 @@
 {"prompt":"Groovy line patterns","params":{"no": "panels", "model":"6.1"},"targets":["desktop", "mobile"]}
 {"prompt":"Groovy patterns","params":{"model":"6.1"},"targets":["desktop", "mobile"]}
 {"prompt":"an organic dark brown wood grain pattern with intricate abstract details, rendered in a wood carving style","params":{"chaos": "5", "stylize": "200", "model":"6.1"},"targets":["mobile"]}
+{"prompt":"Groovy time travel, abstract flat","params":{"no": "clock, vehicle", "model":"6.1"},"targets":["desktop-light", "mobile"]}
+{"prompt":"natural vector field, natural light, peaceful, romantic, high definition details, in the style of illustration","params":{"model":"6.1"},"targets":["desktop-light", "mobile"]}
+{"prompt":"leafs","params":{"model":"6.1"},"targets":["mobile"]}
