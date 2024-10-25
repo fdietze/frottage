@@ -1,0 +1,15 @@
+{
+  "template": {
+    "prompt": "psychedelic wallpaper, patterns",
+    "negativePrompt": "people,face",
+    "params": {
+      "chaos": 10
+    },
+    "targets": [
+      "desktop",
+      "mobile",
+      "watch"
+    ]
+  },
+  "prompt": "psychedelic wallpaper, patterns"
+}

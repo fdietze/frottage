@@ -1,0 +1,14 @@
+{
+  "template": {
+    "prompt": "Groovy time travel, abstract flat",
+    "params": {
+      "no": "clock, vehicle",
+      "model": "6.1"
+    },
+    "targets": [
+      "desktop-light",
+      "mobile"
+    ]
+  },
+  "prompt": "Groovy time travel, abstract flat"
+}

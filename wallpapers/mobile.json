@@ -1,0 +1,14 @@
+{
+  "template": {
+    "prompt": "extremely complicated tesselation, intricate, <%= random(colors) %> color",
+    "params": {
+      "chaos": 20,
+      "model": "5.2"
+    },
+    "targets": [
+      "mobile",
+      "desktop"
+    ]
+  },
+  "prompt": "extremely complicated tesselation, intricate, Puce Dark Pink color"
+}
