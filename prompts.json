@@ -2,7 +2,7 @@
 {"prompt":"forgotten spaceship crashed on planet with strange plants, beautiful night sky, nostalgic, comic style","params":{"no": "photorealistic, people", "model":"6.1"},"targets":["mobile","desktop"]}
 {"prompt":"cute but professional little spaceship crashed on planet with strange plants, daytime, light sky, comic style","params":{"no": "photorealistic, people", "model":"6.1"},"targets":["mobile", "desktop-light"]}
 {"prompt":"harmonious chaos, fragmental tessalations, frottage, hyperrealistic","params":{"no": "people,face,tiles", "chaos":20,"model":"6.1"},"targets":["desktop"]}
-{"prompt":"harmonious chaos, fragmental tessalations, nano particles","params":{"chaos":20,"model":"5.2"},"targets":["mobile","desktop"]}
+{"prompt":"harmonious chaos, fragmental tessalations, nano particles, high resolution, 4k","params":{"chaos":20,"model":"5.2"},"targets":["mobile","desktop"]}
 {"prompt":"harmonious shapes, fragmental tessalations, elegant intricate patterns, 3d, depth","params":{"no":"fractal, white", "stylize":200,"model":"6.1"},"targets":["mobile","desktop"]}
 {"prompt":"extremely complicated tesselation, intricate, <%= random(colors) %> color","params":{"chaos":20,"model":"5.2"},"targets":["mobile","desktop"]}
 {"prompt":"tesselation","params":{"chaos":20,"no":"people, face","model":"5.2"},"targets":["mobile","desktop"]}
@@ -35,7 +35,7 @@
 {"prompt":"crazy futuristic particles, bokeh","params":{"chaos":20,"model":"5.2"},"targets":["desktop","mobile"]}
 {"prompt":"meditation flow, minimal, abstract","params":{"no":"sitting,person,people,face","model":"5.2"},"targets":["desktop","mobile"]}
 {"prompt":"dislocation, linear crystallographic defect, wallpaper","params":{"chaos":10,"model":"5.2"},"targets":["desktop","mobile"]}
-{"prompt":"future lattice","params":{"chaos":10,"no":"people, face","model":"5.2"},"targets":["desktop"]}
+{"prompt":"future lattice, 4k, high resolution","params":{"chaos":10,"no":"people, face","model":"5.2"},"targets":["desktop"]}
 {"prompt":"graffiti, 3d","params":{"chaos":10,"model":"5.2"},"targets":["desktop"]}
 {"prompt":"graffiti","params":{"no": "people,face", "chaos":10,"model":"5.2"},"targets":["desktop"]}
 {"prompt":"nostalgic landscape, comic, peaceful day","params":{"no": "people,face", "chaos":10,"model":"5.2"},"targets":["desktop-light"]}
