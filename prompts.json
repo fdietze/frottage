@@ -34,7 +34,7 @@
 {"prompt":"isometric fairytale","params":{"model":"6.1"},"targets":["desktop-light"]}
 {"prompt":"crazy futuristic particles, bokeh","params":{"chaos":20,"model":"5.2"},"targets":["desktop","mobile"]}
 {"prompt":"meditation flow, minimal, abstract","params":{"no":"sitting,person,people,face","model":"5.2"},"targets":["desktop","mobile"]}
-{"prompt":"dislocation, linear crystallographic defect, wallpaper","params":{"chaos":10,"model":"5.2"},"targets":["desktop","mobile"]}
+{"prompt":"dislocation, linear crystallographic defect, wallpaper","params":{"chaos":10,"model":"5.2"},"targets":["mobile"]}
 {"prompt":"future lattice, 4k, high resolution","params":{"chaos":10,"no":"people, face","model":"5.2"},"targets":["desktop"]}
 {"prompt":"graffiti, 3d","params":{"chaos":10,"model":"5.2"},"targets":["desktop"]}
 {"prompt":"graffiti","params":{"no": "people,face", "chaos":10,"model":"5.2"},"targets":["desktop"]}
