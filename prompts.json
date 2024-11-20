@@ -22,9 +22,8 @@
 {"prompt":"travel through hyperspace, Art Brut","params":{"chaos":20,"stylize":200,"model":"5.2"},"targets":["mobile","desktop"]}
 {"prompt":"meteor flying through hyperspace, Art Brut","params":{"chaos":20,"stylize":200, "model":"5.2"},"targets":["mobile"]}
 {"prompt":"glowing circuitry","params":{"chaos":30,"no":"people,face","model":"5.2"},"targets":["desktop"]}
-{"prompt":"ocean landscape on an different planet, <%= random(artStyles) %>","params":{"chaos":1,"model":"5.2"},"targets":["desktop"]}
 {"prompt":"room with crazy painting","params":{"chaos":10,"model":"5.2"},"targets":["desktop"]}
-{"prompt":"intricate abstract machine","params":{"chaos":20,"model":"5.2"},"targets":["desktop","mobile"]}
+{"prompt":"intricate abstract machine","params":{"chaos":30,"model":"5.2"},"targets":["desktop","mobile"]}
 {"prompt":"elegant fluorescent geometric shapes on dark matte surface","params":{"model":"5.2"},"targets":["desktop","mobile"]}
 {"prompt":"fluid thin line pattern","params":{"no": "black and white", "chaos":20, "model":"5.2"},"targets":["mobile"]}
 {"prompt":"fluid thin line pattern, muted tones","params":{"chaos":30, "model":"6.1", "stylize": 500},"targets":["mobile", "desktop-light"]}
