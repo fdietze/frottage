@@ -27,7 +27,7 @@
 {"prompt":"intricate abstract machine","params":{"chaos":20,"model":"5.2"},"targets":["desktop","mobile"]}
 {"prompt":"elegant fluorescent geometric shapes on dark matte surface","params":{"model":"5.2"},"targets":["desktop","mobile"]}
 {"prompt":"fluid thin line pattern","params":{"no": "black and white", "chaos":20, "model":"5.2"},"targets":["mobile"]}
-{"prompt":"fluid thin line pattern, muted tones","params":{"chaos":30, "model":"5.2"},"targets":["mobile", "desktop-light"]}
+{"prompt":"fluid thin line pattern, muted tones","params":{"chaos":30, "model":"6.1", "stylize": 500},"targets":["mobile", "desktop-light"]}
 {"prompt":"psychedelic planet, close-up, cinematic","params":{"model":"6.1"},"targets":["desktop","mobile"]}
 {"prompt":"psychedelic planet, close-up","params":{"model":"6.1"},"targets":["desktop", "mobile"]}
 {"prompt":"gold vein","params":{"chaos": "10", "model":"6.1"},"targets":["desktop", "mobile"]}
