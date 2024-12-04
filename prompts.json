@@ -66,7 +66,7 @@
 {"prompt":"a poster, in the style of a vintage poster from the 80s","params":{"no": "person", "stylize":200,"model":"6.1"},"targets":["mobile"]}
 {"prompt":"pattern, flowers, sunset light, pastel art","params":{"chaos": 10, "stylize":500,"model":"6.1"},"targets":["mobile"]}
 {"prompt":"macro fingerprint pattern in dust, enigma, labyrinth, vector style","params":{"chaos": 5, "stylize":200,"model":"6.1"},"targets":["desktop"]}
-{"prompt":"Fantasy illustration, magnificent, dreamy fairyland, orange blue background, flowing clouds and fog, Eastern style, intricate lines.","params":{"model":"6.1"},"targets":["mobile", "desktop"]}
+{"prompt":"Fantasy illustration, magnificent, dreamy fairyland, orange blue background, flowing clouds and fog, Eastern style, intricate lines.","params":{"chaos": "5", "model":"6.1"},"targets":["mobile", "desktop"]}
 {"prompt":"choker up shot of a small ancient animal starring curiously into the camera, 35mm cinematic, detailed","params":{"stylize": "300", "model":"6.1"},"targets":["desktop"]}
 {"prompt":"choker up shot of a small ancient animal starring curiously into the camera, 35mm cinematic, detailed, daylight, vibrant colors","params":{"stylize": "300", "model":"6.1"},"targets":["desktop-light"]}
 {"prompt":"Elegant and minimalistic logo of a proud confusing cute creature. color accents. The design should have a modern style, with a focus on simplicity and elegance. The background is white.","params":{"stylize": "250", "model":"6.1"},"targets":["mobile", "desktop-light"]}
@@ -78,3 +78,4 @@
 {"prompt":"Groovy time travel, abstract flat","params":{"no": "clock, vehicle", "model":"6.1"},"targets":["desktop-light", "mobile"]}
 {"prompt":"natural vector field, natural light, peaceful, romantic, high definition details, in the style of illustration","params":{"model":"6.1"},"targets":["desktop-light", "mobile"]}
 {"prompt":"leafs","params":{"model":"6.1"},"targets":["mobile"]}
+{"prompt":"Goro Fujita Minimalist, huge animal, a little girl, sky, rain","params":{"chaos": "10", "model":"6.1"},"targets":["desktop"]}
