@@ -1,0 +1,13 @@
+{
+  "template": {
+    "prompt": "natural vector field, natural light, peaceful, romantic, high definition details, in the style of illustration",
+    "params": {
+      "model": "6.1"
+    },
+    "targets": [
+      "desktop-light",
+      "mobile"
+    ]
+  },
+  "prompt": "natural vector field, natural light, peaceful, romantic, high definition details, in the style of illustration"
+}
