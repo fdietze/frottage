@@ -1,0 +1,12 @@
+{
+  "template": {
+    "prompt": "magnetic field lines, paper sketch, a few color accents",
+    "params": {
+      "model": "6.1"
+    },
+    "targets": [
+      "desktop-light"
+    ]
+  },
+  "prompt": "magnetic field lines, paper sketch, a few color accents"
+}

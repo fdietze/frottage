@@ -1,0 +1,12 @@
+{
+  "template": {
+    "prompt": "graph algorithm, mellow, very detailed, painted by very patient artist",
+    "params": {
+      "model": "6.1"
+    },
+    "targets": [
+      "mobile"
+    ]
+  },
+  "prompt": "graph algorithm, mellow, very detailed, painted by very patient artist"
+}

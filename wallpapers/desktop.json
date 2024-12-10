@@ -1,0 +1,14 @@
+{
+  "template": {
+    "prompt": "future lattice, 4k, high resolution",
+    "params": {
+      "chaos": 10,
+      "no": "people, face",
+      "model": "5.2"
+    },
+    "targets": [
+      "desktop"
+    ]
+  },
+  "prompt": "future lattice, 4k, high resolution"
+}
