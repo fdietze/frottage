@@ -1,0 +1,12 @@
+{
+  "template": {
+    "prompt": "an illustration, showing a hundred music instruments tightly packed",
+    "params": {
+      "model": "6.1"
+    },
+    "targets": [
+      "desktop"
+    ]
+  },
+  "prompt": "an illustration, showing a hundred music instruments tightly packed"
+}

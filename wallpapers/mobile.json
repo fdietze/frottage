@@ -1,0 +1,14 @@
+{
+  "template": {
+    "prompt": "cute but professional little spaceship crashed on planet with strange plants, daytime, light sky, comic style",
+    "params": {
+      "no": "photorealistic, people",
+      "model": "6.1"
+    },
+    "targets": [
+      "mobile",
+      "desktop-light"
+    ]
+  },
+  "prompt": "cute but professional little spaceship crashed on planet with strange plants, daytime, light sky, comic style"
+}

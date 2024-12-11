@@ -1,0 +1,13 @@
+{
+  "template": {
+    "prompt": "daytime,100mm lens,isometric,tilt shift,3d blender render,4k,UHD",
+    "params": {
+      "chaos": 10,
+      "model": "6.1"
+    },
+    "targets": [
+      "desktop-light"
+    ]
+  },
+  "prompt": "daytime,100mm lens,isometric,tilt shift,3d blender render,4k,UHD"
+}
