@@ -1,0 +1,15 @@
+{
+  "template": {
+    "prompt": "travel through hyperspace, Art Brut",
+    "params": {
+      "chaos": 20,
+      "stylize": 200,
+      "model": "5.2"
+    },
+    "targets": [
+      "mobile",
+      "desktop"
+    ]
+  },
+  "prompt": "travel through hyperspace, Art Brut"
+}

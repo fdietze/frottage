@@ -1,0 +1,14 @@
+{
+  "template": {
+    "prompt": "Fantasy illustration, magnificent, dreamy fairyland, orange blue background, flowing clouds and fog, Eastern style, intricate lines.",
+    "params": {
+      "chaos": "5",
+      "model": "6.1"
+    },
+    "targets": [
+      "mobile",
+      "desktop"
+    ]
+  },
+  "prompt": "Fantasy illustration, magnificent, dreamy fairyland, orange blue background, flowing clouds and fog, Eastern style, intricate lines."
+}
