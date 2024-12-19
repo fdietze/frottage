@@ -1,0 +1,12 @@
+{
+  "template": {
+    "prompt": "the king of pigs is a fractal starring into infinity",
+    "params": {
+      "model": "6.1"
+    },
+    "targets": [
+      "mobile"
+    ]
+  },
+  "prompt": "the king of pigs is a fractal starring into infinity"
+}
