@@ -1,0 +1,15 @@
+{
+  "template": {
+    "prompt": "jupiter clouds, close up, psychedelic colors",
+    "params": {
+      "no": "clouds, jupiter",
+      "stylize": 150,
+      "model": "6.1"
+    },
+    "targets": [
+      "desktop",
+      "mobile"
+    ]
+  },
+  "prompt": "jupiter clouds, close up, psychedelic colors"
+}

@@ -1,0 +1,14 @@
+{
+  "template": {
+    "prompt": "crazy futuristic particles, bokeh",
+    "params": {
+      "chaos": 20,
+      "model": "5.2"
+    },
+    "targets": [
+      "desktop",
+      "mobile"
+    ]
+  },
+  "prompt": "crazy futuristic particles, bokeh"
+}
