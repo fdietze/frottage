@@ -1,0 +1,14 @@
+{
+  "template": {
+    "prompt": "nostalgic landscape, comic, sunrise, cartoonish vector style",
+    "params": {
+      "chaos": 20,
+      "model": "6.1",
+      "stylize": 200
+    },
+    "targets": [
+      "desktop"
+    ]
+  },
+  "prompt": "nostalgic landscape, comic, sunrise, cartoonish vector style"
+}
