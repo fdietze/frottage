@@ -1,6 +1,7 @@
 {"prompt":"kaleidoscope mosaic, frottage","params":{"chaos":20,"model":"6.1"},"targets":["mobile","desktop"]}
 {"prompt":"forgotten spaceship crashed on planet with strange plants, beautiful night sky, nostalgic, comic style","params":{"no": "photorealistic, people", "model":"6.1"},"targets":["mobile","desktop"]}
 {"prompt":"cute but professional little spaceship crashed on planet with strange plants, daytime, light sky, comic style","params":{"no": "photorealistic, people", "model":"6.1"},"targets":["mobile", "desktop-light"]}
+{"prompt":"cute and curious little robot discovering planet with strange plants, daytime, light sky, comic style","params":{"no": "photorealistic, people", "model":"6.1"},"targets":["mobile", "desktop-light"]}
 {"prompt":"harmonious chaos, fragmental tessalations, frottage, hyperrealistic","params":{"no": "people,face,tiles", "chaos":20,"model":"6.1"},"targets":["desktop"]}
 {"prompt":"harmonious chaos, fragmental tessalations, nano particles, high resolution, 4k","params":{"chaos":20,"model":"5.2"},"targets":["mobile","desktop"]}
 {"prompt":"harmonious shapes, fragmental tessalations, elegant intricate patterns, 3d, depth","params":{"no":"fractal, white", "stylize":200,"model":"6.1"},"targets":["mobile","desktop"]}
@@ -35,7 +36,6 @@
 {"prompt":"meditation flow, minimal, abstract","params":{"no":"sitting,person,people,face","model":"5.2"},"targets":["desktop","mobile"]}
 {"prompt":"dislocation, linear crystallographic defect, wallpaper","params":{"chaos":10,"model":"5.2"},"targets":["mobile"]}
 {"prompt":"graffiti, 3d, clean sculpture","params":{"stylize":200,"model":"6.1"},"targets":["desktop"]}
-{"prompt":"cool graffiti concept related to nature","params":{"no": "people,face", "stylize":200,"model":"6.1"},"targets":["desktop"]}
 {"prompt":"nostalgic landscape, comic, peaceful day","params":{"no": "people,face", "chaos":10,"model":"5.2"},"targets":["desktop-light"]}
 {"prompt":"nostalgic landscape, comic, sunrise, cartoonish vector style","params":{"chaos":20,"model":"6.1", "stylize": 200},"targets":["desktop"]}
 {"prompt":"flat design abstract poster, daylight, aesthetic dayscape","params":{"no": "furniture", "chaos":30,"model":"5.2"},"targets":["desktop-light"]}
@@ -46,12 +46,12 @@
 {"prompt":"jupiter clouds, close up","params":{"no":"moon,planet,blurred", "chaos": 30, "stylize":600, "weird":500, "model":"5.2"},"targets":["desktop-light"]}
 {"prompt":"cryptic writing, aztec, colorful, plastic","params":{"chaos":8,"no":"people","model":"5.2"},"targets":["desktop","mobile"]}
 {"prompt":"intricate abstract liquid machine, cinematic","params":{"chaos":20,"model":"6.1"},"targets":["desktop", "mobile"]}
-{"prompt":"fractured time, dark, glitches","params":{"no":"clock,person","chaos":20,"model":"6.1"},"targets":["desktop", "mobile"]}
+{"prompt":"fractured time, dark, glitches","params":{"no":"clock,person","chaos":30, "stylize": 500, "model":"6.1"},"targets":["desktop", "mobile"]}
 {"prompt":"warp signature residue","params":{"stylize":200,"model":"6.1"},"targets":["desktop"]}
 {"prompt":"A graphic featuring mandala art depicting a <%= random(animals) %>, symbolizing wisdom and spirit. The minimalistic design uses bold black lines on a light background. a few colored accents. It captures the essence of culture through its intricate patterns and symbolism","params":{"chaos":10,"stylize":300,"model":"6.1"},"targets":["desktop-light"]}
 {"prompt":"gradient descent","params":{"model":"6.1"},"targets":["mobile"]}
 {"prompt":"graph algorithm, mellow, very detailed, painted by very patient artist","params":{"model":"6.1"},"targets":["mobile"]}
-{"prompt":"an illustration, showing a hundred animals tightly packed","params":{"model":"6.1"},"targets":["desktop"]}
+{"prompt":"an illustration, showing a hundred cute animals tightly packed. Graphic design, lines, soft tones","params":{"model":"6.1"},"targets":["desktop"]}
 {"prompt":"an illustration, showing a hundred music instruments tightly packed","params":{"model":"6.1"},"targets":["desktop"]}
 {"prompt":"an illustration, showing a hundred peaks tightly packed","params":{"model":"6.1"},"targets":["desktop-light"]}
 {"prompt":"an illustration, showing a hundred different trees having a party, tightly packed, filling screen","params":{"no": "people", "chaos":15,"model":"6.1"},"targets":["desktop-light"]}
@@ -78,3 +78,4 @@
 {"prompt":"natural vector field, natural light, peaceful, romantic, high definition details, in the style of illustration","params":{"model":"6.1"},"targets":["desktop-light", "mobile"]}
 {"prompt":"leafs","params":{"model":"6.1"},"targets":["mobile"]}
 {"prompt":"Goro Fujita Minimalist, huge animal, a little girl, sky, rain","params":{"chaos": "10", "model":"6.1"},"targets":["desktop"]}
+{"prompt":"liquid time, sand, illustration, fantastic geometric forest","params":{"model":"6.1"},"targets":["mobile", "desktop"]}
