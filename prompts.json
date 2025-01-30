@@ -60,7 +60,7 @@
 {"prompt":"hybrid phenomena, high viscosity","params":{"model":"6.1"},"targets":["desktop"]}
 {"prompt":"magnetic field lines, paper sketch, a few color accents","params":{"model":"6.1"},"targets":["desktop-light"]}
 {"prompt":"jupiter clouds, close up, psychedelic colors","params":{"no":"clouds, jupiter","stylize":150,"model":"6.1"},"targets":["desktop","mobile"]}
-{"prompt":"liquid vortices","params":{"stylize":150,"model":"6.1"},"targets":["desktop","mobile"]}
+{"prompt":"liquid vortices","params":{"stylize":150,"model":"6.1"},"targets":["mobile"]}
 {"prompt":"crowd worshipping a gigantic holy <%= random(fruits.concat(vegetables)) %>, cult, sermon by messiah, tilt-shift photography, dramatic composition","params":{"model":"6.1"},"targets":["desktop"]}
 {"prompt":"a poster, in the style of a vintage poster from the 80s","params":{"no": "person", "stylize":200,"model":"6.1"},"targets":["mobile"]}
 {"prompt":"pattern, flowers, sunset light, pastel art","params":{"chaos": 10, "stylize":500,"model":"6.1"},"targets":["mobile"]}
