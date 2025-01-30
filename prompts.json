@@ -79,3 +79,5 @@
 {"prompt":"leafs","params":{"model":"6.1"},"targets":["mobile"]}
 {"prompt":"Goro Fujita Minimalist, huge animal, a little girl, sky, rain","params":{"chaos": "10", "model":"6.1"},"targets":["desktop"]}
 {"prompt":"liquid time, sand, illustration, fantastic geometric forest","params":{"model":"6.1"},"targets":["mobile", "desktop"]}
+{"prompt":"megalith tree, druid stones, glowing magic, psychedelic","params":{"chaos": "20","stylize": "500", "model":"6.1"},"targets":["desktop", "mobile"]}
+{"prompt":"turbulence in two phases, blotches of liquid paint, multifacetted","params":{"chaos": "300","stylize": "404", "no": "person","model":"6.1"},"targets":["desktop", "mobile"]}
