@@ -42,7 +42,7 @@
 {"prompt":"A minimalist full body cartoonish grinning animal isolated and cut-out on white background. Widely spaced eyes. Small pupils. In the style of childish and whimsy illustrations. Anthropomorphic style. Endearing and funny. Muted tones. In the style of watercolor paintings. Isolated on muted background.","params":{"no": "outline, realistic photo details", "chaos":5, "model":"6.1"},"targets":["mobile"]}
 {"prompt":"the king of pigs is a fractal starring into infinity","params":{"model":"6.1"},"targets":["mobile"]}
 {"prompt":"color dispersion, abstract, glitches","params":{"model":"5.2"},"targets":["desktop","mobile"]}
-{"prompt":"cryptic writing, aztec, colorful, plastic","params":{"chaos":8,"no":"people","model":"5.2"},"targets":["desktop","mobile"]}
+{"prompt":"cryptic writing, aztec, colorful, plastic","params":{"chaos":8,"no":"people","model":"5.2"},"targets":["mobile"]}
 {"prompt":"intricate abstract liquid machine, cinematic","params":{"chaos":20,"model":"6.1"},"targets":["desktop", "mobile"]}
 {"prompt":"fractured time, dark, glitches","params":{"no":"clock,person","chaos":30, "stylize": 500, "model":"6.1"},"targets":["desktop", "mobile"]}
 {"prompt":"warp signature residue","params":{"stylize":200,"model":"6.1"},"targets":["desktop"]}
@@ -78,4 +78,5 @@
 {"prompt":"Goro Fujita Minimalist, huge animal, a little girl, sky, rain","params":{"chaos": "10", "model":"6.1"},"targets":["desktop"]}
 {"prompt":"liquid time, sand, illustration, fantastic geometric forest","params":{"model":"6.1"},"targets":["mobile", "desktop"]}
 {"prompt":"megalith tree, druid stones, glowing magic, psychedelic","params":{"chaos": "20","stylize": "500", "model":"6.1"},"targets":["desktop", "mobile"]}
-{"prompt":"turbulence in two phases, blotches of liquid paint, multifacetted","params":{"chaos": "300","stylize": "404", "no": "person","model":"6.1"},"targets":["desktop", "mobile"]}
+{"prompt":"turbulence in two phases, blotches of liquid paint, multifacetted","params":{"chaos": "30","stylize": "404", "no": "person","model":"6.1"},"targets":["desktop", "mobile"]}
+{"prompt":"line art bending white on black background, resembling patterns from nature","params":{"chaos": "20","model":"6.1"},"targets":["desktop", "mobile"]}
