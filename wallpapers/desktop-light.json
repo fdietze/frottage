@@ -1,0 +1,13 @@
+{
+  "template": {
+    "prompt": "abstract trippy psychedelic dream art, paper cut craft, paper craft, paper illustration",
+    "params": {
+      "no": "face",
+      "model": "6.1"
+    },
+    "targets": [
+      "desktop-light"
+    ]
+  },
+  "prompt": "abstract trippy psychedelic dream art, paper cut craft, paper craft, paper illustration"
+}

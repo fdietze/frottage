@@ -1,0 +1,15 @@
+{
+  "template": {
+    "prompt": "random noise, abstract",
+    "params": {
+      "chaos": 20,
+      "no": "people, face",
+      "model": "5.2"
+    },
+    "targets": [
+      "mobile",
+      "desktop"
+    ]
+  },
+  "prompt": "random noise, abstract"
+}

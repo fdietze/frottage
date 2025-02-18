@@ -1,0 +1,14 @@
+{
+  "template": {
+    "prompt": "gold vein",
+    "params": {
+      "chaos": "10",
+      "model": "6.1"
+    },
+    "targets": [
+      "desktop",
+      "mobile"
+    ]
+  },
+  "prompt": "gold vein"
+}
