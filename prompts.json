@@ -1,7 +1,6 @@
 {"prompt":"kaleidoscope mosaic, frottage","params":{"chaos":20,"model":"6.1"},"targets":["mobile","desktop"]}
 {"prompt":"forgotten spaceship crashed on planet with strange plants, beautiful night sky, nostalgic, comic style","params":{"no": "photorealistic, people", "model":"6.1"},"targets":["mobile","desktop"]}
 {"prompt":"cute but professional little spaceship crashed on planet with strange plants, daytime, light sky, comic style","params":{"no": "photorealistic, people", "model":"6.1"},"targets":["mobile", "desktop-light"]}
-{"prompt":"cute and curious little robot discovering planet with strange plants, daytime, light sky, comic style","params":{"no": "photorealistic, people", "model":"6.1"},"targets":["mobile", "desktop-light"]}
 {"prompt":"harmonious chaos, fragmental tessalations, frottage, hyperrealistic","params":{"no": "people,face,tiles", "chaos":20,"model":"6.1"},"targets":["desktop"]}
 {"prompt":"harmonious chaos, fragmental tessalations, nano particles, high resolution, 4k","params":{"chaos":20,"model":"5.2"},"targets":["mobile","desktop"]}
 {"prompt":"harmonious shapes, fragmental tessalations, elegant intricate patterns, 3d, depth","params":{"no":"fractal, white", "stylize":200,"model":"6.1"},"targets":["mobile","desktop"]}
@@ -30,7 +29,7 @@
 {"prompt":"fluid thin line pattern, muted tones","params":{"chaos":30, "model":"6.1", "stylize": 500},"targets":["mobile", "desktop-light"]}
 {"prompt":"psychedelic planet, close-up, cinematic","params":{"model":"6.1"},"targets":["desktop","mobile"]}
 {"prompt":"psychedelic planet, close-up","params":{"model":"6.1"},"targets":["desktop", "mobile"]}
-{"prompt":"gold vein","params":{"chaos": "10", "model":"6.1"},"targets":["desktop", "mobile"]}
+{"prompt":"gold vein","params":{"chaos": "40", "model":"6.1"},"targets":["desktop", "mobile"]}
 {"prompt":"isometric fairytale","params":{"model":"6.1"},"targets":["desktop-light"]}
 {"prompt":"crazy futuristic particles, bokeh","params":{"chaos":20,"model":"5.2"},"targets":["desktop","mobile"]}
 {"prompt":"meditation flow, minimal, abstract","params":{"no":"sitting,person,people,face","model":"5.2"},"targets":["desktop","mobile"]}
@@ -80,3 +79,9 @@
 {"prompt":"megalith tree, druid stones, glowing magic, psychedelic","params":{"chaos": "20","stylize": "500", "model":"6.1"},"targets":["desktop", "mobile"]}
 {"prompt":"turbulence in two phases, blotches of liquid paint, multifacetted","params":{"chaos": "30","stylize": "404", "no": "person","model":"6.1"},"targets":["desktop", "mobile"]}
 {"prompt":"line art bending white on black background, resembling patterns from nature","params":{"chaos": "20","model":"6.1"},"targets":["desktop", "mobile"]}
+{"prompt":"Abstract labyrinth, vector art","params":{"chaos": "10","model":"6.1"},"targets":["desktop", "mobile"]}
+{"prompt":"Abstract labyrinth, vector art","params":{"model":"6.1"},"targets":["desktop", "mobile"]}
+{"prompt":"Abstract labyrinth, vector art, escher-like","params":{"model":"6.1"},"targets":["desktop", "mobile"]}
+{"prompt":"a simple flat illustration with a <%= random(colors) %> background, in a cute style with bold lines and solid colors, a minimalist art piece with simple details and a silhouette. A minimalistic design featuring only the head of an elegant cartoon-style black <%= random(animals) %>, its eyes sparkling as it gazes upwards at the sky, in the style of Henri Matisse, with his artistic styles and color schemes.","params":{"model":"6.1"},"targets":["mobile", "desktop-light"]}
+{"prompt":"Groovy pipe network, isometric style","params":{"model":"6.1"},"targets":["mobile", "desktop"]}
+{"prompt":"an Abstract design using circular dots arranged in a dynamic yet minimalistic composition, geometric style, monochromatic color scheme, clean lines, high contrast, sharp edges, modern aesthetic","params":{"model":"6.1"},"targets":["mobile", "desktop-light"]}
