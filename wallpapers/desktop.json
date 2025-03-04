@@ -1,0 +1,15 @@
+{
+  "template": {
+    "prompt": "megalith tree, druid stones, glowing magic, psychedelic",
+    "params": {
+      "chaos": "20",
+      "stylize": "500",
+      "model": "6.1"
+    },
+    "targets": [
+      "desktop",
+      "mobile"
+    ]
+  },
+  "prompt": "megalith tree, druid stones, glowing magic, psychedelic"
+}

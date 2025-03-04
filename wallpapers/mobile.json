@@ -1,0 +1,13 @@
+{
+  "template": {
+    "prompt": "liquid vortices",
+    "params": {
+      "stylize": 150,
+      "model": "6.1"
+    },
+    "targets": [
+      "mobile"
+    ]
+  },
+  "prompt": "liquid vortices"
+}
