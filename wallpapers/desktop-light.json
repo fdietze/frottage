@@ -1,0 +1,14 @@
+{
+  "template": {
+    "prompt": "Elegant and minimalistic logo of a proud confusing cute creature. color accents. The design should have a modern style, with a focus on simplicity and elegance. The background is white.",
+    "params": {
+      "stylize": "250",
+      "model": "6.1"
+    },
+    "targets": [
+      "mobile",
+      "desktop-light"
+    ]
+  },
+  "prompt": "Elegant and minimalistic logo of a proud confusing cute creature. color accents. The design should have a modern style, with a focus on simplicity and elegance. The background is white."
+}

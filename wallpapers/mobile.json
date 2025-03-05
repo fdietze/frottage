@@ -1,0 +1,14 @@
+{
+  "template": {
+    "prompt": "intricate abstract machine",
+    "params": {
+      "chaos": 30,
+      "model": "5.2"
+    },
+    "targets": [
+      "desktop",
+      "mobile"
+    ]
+  },
+  "prompt": "intricate abstract machine"
+}

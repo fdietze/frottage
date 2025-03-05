@@ -1,0 +1,13 @@
+{
+  "template": {
+    "prompt": "midjourney",
+    "params": {
+      "model": "6.1"
+    },
+    "targets": [
+      "desktop",
+      "mobile"
+    ]
+  },
+  "prompt": "midjourney"
+}
