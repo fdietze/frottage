@@ -1,0 +1,13 @@
+{
+  "template": {
+    "prompt": "an Abstract design using circular dots arranged in a dynamic yet minimalistic composition, geometric style, monochromatic color scheme, clean lines, high contrast, sharp edges, modern aesthetic",
+    "params": {
+      "model": "6.1"
+    },
+    "targets": [
+      "mobile",
+      "desktop-light"
+    ]
+  },
+  "prompt": "an Abstract design using circular dots arranged in a dynamic yet minimalistic composition, geometric style, monochromatic color scheme, clean lines, high contrast, sharp edges, modern aesthetic"
+}

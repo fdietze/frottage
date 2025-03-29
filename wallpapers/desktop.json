@@ -1,0 +1,13 @@
+{
+  "template": {
+    "prompt": "hybrid phenomena, mandala",
+    "params": {
+      "model": "6.1",
+      "chaos": 10
+    },
+    "targets": [
+      "desktop"
+    ]
+  },
+  "prompt": "hybrid phenomena, mandala"
+}

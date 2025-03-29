@@ -1,0 +1,15 @@
+{
+  "template": {
+    "prompt": "synesthesia, abstract",
+    "params": {
+      "chaos": 30,
+      "no": "people, face",
+      "model": "6.1"
+    },
+    "targets": [
+      "desktop",
+      "mobile"
+    ]
+  },
+  "prompt": "synesthesia, abstract"
+}
