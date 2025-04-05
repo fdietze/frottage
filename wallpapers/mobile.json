@@ -1,0 +1,14 @@
+{
+  "template": {
+    "prompt": "harmonious chaos, fragmental tessalations, nano particles, high resolution, 4k",
+    "params": {
+      "chaos": 20,
+      "model": "5.2"
+    },
+    "targets": [
+      "mobile",
+      "desktop"
+    ]
+  },
+  "prompt": "harmonious chaos, fragmental tessalations, nano particles, high resolution, 4k"
+}
