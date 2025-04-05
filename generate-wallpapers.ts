@@ -35,7 +35,7 @@ function constructMjPrompt(
   if (prompt.params?.chaos) mjPrompt += ` --chaos ${prompt.params.chaos}`;
   if (prompt.params?.weird) mjPrompt += ` --weird ${prompt.params.weird}`;
   mjPrompt += ` --stylize ${prompt.params?.stylize ?? 200}`;
-  if (prompt.params?.model) mjPrompt += ` --version ${prompt.params.model}`;
+  mjPrompt += ` --profile an39wr2 --v 7`;
   mjPrompt += ` --aspect ${target.aspectRatio}`;
   return mjPrompt;
 }
