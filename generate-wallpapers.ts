@@ -10,13 +10,6 @@ import { displayRemoteImage } from "./image-display";
 
 interface Prompt {
   prompt: string;
-  params?: {
-    no?: string;
-    chaos?: number;
-    weird?: number;
-    stylize?: number;
-    model?: string;
-  };
   targets: string[];
 }
 
@@ -31,12 +24,12 @@ function constructMjPrompt(
   target: Target,
 ): string {
   let mjPrompt = renderedPrompt;
-  if (prompt.params?.no) mjPrompt += ` --no ${prompt.params.no}`;
-  if (prompt.params?.chaos) mjPrompt += ` --chaos ${prompt.params.chaos}`;
-  if (prompt.params?.weird) mjPrompt += ` --weird ${prompt.params.weird}`;
-  mjPrompt += ` --stylize ${prompt.params?.stylize ?? 200}`;
-  mjPrompt += ` --profile an39wr2 --v 7`;
+
+  // remove aspect ratio and profile
+  mjPrompt = mjPrompt.replace(/\s+--(ar|aspect|p|profile)\s+[^\s]+/gm, "");
+
   mjPrompt += ` --aspect ${target.aspectRatio}`;
+  mjPrompt += ` --profile an39wr2`;
   return mjPrompt;
 }
 
