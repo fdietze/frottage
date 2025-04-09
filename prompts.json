@@ -2,6 +2,7 @@
 {"prompt":"forgotten spaceship crashed on planet with strange plants, beautiful night sky, nostalgic, comic style --no photorealistic, people","targets":["mobile","desktop"]}
 {"prompt":"cute but professional little spaceship crashed on planet with strange plants, daytime, light sky, comic style --no photorealistic, people","targets":["mobile","desktop-light"]}
 {"prompt":"harmonious chaos, fragmental tessalations, frottage, hyperrealistic --chaos 20 --no people,face,tiles","targets":["desktop"]}
+{"prompt":"harmonious chaos, fragmental tessalations, frottage --chaos 20","targets":["desktop", "mobile"]}
 {"prompt":"harmonious chaos, fragmental tessalations, nano particles, high resolution, 4k --chaos 20","targets":["mobile","desktop"]}
 {"prompt":"harmonious shapes, fragmental tessalations, elegant intricate patterns, 3d, depth --no fractal, white","targets":["mobile","desktop"]}
 {"prompt":"extremely complicated tesselation, intricate, <%= random(colors) %> color --chaos 20","targets":["mobile","desktop"]}
@@ -70,7 +71,7 @@
 {"prompt":"abstract trippy psychedelic dream art, paper cut craft, paper craft, paper illustration --no face","targets":["desktop-light"]}
 {"prompt":"Groovy line patterns --no panels","targets":["desktop","mobile"]}
 {"prompt":"Groovy patterns","targets":["desktop","mobile"]}
-{"prompt":"an organic dark brown wood grain pattern with intricate abstract details, rendered in a wood carving style --chaos 5","targets":["mobile"]}
+{"prompt":"an organic dark brown wood grain pattern with intricate abstract details, rendered in a wood carving style an organic dark brown wood grain pattern with intricate abstract details, rendered in a wood carving style --chaos 40","targets":["mobile"]}
 {"prompt":"Groovy time travel, abstract flat --no clock, vehicle","targets":["desktop-light","mobile"]}
 {"prompt":"natural vector field, natural light, peaceful, romantic, high definition details, in the style of illustration","targets":["desktop-light","mobile"]}
 {"prompt":"leafs","targets":["mobile"]}
@@ -88,3 +89,16 @@
 {"prompt":"simple details, HD, high resolution, high details, best quality, high quality. --no people,face","targets":["mobile"]}
 {"prompt":"3D rendering of a cute <%= random(animals) %> with its head poking out of a wall, cute expression, <%= random(colors) %> background, Pixar style, Disney style, 3D rendering, simple design, simple details, HD, high resolution, high details, best quality, high quality.","targets":["mobile","desktop-light"]}
 {"prompt":"dark patterns, geometric --chaos 20","targets":["mobile"]}
+{"prompt":"aurora borealis, psychedelic --chaos 9","targets":["desktop","mobile"]}
+{"prompt":"biomechanical landscape","targets":["desktop","mobile"]}
+{"prompt":"biomechanical landscape","targets":["desktop","mobile"]}
+{"prompt":"sound particles", "targets":["desktop", "mobile"]}
+{"prompt":"crazy proud <%= random(animals) %> robot", "targets":["desktop", "mobile"]}
+{"prompt":"fata morgana,", "targets":["desktop", "mobile"]}
+{"prompt":"8-bit blocky pixel style", "targets":["desktop", "mobile"]}
+{"prompt":"midjourney,", "targets":["desktop", "mobile"]}
+{"prompt":"8-bit pixel style", "targets":["desktop", "mobile"]}
+{"prompt":"warp signature residue, sepia pastel color scheme", "targets":["desktop", "mobile"]}
+{"prompt":"warp signature residue, line art, colored accents", "targets":["desktop", "mobile"]}
+{"prompt":"gravitic ripple relic, mauve hue lineup", "targets":["desktop", "mobile"]}
+{"prompt":"circular music visualization, iris", "targets":["desktop", "mobile"]}
