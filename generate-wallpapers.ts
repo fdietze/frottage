@@ -29,7 +29,7 @@ function constructMjPrompt(
   mjPrompt = mjPrompt.replace(/\s+--(ar|aspect|p|profile)\s+[^\s]+/gm, "");
 
   mjPrompt += ` --aspect ${target.aspectRatio}`;
-  mjPrompt += ` --profile an39wr2`;
+  mjPrompt += ` --profile an39wr2 --version 7`;
   return mjPrompt;
 }
 
