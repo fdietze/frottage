@@ -1,5 +1,5 @@
 {"prompt":"kaleidoscope mosaic, frottage --chaos 20","targets":["mobile","desktop"]}
-{"prompt":"forgotten spaceship crashed on planet with strange plants, beautiful night sky, nostalgic, comic style --no photorealistic, people","targets":["mobile","desktop"]}
+{"prompt":"forgotten spaceship crashed on planet with strange plants, beautiful night sky, nostalgic, cell shaded --no photorealistic, people","targets":["mobile","desktop"]}
 {"prompt":"cute but professional little spaceship crashed on planet with strange plants, daytime, light sky, comic style --no photorealistic, people","targets":["mobile","desktop-light"]}
 {"prompt":"harmonious chaos, fragmental tessalations, frottage, hyperrealistic --chaos 20 --no people,face,tiles","targets":["desktop"]}
 {"prompt":"harmonious chaos, fragmental tessalations, frottage --chaos 20","targets":["desktop", "mobile"]}
@@ -10,7 +10,7 @@
 {"prompt":"random noise, abstract --chaos 20 --no people, face","targets":["mobile","desktop"]}
 {"prompt":"random noise, abstract, spectrum","targets":["mobile","desktop"]}
 {"prompt":"fluid simulation, tesselation --chaos 40","targets":["mobile","desktop"]}
-{"prompt":"psychedelic wallpaper, patterns --chaos 10 --no people,face","targets":["watch"]}
+{"prompt":"psychedelic wallpaper, patterns","targets":["mobile", "desktop","watch"]}
 {"prompt":"colorful and abstract poster, light and space movement, elongated forms, detailed dreamscapes, nightscape","targets":["mobile"]}
 {"prompt":"Psychedelic landscape, friendly, idyllic, strong colors, intricate detail --chaos 30 --no people,face","targets":["desktop","mobile"]}
 {"prompt":"synesthesia, abstract --chaos 30 --no people, face","targets":["desktop","mobile"]}
@@ -46,7 +46,7 @@
 {"prompt":"intricate abstract liquid machine, cinematic --chaos 20","targets":["desktop","mobile"]}
 {"prompt":"fractured time, dark, glitches --chaos 30 --no clock,person","targets":["desktop","mobile"]}
 {"prompt":"warp signature residue","targets":["desktop"]}
-{"prompt":"A graphic featuring mandala art depicting a <%= random(animals) %>, symbolizing wisdom and spirit. The minimalistic design uses bold black lines on a light background. a few colored accents. It captures the essence of culture through its intricate patterns and symbolism --chaos 10","targets":["desktop-light"]}
+{"prompt":"A graphic featuring mandala art depicting a <%= random(animals) %>, symbolizing wisdom and spirit. The design uses bold black lines on a light background. a few colored accents. It captures the essence of culture through its intricate patterns and symbolism --chaos 10","targets":["desktop-light"]}
 {"prompt":"gradient descent","targets":["mobile"]}
 {"prompt":"graph algorithm, mellow, few details, painted by very patient artist","targets":["mobile"]}
 {"prompt":"an illustration, showing a hundred cute animals tightly packed. Graphic design, lines, soft tones","targets":["desktop"]}
@@ -66,7 +66,7 @@
 {"prompt":"Fantasy illustration, magnificent, dreamy fairyland, orange blue background, flowing clouds and fog, Eastern style, intricate lines. --chaos 5","targets":["mobile","desktop"]}
 {"prompt":"choker up shot of a small ancient animal starring curiously into the camera, 35mm cinematic, detailed","targets":["desktop"]}
 {"prompt":"choker up shot of a small ancient animal starring curiously into the camera, 35mm cinematic, detailed, daylight, vibrant colors","targets":["desktop-light"]}
-{"prompt":"Elegant and minimalistic logo of a proud confusing cute creature. color accents. The design should have a modern style, with a focus on simplicity and elegance. The background is white.","targets":["mobile","desktop-light"]}
+{"prompt":"Illustration of a proud confusing cute creature. color accents. The design should have a modern style, with a focus on simplicity and elegance. The background is white.","targets":["mobile","desktop-light"]}
 {"prompt":"3d papercuts view, in the style of surrealistic cartoons, detailed shading, realistic landscapes with soft, tonal colors, swirling vortexes traditional, vibrant","targets":["mobile"]}
 {"prompt":"abstract trippy psychedelic dream art, paper cut craft, paper craft, paper illustration --no face","targets":["desktop-light"]}
 {"prompt":"Groovy line patterns --no panels","targets":["desktop","mobile"]}
@@ -80,9 +80,7 @@
 {"prompt":"megalith tree, druid stones, glowing magic, psychedelic --chaos 20","targets":["desktop","mobile"]}
 {"prompt":"turbulence in two phases, blotches of liquid paint, multifacetted --chaos 30 --no person","targets":["desktop","mobile"]}
 {"prompt":"line art bending white on black background, resembling patterns from nature --chaos 20","targets":["desktop","mobile"]}
-{"prompt":"Abstract labyrinth, vector art --chaos 10","targets":["desktop","mobile"]}
-{"prompt":"Abstract labyrinth, vector art","targets":["desktop","mobile"]}
-{"prompt":"Abstract labyrinth, vector art, escher-like","targets":["desktop","mobile"]}
+{"prompt":"Groovy labyrinth, vector art","targets":["desktop","mobile"]}
 {"prompt":"a simple flat illustration with a <%= random(colors) %> background, in a cute style with bold lines and solid colors, a minimalist art piece with simple details and a silhouette. A minimalistic design featuring only the head of an elegant cartoon-style black <%= random(animals) %>, its eyes sparkling as it gazes upwards at the sky, in the style of Henri Matisse, with his artistic styles and color schemes.","targets":["mobile","desktop-light"]}
 {"prompt":"Groovy pipe network, isometric style","targets":["mobile","desktop"]}
 {"prompt":"an Abstract design using circular dots arranged in a dynamic yet minimalistic composition, geometric style, monochromatic color scheme, clean lines, high contrast, sharp edges, modern aesthetic","targets":["mobile","desktop-light"]}
@@ -102,3 +100,24 @@
 {"prompt":"warp signature residue, line art, colored accents", "targets":["desktop", "mobile"]}
 {"prompt":"gravitic ripple relic, mauve hue lineup", "targets":["desktop", "mobile"]}
 {"prompt":"circular music visualization, iris", "targets":["desktop", "mobile"]}
+{"prompt":"trippy carrot looking you deep into the eyes", "targets":["desktop", "mobile"]}
+{"prompt":"abstract thought patterns", "targets":["desktop", "mobile"]}
+{"prompt":"vortex spiral ghost, emerald gradient lineup", "targets":["desktop", "mobile"]}
+{"prompt":"trippy frog hypnotizing you", "targets":["desktop", "mobile"]}
+{"prompt":"meditating vegetable", "targets":["desktop", "mobile"]}
+{"prompt":"Midjourney in a trippy adventure", "targets":["desktop", "mobile"]}
+{"prompt":"Midjourney in a biomechanical adventure", "targets":["desktop", "mobile"]}
+{"prompt":"chaos", "targets":["desktop", "mobile"]}
+{"prompt":"Chaos, but calm", "targets":["desktop", "mobile"]}
+{"prompt":"tesselation", "targets":["desktop", "mobile"]}
+{"prompt":"playful abstraction", "targets":["desktop", "mobile"]}
+{"prompt":"Causality", "targets":["desktop", "mobile"]}
+{"prompt":"Quantum mechanics", "targets":["desktop", "mobile"]}
+{"prompt":"Wallpaper", "targets":["desktop", "mobile"]}
+{"prompt":"Origami particles", "targets":["desktop", "mobile"]}
+{"prompt":"Holistic", "targets":["desktop", "mobile"]}
+{"prompt":"Tentacle quadrant", "targets":["desktop", "mobile"]}
+{"prompt":"Tentacle tesselation", "targets":["desktop", "mobile"]}
+{"prompt":"Dream computing", "targets":["desktop", "mobile"]}
+{"prompt":"firewatch style, mountains, nature --no structure", "targets":["desktop", "desktop-light", "mobile"]}
+{"prompt":"Moon cave exploration, line shaded, pale colors", "targets":["desktop", "mobile"]}

@@ -1,2 +1,3 @@
-{"prompt":"explosion of the frontal cortex","params":{"chaos": "20", "stylize": "200", "model":"6.1"},"targets":["mobile"]}
-{"prompt":"chaos","params":{"chaos": "50", "stylize": "500", "no": "chaos", "weird": "100", "model":"6.1"},"targets":["mobile"]}
+{"prompt":"Omnipresent darkness", "targets":["desktop", "mobile"]}
+{"prompt":"explosion of the frontal cortex", "targets":["desktop", "mobile"]}
+{"prompt":"Quantum bomb", "targets":["desktop", "mobile"]}
