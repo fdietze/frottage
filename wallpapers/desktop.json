@@ -1,0 +1,10 @@
+{
+  "template": {
+    "prompt": "Tentacle tesselation",
+    "targets": [
+      "desktop",
+      "mobile"
+    ]
+  },
+  "prompt": "Tentacle tesselation"
+}
