@@ -43,13 +43,8 @@ feh --bg-fill https://fdietze.github.io/frottage/wallpapers/wallpaper-desktop-la
 
 ## Android:
 
-A minimal Android app is on the way (subscribe this issue to get notified: https://github.com/fdietze/frottage/issues/9)
-
-Until then, you can use this automation app:
-
-
-1. Install Automate: https://play.google.com/store/apps/details?id=com.llamalab.automate&referrer=utm_source%3Dcommunity
-2. Download flow: https://llamalab.com/automate/community/flows/45884
+Get the app on the Play Store [here](https://play.google.com/store/apps/details?id=com.frottage).
+Optionally, check the [app repo](https://github.com/fdietze/frottage-android) for buildung yourself.
 
 ## iOS:
 
