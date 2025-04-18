@@ -31,7 +31,7 @@ function constructMjPrompt(
   const endDate = new Date('2025-04-21');
 
   if (today >= startDate && today <= endDate) {
-    mjPrompt = "friendly but confused bunny hiding in a bush and peeking out, pastel colors --chaos 10";
+    mjPrompt = "a basket of colorful Easter eggs, with a big egg with arms and legs watching over them, comic style --chaos 10";
   }
 
 
