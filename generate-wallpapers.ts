@@ -31,7 +31,7 @@ function constructMjPrompt(
   const endDate = new Date('2025-04-21');
 
   if (today >= startDate && today <= endDate) {
-    mjPrompt = "easter egg vibes --chaos 10";
+    mjPrompt = "friendly but confused bunny hiding in a bush and peeking out, pastel colors --chaos 10";
   }
 
 
