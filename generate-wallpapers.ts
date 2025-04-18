@@ -25,6 +25,17 @@ function constructMjPrompt(
 ): string {
   let mjPrompt = renderedPrompt;
 
+
+  const today = new Date();
+  const startDate = new Date('2025-04-18');
+  const endDate = new Date('2025-04-21');
+
+  if (today >= startDate && today <= endDate) {
+    mjPrompt = "easter egg vibes --chaos 10";
+  }
+
+
+
   // remove aspect ratio and profile
   mjPrompt = mjPrompt.replace(/\s+--(ar|aspect|p|profile)\s+[^\s]+/gm, "");
 
