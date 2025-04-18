@@ -31,7 +31,14 @@ function constructMjPrompt(
   const endDate = new Date('2025-04-21');
 
   if (today >= startDate && today <= endDate) {
-    mjPrompt = "a basket of colorful Easter eggs, with a big egg with arms and legs watching over them, comic style --chaos 10";
+    const prompts = [
+      "easter egg vibes --chaos 10",
+      "friendly but confused bunny hiding in a bush and peeking out, pastel colors --chaos 10",
+      "a basket of colorful Easter eggs, with a big egg with arms and legs watching over them, comic style --chaos 10",
+      "midjourney in a crazy easter egg adventure",
+      "high dimensional easter egg --chaos 10"
+    ];
+    mjPrompt = prompts[getRandomIndex(prompts.length)];
   }
 
 
