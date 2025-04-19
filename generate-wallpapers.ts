@@ -36,7 +36,8 @@ function constructMjPrompt(
       "friendly but confused bunny hiding in a bush and peeking out, pastel colors --chaos 10",
       "a basket of colorful Easter eggs, with a big egg with arms and legs watching over them, comic style --chaos 10",
       "midjourney in a crazy easter egg adventure",
-      "high dimensional easter egg --chaos 10"
+      "high dimensional easter egg --chaos 20",
+      "Small cute bunny carrying a giant easter egg, pixar scene, cinematic --chaos 20",
     ];
     mjPrompt = prompts[getRandomIndex(prompts.length)];
   }
