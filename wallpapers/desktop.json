@@ -1,0 +1,9 @@
+{
+  "template": {
+    "prompt": "glowing circuitry --chaos 30 --no people,face",
+    "targets": [
+      "desktop"
+    ]
+  },
+  "prompt": "glowing circuitry --chaos 30 --no people,face"
+}
