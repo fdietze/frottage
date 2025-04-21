@@ -28,7 +28,7 @@ function constructMjPrompt(
 
   const today = new Date();
   const startDate = new Date('2025-04-18');
-  const endDate = new Date('2025-04-21');
+  const endDate = new Date('2025-04-22');
 
   if (today >= startDate && today <= endDate) {
     const prompts = [
