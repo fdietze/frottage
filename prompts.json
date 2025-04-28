@@ -10,7 +10,7 @@
 {"prompt":"random noise, abstract --chaos 20 --no people, face","targets":["mobile","desktop"]}
 {"prompt":"random noise, abstract, spectrum","targets":["mobile","desktop"]}
 {"prompt":"fluid simulation, tesselation --chaos 40","targets":["mobile","desktop"]}
-{"prompt":"psychedelic wallpaper, patterns","targets":["mobile", "desktop","watch"]}
+{"prompt":"psychedelic wallpaper, patterns","targets":["mobile", "desktop"]}
 {"prompt":"colorful and abstract poster, light and space movement, elongated forms, detailed dreamscapes, nightscape","targets":["mobile"]}
 {"prompt":"Psychedelic landscape, friendly, idyllic, strong colors, intricate detail --chaos 30 --no people,face","targets":["desktop","mobile"]}
 {"prompt":"synesthesia, abstract --chaos 30 --no people, face","targets":["desktop","mobile"]}
@@ -88,7 +88,6 @@
 {"prompt":"3D rendering of a cute <%= random(animals) %> with its head poking out of a wall, cute expression, <%= random(colors) %> background, Pixar style, Disney style, 3D rendering, simple design, simple details, HD, high resolution, high details, best quality, high quality.","targets":["mobile","desktop-light"]}
 {"prompt":"dark patterns, geometric --chaos 20","targets":["mobile"]}
 {"prompt":"aurora borealis, psychedelic --chaos 9","targets":["desktop","mobile"]}
-{"prompt":"biomechanical landscape","targets":["desktop","mobile"]}
 {"prompt":"biomechanical landscape","targets":["desktop","mobile"]}
 {"prompt":"sound particles", "targets":["desktop", "mobile"]}
 {"prompt":"crazy proud <%= random(animals) %> robot", "targets":["desktop", "mobile"]}
