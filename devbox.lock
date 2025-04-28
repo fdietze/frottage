@@ -1,0 +1,73 @@
+{
+  "lockfile_version": "1",
+  "packages": {
+    "github:NixOS/nixpkgs/nixpkgs-unstable": {
+      "resolved": "github:NixOS/nixpkgs/507b63021ada5fee621b6ca371c4fca9ca46f52c?lastModified=1745377448&narHash=sha256-jhZDfXVKdD7TSEGgzFJQvEEZ2K65UMiqW5YJ2aIqxMA%3D"
+    },
+    "nodejs@latest": {
+      "last_modified": "2025-04-02T13:00:31Z",
+      "plugin_version": "0.0.2",
+      "resolved": "github:NixOS/nixpkgs/384d1adab77a8d49172a3acc1d5c2f26d013a69a#nodejs_23",
+      "source": "devbox-search",
+      "version": "23.11.0",
+      "systems": {
+        "aarch64-darwin": {
+          "outputs": [
+            {
+              "name": "out",
+              "path": "/nix/store/7z52lrjdf95sxdv5gmf1lkd6jkmbrk56-nodejs-23.11.0",
+              "default": true
+            },
+            {
+              "name": "libv8",
+              "path": "/nix/store/0ksknzxczr0kzbz6swnw9ib84hgi77s8-nodejs-23.11.0-libv8"
+            }
+          ],
+          "store_path": "/nix/store/7z52lrjdf95sxdv5gmf1lkd6jkmbrk56-nodejs-23.11.0"
+        },
+        "aarch64-linux": {
+          "outputs": [
+            {
+              "name": "out",
+              "path": "/nix/store/yjnnd52kllrr7ydnz7ixw950fbgv014q-nodejs-23.11.0",
+              "default": true
+            },
+            {
+              "name": "libv8",
+              "path": "/nix/store/4i48prhfrkr2wbs06vs5g2aaicncpsfx-nodejs-23.11.0-libv8"
+            }
+          ],
+          "store_path": "/nix/store/yjnnd52kllrr7ydnz7ixw950fbgv014q-nodejs-23.11.0"
+        },
+        "x86_64-darwin": {
+          "outputs": [
+            {
+              "name": "out",
+              "path": "/nix/store/m2wfafc3wszhrl6ymyjjjw2b20a0xbx3-nodejs-23.11.0",
+              "default": true
+            },
+            {
+              "name": "libv8",
+              "path": "/nix/store/5f0jci5bwflnxp2ysfisv5xwxis7wa45-nodejs-23.11.0-libv8"
+            }
+          ],
+          "store_path": "/nix/store/m2wfafc3wszhrl6ymyjjjw2b20a0xbx3-nodejs-23.11.0"
+        },
+        "x86_64-linux": {
+          "outputs": [
+            {
+              "name": "out",
+              "path": "/nix/store/npy9r2i6v4r277y91vnf40l47gwpsdz4-nodejs-23.11.0",
+              "default": true
+            },
+            {
+              "name": "libv8",
+              "path": "/nix/store/0shcl7m044cdglpsf9nd61rgfndhx4qm-nodejs-23.11.0-libv8"
+            }
+          ],
+          "store_path": "/nix/store/npy9r2i6v4r277y91vnf40l47gwpsdz4-nodejs-23.11.0"
+        }
+      }
+    }
+  }
+}
