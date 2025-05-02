@@ -1,5 +1,5 @@
 import "dotenv/config";
-import { Midjourney, MJMessage } from "midjourney";
+import { Midjourney, MJMessage } from "midjourney-cunderw";
 import { getRandomIndex, randomInt } from "./random";
 import { sleepMs } from "./util";
 
@@ -8,9 +8,9 @@ export async function connect<R>(
   code: (client: Midjourney) => Promise<R>,
 ): Promise<R> {
   const client = new Midjourney({
-    ServerId: <string> process.env.SERVER_ID,
-    ChannelId: <string> process.env.CHANNEL_ID,
-    SalaiToken: <string> process.env.SALAI_TOKEN,
+    ServerId: <string>process.env.SERVER_ID,
+    ChannelId: <string>process.env.CHANNEL_ID,
+    SalaiToken: <string>process.env.SALAI_TOKEN,
     Debug: false,
     Ws: true, //enable ws is required for remix mode (and custom zoom)
     ...options,
@@ -66,7 +66,7 @@ export async function upscale(
     throw new Error(`upscale button not found (${imagined.content})`);
   }
   const upscaled: MJMessage | null = await client.Custom({
-    msgId: <string> imagined.id,
+    msgId: <string>imagined.id,
     flags: imagined.flags,
     customId: customID,
     loading: (uri: string, progress: string) => {
@@ -106,7 +106,7 @@ export async function varyRemix(
   const vary = upscaled?.options?.find((o) => o.label === varyLabel);
   if (!vary) throw new Error("no vary button");
   const varyCustom = await client.Custom({
-    msgId: <string> upscaled.id,
+    msgId: <string>upscaled.id,
     flags: upscaled.flags,
     content: remixPrompt,
     customId: vary.custom,
@@ -132,7 +132,7 @@ export async function upscale2x(
   );
   if (!upscale_button) throw new Error("no upscale button");
   const upscaled2x = await client.Custom({
-    msgId: <string> upscaled.id,
+    msgId: <string>upscaled.id,
     flags: upscaled.flags,
     customId: upscale_button.custom,
     loading: (uri: string, progress: string) => {
@@ -152,7 +152,7 @@ export async function upscale4x(
   );
   if (!upscale_button) throw new Error("no upscale button");
   const upscaled4x = await client.Custom({
-    msgId: <string> upscaled.id,
+    msgId: <string>upscaled.id,
     flags: upscaled.flags,
     customId: upscale_button.custom,
     loading: (uri: string, progress: string) => {
