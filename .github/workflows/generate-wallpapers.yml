@@ -3,7 +3,7 @@ name: Generate Wallpapers
 on:
   workflow_dispatch:
   schedule:
-    - cron: "0 23,5,11,17 * * *" # two hours before the update (UTC)
+    - cron: "0 0,6,12,18 * * *" # one hour before the update (UTC)
 
 
 jobs:
