@@ -63,7 +63,7 @@
 {"prompt":"a poster, in the style of a vintage poster from the 80s --no person","targets":["mobile"]}
 {"prompt":"pattern, flowers, sunset light, pastel art --chaos 10","targets":["mobile"]}
 {"prompt":"macro fingerprint pattern in dust, enigma, labyrinth, vector style --chaos 5","targets":["desktop"]}
-{"prompt":"Fantasy illustration, magnificent, dreamy fairyland, orange blue background, flowing clouds and fog, Eastern style, intricate lines. --chaos 5","targets":["mobile","desktop"]}
+{"prompt":"Fantasy illustration, magnificent, dreamy fairyland, <%= random(colors) %> and <%= random(colors) %> background, flowing clouds and fog, Eastern style, intricate lines. --chaos 10 --stylize 300","targets":["mobile","desktop"]}
 {"prompt":"choker up shot of a small ancient animal starring curiously into the camera, 35mm cinematic, detailed --chaos 10","targets":["desktop"]}
 {"prompt":"choker up shot of a small ancient animal starring curiously into the camera, 35mm cinematic, detailed, daylight, vibrant colors --chaos 10","targets":["desktop-light"]}
 {"prompt":"Illustration of a proud confusing cute creature. color accents. The design should have a modern style, with a focus on simplicity and elegance. The background is white.","targets":["mobile","desktop-light"]}
@@ -93,9 +93,8 @@
 {"prompt":"sound particles", "targets":["desktop", "mobile"]}
 {"prompt":"crazy proud <%= random(animals) %> robot", "targets":["desktop", "mobile"]}
 {"prompt":"fata morgana, --stylize 300", "targets":["desktop", "mobile"]}
-{"prompt":"8-bit blocky pixel style", "targets":["desktop", "mobile"]}
 {"prompt":"midjourney,", "targets":["desktop", "mobile"]}
-{"prompt":"8-bit pixel style", "targets":["desktop", "mobile"]}
+{"prompt":"8-bit pixel style scene --stylize 200", "targets":["desktop", "mobile"]}
 {"prompt":"warp signature residue, sepia pastel color scheme", "targets":["desktop", "mobile"]}
 {"prompt":"warp signature residue, line art, colored accents", "targets":["desktop", "mobile"]}
 {"prompt":"gravitic ripple relic, mauve hue lineup", "targets":["desktop", "mobile"]}
