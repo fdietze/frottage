@@ -1,0 +1,9 @@
+{
+  "template": {
+    "prompt": "flat design abstract poster, daylight, aesthetic dayscape --chaos 10 --stylize 500 --no furniture",
+    "targets": [
+      "desktop-light"
+    ]
+  },
+  "prompt": "flat design abstract poster, daylight, aesthetic dayscape --chaos 10 --stylize 500 --no furniture"
+}

@@ -1,0 +1,10 @@
+{
+  "template": {
+    "prompt": "synesthesia, abstract, psychedelic --chaos 20 --no people, face",
+    "targets": [
+      "desktop",
+      "mobile"
+    ]
+  },
+  "prompt": "synesthesia, abstract, psychedelic --chaos 20 --no people, face"
+}

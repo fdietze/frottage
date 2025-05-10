@@ -1,0 +1,10 @@
+{
+  "template": {
+    "prompt": "Chaos, but calm --stylize 200",
+    "targets": [
+      "desktop",
+      "mobile"
+    ]
+  },
+  "prompt": "Chaos, but calm --stylize 200"
+}

@@ -1,0 +1,12 @@
+{
+  "template": {
+    "prompt": "<%= imageFrom('mobile') %> tiling wall structure, shades of gray",
+    "negativePrompt": "woman",
+    "params": {
+      "imageWeight": 1.5
+    },
+    "targets": [
+      "mobile-homescreen"
+    ]
+  }
+}
